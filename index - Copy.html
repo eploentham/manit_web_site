@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap UI Kit / Components">
+<meta name="keywords" content="bootstrap ui kit, bootstrap components, html5 / css3 ui kit, web ui kit" />
+<meta name="author" content="KingStudio.ro">
+
+<!-- favicon -->
+<link rel="icon" href="images/favicon.png">
+<!-- page title -->
+<title>King UI - Bootstrap UI & Components Kit</title>
+<!-- bootstrap css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- css -->
+<link href="css/king-ui.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/linear-icons.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<!-- your content here -->
+
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/validator.min.js" type="text/javascript"></script>
+<script src="js/form-scripts.js" type="text/javascript"></script>
+<!-- bootstrap javascript plugins -->
+<!-- / sliders -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- cards carousel -->
+<script>
+
+    $(document).ready(function($) {
+      $("#card-carousel").owlCarousel();
+    });
+
+    $("body").data("page", "frontpage");
+
+</script>
+<!-- / cards carousel -->
+<!-- image carousel -->
+<script>
+    $(document).ready(function() {
+      $("#image-carousel").owlCarousel({
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+</script>
+<!-- / image carousel -->
+<!-- posts carousel -->
+<script>
+    $(document).ready(function() {
+      $("#posts-carousel").owlCarousel({
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+</script>
+<!-- / posts carousel -->
+<!-- posts carousel 3col -->
+<script>
+    $(document).ready(function() {
+      $("#posts-carousel-3col").owlCarousel({
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+</script>
+<!-- / posts carousel 3col -->
+<!-- image slider -->
+<script>
+$(document).ready(function() {
+ 
+  $("#image-slider").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+ 
+  });
+ 
+});
+</script>
+<!-- / image slider -->
+<!-- / sliders -->
+<!-- facts counter -->
+<script src="js/jquery.countTo.js"></script>
+ <script type="text/javascript">
+      $('.timer').countTo({
+        refreshInterval: 60,
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals);
+        },
+      });
+</script>
+<!-- / facts counter -->
+<!-- google maps -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA40uewXP25u1A4o9u8ueBimZZwIdNLkY"></script>
+<script src="js/map.js"></script>
+<script src="js/map-full.js"></script>
+<!-- / google maps -->
+<!-- portfolio script -->
+<script src="js/jquery.shuffle.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- / portfolio script -->
+<!-- / javascript -->
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/*----------------------------------------
+	CSS @font-face
+----------------------------------------*/
+
+@font-face {
+    font-family: 'db_heaventroundedregular';
+    src: url('../fonts/db_heaventroundedv3.2-webfont.eot');
+    src: url('../fonts/db_heaventroundedv3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/db_heaventroundedv3.2-webfont.woff2') format('woff2'),
+         url('../fonts/db_heaventroundedv3.2-webfont.woff') format('woff'),
+         url('../fonts/db_heaventroundedv3.2-webfont.ttf') format('truetype'),
+         url('../fonts/db_heaventroundedv3.2-webfont.svg#db_heaventroundedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'db_heaventroundeditalic';
+    src: url('../fonts/db_heaventrounded_it_v3.2-webfont.eot');
+    src: url('../fonts/db_heaventrounded_it_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/db_heaventrounded_it_v3.2-webfont.woff2') format('woff2'),
+         url('../fonts/db_heaventrounded_it_v3.2-webfont.woff') format('woff'),
+         url('../fonts/db_heaventrounded_it_v3.2-webfont.ttf') format('truetype'),
+         url('../fonts/db_heaventrounded_it_v3.2-webfont.svg#db_heaventroundeditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'db_heaventroundedmed';
+    src: url('../fonts/db_heaventrounded_med_v3.2-webfont.eot');
+    src: url('../fonts/db_heaventrounded_med_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/db_heaventrounded_med_v3.2-webfont.woff2') format('woff2'),
+         url('../fonts/db_heaventrounded_med_v3.2-webfont.woff') format('woff'),
+         url('../fonts/db_heaventrounded_med_v3.2-webfont.ttf') format('truetype'),
+         url('../fonts/db_heaventrounded_med_v3.2-webfont.svg#db_heaventroundedmed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'db_heaventroundedmed_it';
+    src: url('../fonts/db_heaventrounded_med_it_v3.2-webfont.eot');
+    src: url('../fonts/db_heaventrounded_med_it_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/db_heaventrounded_med_it_v3.2-webfont.woff2') format('woff2'),
+         url('../fonts/db_heaventrounded_med_it_v3.2-webfont.woff') format('woff'),
+         url('../fonts/db_heaventrounded_med_it_v3.2-webfont.ttf') format('truetype'),
+         url('../fonts/db_heaventrounded_med_it_v3.2-webfont.svg#db_heaventroundedmed_it') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'db_heaventroundedbold';
+    src: url('../fonts/db_heaventrounded_bd_v3.2-webfont.eot');
+    src: url('../fonts/db_heaventrounded_bd_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/db_heaventrounded_bd_v3.2-webfont.woff2') format('woff2'),
+         url('../fonts/db_heaventrounded_bd_v3.2-webfont.woff') format('woff'),
+         url('../fonts/db_heaventrounded_bd_v3.2-webfont.ttf') format('truetype'),
+         url('../fonts/db_heaventrounded_bd_v3.2-webfont.svg#db_heaventroundedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'db_heaventroundedbold_it';
+    src: url('../fonts/db_heaventrounded_bd_it_v3.2-webfont.eot');
+    src: url('../fonts/db_heaventrounded_bd_it_v3.2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/db_heaventrounded_bd_it_v3.2-webfont.woff2') format('woff2'),
+         url('../fonts/db_heaventrounded_bd_it_v3.2-webfont.woff') format('woff'),
+         url('../fonts/db_heaventrounded_bd_it_v3.2-webfont.ttf') format('truetype'),
+         url('../fonts/db_heaventrounded_bd_it_v3.2-webfont.svg#db_heaventroundedbold_it') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
