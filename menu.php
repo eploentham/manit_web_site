@@ -1,0 +1,35 @@
+<div class="header-v6 header-border-bottom header-sticky">
+    <!-- Navbar -->
+    <div class="navbar mega-menu" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="menu-container">
+                <!-- Navbar Brand -->
+                <div class="navbar-brand">
+                        <a href="index.html">
+                                <img class="default-logo" src="assets/img/logo3-light.png" alt="Logo">
+                                <img class="shrink-logo" src="assets/img/logo3-dark.png" alt="Logo">
+                        </a>
+                </div>
+                <!-- ENd Navbar Brand -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <div class="menu-container">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Home
+                            </a>									
+                        </li>
+                        <!-- End Home -->
+
+                    </ul>
+                </div>
+            </div><!--/navbar-collapse-->
+        </div>
+    </div>
+    <!-- End Navbar -->
+</div>
