@@ -42,6 +42,16 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
+    <link href="assets/king-ui/css/animate.css" rel="stylesheet">
+    <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="assets/king-ui/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='assets/king-ui/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/king-ui/css/linear-icons.css">
+
 </head>
 
 <body class="header-fixed">
@@ -53,21 +63,57 @@
 		<!-- Interactive Slider v2 -->
 		<div class="interactive-slider-v2">
 			<div class="container">
-				<h1>Welcome to Unify</h1>
-				<p>Clean and fully responsive Template.</p>
+				<h1>ข้อเสนอดีๆ สำหรับครอบครัวคุณ</h1>
+				<p>สะดวก รวดเร็ว มั่นใจ ไร้กังวล ซื้อประกันกับเรา ประหยัดเงินมากกว่า</p>
 			</div>
 		</div>
 		<!-- End Interactive Slider v2 -->
 
 		<!--=== Content ===-->
 		<div class="container content-md">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare magna neque, quis sodales ex luctus at. In feugiat finibus sem. Ut nisi est, cursus vitae risus non, sagittis auctor nisl. Aenean sit amet luctus ante. Phasellus pellentesque tempor libero nec rhoncus. Nam sed diam eget ante rhoncus volutpat vitae ac dui. Vestibulum massa velit, pretium pellentesque vestibulum et, pharetra at magna. Praesent sit amet arcu malesuada, malesuada dui et, fringilla neque. Integer sapien elit, gravida in malesuada consectetur, sagittis ac erat. Praesent vel vestibulum eros, ac interdum diam. Cras vitae massa neque. Duis dapibus auctor dui, eu pulvinar odio efficitur non. Sed quis nibh in risus gravida hendrerit.</p>
+		    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">
+                                    <ul class="nav nav-pills" role="tablist">
+                                        <li class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="true"><h4>ประกันรถยนต์</h4></a></li>
+                                      <li class=""><a href="#tab2" role="tab" data-toggle="tab" aria-expanded="false"><h4>ประกันรถจักรยานยนต์</h4></a></li>
+                                    </ul>
+                                    <div class="tab-content">
 
-			<p>In volutpat tristique rutrum. Vestibulum sollicitudin at nulla sit amet pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam dictum at diam eu commodo. Mauris vehicula sapien lectus, ac molestie mauris commodo sit amet. Aliquam non est leo. Mauris sagittis sagittis urna, in lacinia lectus efficitur in. Proin sollicitudin mattis sodales. Cras et faucibus neque, non ornare metus. Vestibulum id semper est. Maecenas vestibulum varius sapien, id elementum tellus euismod at. Vestibulum auctor ante a efficitur sagittis. Proin tempus lacus risus, quis dapibus nunc eleifend sit amet.</p>
+                                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="tab1">
+                                            <div class="col-md-6">
+                                                <h1>ประกันรถยนต์</h1>ค้นพบข้อเสนอประกันรถยนต์โดนๆ ซื้อ พ.ร.บ. ต่อประกันรถยนต์ โดยบริษัทประกันภัยชั้นนำมากกว่า 30 บริษัท
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <button type="button" class="btn btn-success btn-rounded btn-block" id="btnCarInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถยนต์เลย!</strong></span></button>
+                                                <div class="box-content">
+                                                    <p>หรือ</p>
+                                                </div>
+                                                <button type="button" class="btn btn-warning btn-pill btn-block" id="btnCarPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane animated fadeIn" id="tab2">
+                                            <div class="col-md-6">
+                                                <h2>ประกันรถจักรยานยนต์</h2>ค้นพบข้อเสนอประกันรถจักรยานยนต์โดนๆ โดยบริษัทประกันภัยชั้นนำ
+                                            </div>
 
-			<p>Aliquam quis varius nisl. Praesent egestas magna efficitur enim posuere rutrum. Vivamus nulla velit, tempus id tempus nec, lacinia et leo. Nullam fringilla commodo facilisis. Maecenas mi eros, feugiat eget arcu sit amet, posuere efficitur ex. Nulla vel felis facilisis turpis porta euismod. Aenean vel enim nec nisl varius feugiat vitae nec urna. Duis feugiat molestie ex, non tincidunt tortor finibus in. Pellentesque quis ultricies augue. Nulla et lacus semper quam ornare cursus sit amet a sem. Vivamus semper lectus dui, faucibus dignissim enim feugiat vitae. Morbi fermentum odio neque, a molestie nunc volutpat ac. In ut aliquam est. Pellentesque est elit, pulvinar a magna sit amet, vestibulum fermentum neque. Aliquam vel lorem ut tortor tristique pretium eget vitae dolor.</p>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <button type="button" class="btn btn-success btn-rounded btn-block" id="btnCarInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถจักรยานยนต์เลย!</strong></span></button>
+                                                <div class="box-content">
+                                                    <p>หรือ</p>
+                                                </div>
+                                                <button type="button" class="btn btn-warning btn-pill btn-block" id="btnCarPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
+                                            </div>
+                                        </div>
 
-			<p>Vestibulum dictum nec libero ut euismod. Fusce posuere sit amet libero vitae ornare. Curabitur posuere semper ipsum in efficitur. Etiam pellentesque felis sodales, blandit eros vel, dignissim turpis. Phasellus ullamcorper rhoncus enim, a consequat libero sagittis at. Mauris in pharetra elit. Suspendisse in urna dictum, tincidunt odio eget, vehicula turpis. Sed eget quam consequat, aliquam magna non, aliquam ipsum.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </div>
 		</div>
 		<!--=== End Content ===-->
 

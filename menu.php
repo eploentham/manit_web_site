@@ -25,7 +25,16 @@
                             </a>									
                         </li>
                         <!-- End Home -->
-
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    ติดต่อเจ้าหน้าที่
+                            </a>									
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    ลงชื่อเข้าระบบ
+                            </a>									
+                        </li>
                     </ul>
                 </div>
             </div><!--/navbar-collapse-->
