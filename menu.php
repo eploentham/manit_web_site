@@ -26,7 +26,7 @@
                     <ul class="nav navbar-nav">
                         <!-- Home -->
                         <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="index.php" class="dropdown-toggle" >
                                     Home
                             </a>									
                         </li>
@@ -37,7 +37,7 @@
                             </a>									
                         </li>
                         <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="login.php" class="dropdown-toggle" >
                                     ลงชื่อเข้าระบบ
                             </a>									
                         </li>
