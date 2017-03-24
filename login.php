@@ -61,43 +61,47 @@
 <body class="dark">
 	<!--=== Content Part ===-->
 	<div class="container">
-		<!--Reg Block-->
-		<div class="reg-block">
-			<div class="reg-block-header">
-				<h2>Sign In</h2>
-				<ul class="social-icons text-center">
-					<li><a class="rounded-x social_facebook" data-original-title="Facebook" href="#"></a></li>
-					<li><a class="rounded-x social_twitter" data-original-title="Twitter" href="#"></a></li>
-					<li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="#"></a></li>
-					<li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="#"></a></li>
-				</ul>
-                                <p>Don't Have Account? Click <a class="color-green" href="regis.php">Sign Up</a> to registration.</p>
-			</div>
+            <!--Reg Block-->
+            <div class="reg-block">
+                <div class="reg-block-header">
+                    <h2>Sign In</h2>
+                    <ul class="social-icons text-center">
+                        <li><a class="rounded-x social_facebook" data-original-title="Facebook" href="#"></a></li>
+                        <li><a class="rounded-x social_twitter" data-original-title="Twitter" href="#"></a></li>
+                        <li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="#"></a></li>
+                        <li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="#"></a></li>
+                    </ul>
+                    <p>Don't Have Account? Click <a class="color-green" href="regis.php">Sign Up</a> to registration.</p>
+                </div>
 
-			<div class="input-group margin-bottom-20">
-				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-				<input type="text" class="form-control" placeholder="Email" id="email">
-			</div>
-			<div class="input-group margin-bottom-20">
-				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-				<input type="text" class="form-control" placeholder="Password" id="password">
-			</div>
-			<hr>
+                <div class="input-group margin-bottom-20">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <p id="lopEmail"><input type="text" class="form-control" placeholder="Email" id="loEmail"></p>
+                </div>
+                <div class="input-group margin-bottom-20">
+                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    <p id="lopPassword"><input type="password" class="form-control" placeholder="Password" id="loPassword"></p>
+                </div>
+                <hr>
 
-			<div class="checkbox">
-				<label>
-					<input type="checkbox">
-					<p>Always stay signed in</p>
-				</label>
-			</div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        <p>Always stay signed in</p>
+                    </label>
+                </div>
 
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<button type="submit" class="btn-u btn-block">Log In</button>
-				</div>
-			</div>
-		</div>
-		<!--End Reg Block-->
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <button type="button" class="btn-u btn-block" id="btnLogin">Log In</button>
+                    </div>
+                    <div id="loading">
+                        <img id="logo-footer" class="slick-loading" src="assets/img/ajax-loader.gif" alt="">
+                    </div>
+                    <div id="divView"></div>
+                </div>
+            </div>
+            <!--End Reg Block-->
 	</div><!--/container-->
 	<!--=== End Content Part ===-->
 
@@ -116,20 +120,81 @@
 	<script type="text/javascript" src="assets/js/app.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript">
-		jQuery(document).ready(function() {
-			App.init();
-		});
+            jQuery(document).ready(function() {
+                //alert('bbbbb');
+                App.init();
+                //alert('bbbbb');
+                hideLoader();
+                //$("#loEmail").focusout(loginCheckEmail("login_check_email"));
+            });
+            function showLoader() {
+                $("#loading").show();
+            }
+            function hideLoader() {
+                //alert('bbbbb');
+                $("#loading").hide();
+            }
+            function loginCheckEmail(flag){
+                if(flag=="login_check_email"){
+                    if ($("#loEmail").val()=="") {
+                        return ;
+                    }
+//                    if($("#loEmail").val()!=""){
+//                        alert("Password ไม่สามารถว่างได้");
+//                        hideLoader();
+//                        return ;
+//                    }
+                    
+                }
+                $.ajax({
+                    type: 'GET', url: 'login_check.php', contentType: "application/json", dataType: 'text', 
+                    data: {'flagPage': flag
+                        //, 'reUsername':$("#reUsername").val()
+                        , 'loEmail':$("#loEmail").val()
+                        , 'loPassword':$("#loPassword").val()
+                        } 
+                    ,progress: function(e){
+                        showLoader();
+                    }
+                    ,success: function (data) {
+                        //alert('bbbbb '.data);
+                        $("#divView").append(data);
+                        //$("#divView").append("<br>ขอบคุณสำหรับการสมัครสมาชิก กับManit Insurance <br>โปรดตรวจสอบ email และconfirm ");
+                        hideLoader();
+                    }
+                });
+//                    if($("#rePassword").val() != $("#reCPassword").val()){
+//                        alert("Password ไม่ตรงกัน ");
+//                        return ;
+//                    }
+                //alert(flag);
+                
+            }
 	</script>
 	<script type="text/javascript">
-		$.backstretch([
-			"assets/img/bg/19.jpg",
-			"assets/img/bg/18.jpg",
-			], {
-				fade: 1000,
-				duration: 7000
-			});
+            $.backstretch([
+                "assets/img/bg/31.jpg",
+                "assets/img/bg/32.jpg",
+                ], {
+                        fade: 1000,
+                        duration: 7000
+                });
 	</script>
-
+        <script>
+        var focus = 0,
+          blur = 0;
+        $( "input" )
+          .focusout(function() {
+            focus++;
+            $( "#divView" ).text( "focusout fired: " + focus + "x" );
+            loginCheckEmail("login_check_email");
+            //alert($(this).attr("id"));
+          })
+          .blur(function() {
+            blur++;
+            $( "#divView" ).text( "blur fired: " + blur + "x" );
+          });
+        </script>
 	<!--[if lt IE 9]>
 	<script src="assets/plugins/respond.js"></script>
 	<script src="assets/plugins/html5shiv.js"></script>

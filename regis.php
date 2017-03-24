@@ -66,33 +66,37 @@
 
 			<div class="input-group margin-bottom-20">
 				<span class="input-group-addon"><i class="fa fa-user"></i></span>
-				<input type="text" class="form-control" placeholder="Username">
+				<input type="text" id="reUsername" class="form-control" placeholder="Username">
 			</div>
 			<div class="input-group margin-bottom-20">
 				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-				<input type="text" class="form-control" placeholder="Email">
+				<input type="text" id="reEmail" class="form-control" placeholder="Email">
 			</div>
 			<div class="input-group margin-bottom-20">
 				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-				<input type="text" class="form-control" placeholder="Password">
+                                <input type="password" id="rePassword" class="form-control" placeholder="Password">
 			</div>
 			<div class="input-group margin-bottom-30">
 				<span class="input-group-addon"><i class="fa fa-key"></i></span>
-				<input type="text" class="form-control" placeholder="Confirm Password">
+                                <input type="password" id="reCPassword" class="form-control" placeholder="Confirm Password">
 			</div>
 			<hr>
 
 			<div class="checkbox">
 				<label>
-					<input type="checkbox">
-					I read <a target="_blank" href="page_terms.html">Terms and Conditions</a>
+					<input type="checkbox" id="reterms">
+					I read <a target="_blank" href="page_terms.php">Terms and Conditions</a>
 				</label>
 			</div>
 
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<button type="submit" class="btn-u btn-block">Register</button>
-				</div>
+                            <div class="col-md-10 col-md-offset-1">
+                                <button type="button" id="btnRegis" class="btn-u btn-block">Register</button>
+                            </div>
+                            <div id="loading">
+                                <img id="logo-footer" class="slick-loading" src="assets/img/ajax-loader.gif" alt="">
+                            </div>
+                            <div id="divView"></div>
 			</div>
 		</div>
 		<!--End Reg Block-->
@@ -116,7 +120,72 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
+                        hideLoader();
+                        btnRegisDisable();
+                        $("#btnRegis").click(sendEmail);
+                        $("#reterms").click(checkRegis);
+                        //$("#btnRegis").
+                        
+                        //$("#divView").append("bbbbbbbbbbbb");
 		});
+                function showLoader() {
+                    $("#loading").show();
+                  }
+                function hideLoader() {
+                    //alert('bbbbb');
+                    $("#loading").hide();
+                }
+                function btnRegisDisable(){
+                    $("#btnRegis").prop("disabled",true);
+                    //$('#btn_show').addClass('btn-u-blue');
+                    $('#btnRegis').removeClass('btn-u');
+                    //$("#btn_show").removeClass("animated fadeOut");
+                }
+                function btnRegisEnable(){
+                    $("#btnRegis").prop("disabled",false);
+                    $('#btnRegis').addClass('btn-u');
+                    //$('#btn_show').removeClass('btn-u-blue');
+                }
+                function checkRegis(){
+                    //alert("aaaaa");
+                    if($("#reterms").is(':checked')==true){
+                        btnRegisEnable();
+                    }else{
+                        btnRegisDisable();
+                    }
+                }
+                function sendEmail(){
+                    //alert('bbbbb');
+                    //$("#divView").append("aaaaaaaaaaaaa");
+                    //alert("aaa"+$("#reterms").is(':checked'));
+                    if($("#reterms").is(':checked')==true){
+                        if($("#rePassword").val()==""){
+                            alert("Password ไม่สามารถว่างได้");
+                            return ;
+                        }
+                        if($("#rePassword").val() != $("#reCPassword").val()){
+                            alert("Password ไม่ตรงกัน ");
+                            return ;
+                        }
+                        showLoader();
+                        $.ajax({
+                            type: 'GET', url: 'gmail.php', contentType: "application/json", dataType: 'text', 
+                            data: {'flagPage': "regis"
+                                , 'reUsername':$("#reUsername").val()
+                                , 'reEmail':$("#reEmail").val()
+                                , 'rePassword':$("#rePassword").val()
+                                }, 
+                            success: function (data) {
+                                //alert('bbbbb '.data);
+                                $("#divView").append(data);
+                                $("#divView").append("<br>ขอบคุณสำหรับการสมัครสมาชิก กับManit Insurance <br>โปรดตรวจสอบ email และconfirm ");
+                                hideLoader();
+                            }
+                        });
+                    }else{
+                        alert("ยังไม่ได้ Click Terms");
+                    }
+                }
 	</script>
 	<script type="text/javascript">
 		$.backstretch([

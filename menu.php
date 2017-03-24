@@ -12,7 +12,7 @@
                 </button>
                 <!-- Navbar Brand -->
                 <div class="navbar-brand">
-                        <a href="index.html">
+                        <a href="index.php">
                                 <img class="default-logo" src="assets/img/logo3-light.png" alt="Logo">
                                 <img class="shrink-logo" src="assets/img/logo3-dark.png" alt="Logo">
                         </a>
@@ -32,14 +32,12 @@
                         </li>
                         <!-- End Home -->
                         <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" >
                                     ติดต่อเจ้าหน้าที่
                             </a>									
                         </li>
                         <li class="dropdown">
-                            <a href="login.php" class="dropdown-toggle" >
-                                    ลงชื่อเข้าระบบ
-                            </a>									
+                            <a href="login.php" class="dropdown-toggle" >ลงชื่อเข้าระบบ</a>
                         </li>
                     </ul>
                 </div>
