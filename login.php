@@ -139,14 +139,10 @@
                     if ($("#loEmail").val()=="") {
                         return ;
                     }
-//                    if($("#loEmail").val()!=""){
-//                        alert("Password ไม่สามารถว่างได้");
-//                        hideLoader();
-//                        return ;
-//                    }
+
                     
                 }
-                $.ajax({
+                $.ajax({ 
                     type: 'GET', url: 'login_check.php', contentType: "application/json", dataType: 'text', 
                     data: {'flagPage': flag
                         //, 'reUsername':$("#reUsername").val()
