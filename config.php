@@ -7,7 +7,6 @@
  */
 $ipaddress = '';
 function get_client_ip() {
-    
     if (isset($_SERVER['HTTP_CLIENT_IP']))
         $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
     else if(isset($_SERVER['HTTP_X_FORWARDED_FOR']))
@@ -32,4 +31,7 @@ function setIPView(){
     $objConnect = mysqli_connect("localhost",'root','Ekartc2c5','manit');
     $obj = mysqli_query($objConnect, "Insert Into oc_customer_ip (ip, date_added) Value('".$ipaddress."',now());");
     mysqli_close($objConnect);
+}
+function carYear(){
+    
 }

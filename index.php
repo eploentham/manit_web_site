@@ -5,6 +5,7 @@
         
     setIPView();
     $menu = file_get_contents('menu.php',TRUE);
+    $footer = file_get_contents('footer.php',TRUE);
     if(isset($_SESSION["status_regis"])){
         $txt = "<a href='#' class='dropdown-toggle' > ".$_SESSION["cust_name_t"]." ".$_SESSION["cust_lastname_t"]."</a>";
         $menu = str_replace('<a href="login.php" class="dropdown-toggle" >ลงชื่อเข้าระบบ</a>',$txt,$menu);
@@ -21,7 +22,7 @@
     <title>Manit Insurance</title>
 
     <!-- Meta -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -64,188 +65,185 @@
 </head>
 
 <body class="header-fixed">
-	<div class="wrapper">
-		<!--=== Header v6 ===-->
-                <?php echo $menu; ?>		
-		<!--=== End Header v6 ===-->
+    <div class="wrapper">
+        <!--=== Header v6 ===-->
+        <?php echo $menu; ?>
+        <!--=== End Header v6 ===-->
 
-		<!-- Interactive Slider v2 -->
-		<div class="interactive-slider-v2">
-			<div class="container">
-				<h1>ข้อเสนอดีๆ สำหรับครอบครัวคุณ</h1>
-				<p>สะดวก รวดเร็ว มั่นใจ ไร้กังวล ซื้อประกันกับเรา ประหยัดเงินมากกว่า</p>
-			</div>
-		</div>
-		<!-- End Interactive Slider v2 -->
+        <!-- Interactive Slider v2 -->
+        <div class="interactive-slider-v2">
+            <div class="container">
+                <h1>ข้อเสนอดีๆ สำหรับครอบครัวคุณ</h1>
+                <p>สะดวก รวดเร็ว มั่นใจ ไร้กังวล ซื้อประกันกับเรา ประหยัดเงินมากกว่า</p>
+            </div>
+        </div>
+        <!-- End Interactive Slider v2 -->
 
-		<!--=== Content ===-->
-		<div class="container content-md">
-		    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-8">
-                                    <ul class="nav nav-pills" role="tablist">
-                                        <li class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="true"><h4>ประกันรถยนต์</h4></a></li>
-                                      <li class=""><a href="#tab2" role="tab" data-toggle="tab" aria-expanded="false"><h4>ประกันรถจักรยานยนต์</h4></a></li>
-                                    </ul>
-                                    <div class="tab-content">
-
-                                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="tab1">
-                                            <div class="col-md-6">
-                                                <h1>ประกันรถยนต์</h1>ค้นพบข้อเสนอประกันรถยนต์โดนๆ ซื้อ พ.ร.บ. ต่อประกันรถยนต์ โดยบริษัทประกันภัยชั้นนำมากกว่า 30 บริษัท
-                                            </div>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <button type="button" class="btn btn-success btn-rounded btn-block" id="btnCarInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถยนต์เลย!</strong></span></button>
-                                                <div class="box-content">
-                                                    <p>หรือ</p>
-                                                </div>
-                                                <button type="button" class="btn btn-warning btn-pill btn-block" id="btnCarPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
-                                            </div>
+        <!--=== Content ===-->
+        <div class="container content-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="true"><h4>ประกันรถยนต์</h4></a></li>
+                                <li class=""><a href="#tab2" role="tab" data-toggle="tab" aria-expanded="false"><h4>ประกันรถจักรยานยนต์</h4></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane animated fadeIn active" id="tab1">
+                                    <div class="col-md-6">
+                                        <h1>ประกันรถยนต์</h1>ค้นพบข้อเสนอประกันรถยนต์โดนๆ ซื้อ พ.ร.บ. ต่อประกันรถยนต์ โดยบริษัทประกันภัยชั้นนำมากกว่า 30 บริษัท
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button type="button" class="btn btn-success btn-rounded btn-block" id="btnCarInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถยนต์เลย!</strong></span></button>
+                                        <div class="box-content">
+                                            <p>หรือ</p>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane animated fadeIn" id="tab2">
-                                            <div class="col-md-6">
-                                                <h2>ประกันรถจักรยานยนต์</h2>ค้นพบข้อเสนอประกันรถจักรยานยนต์โดนๆ โดยบริษัทประกันภัยชั้นนำ
-                                            </div>
-
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <button type="button" class="btn btn-success btn-rounded btn-block" id="btnCarInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถจักรยานยนต์เลย!</strong></span></button>
-                                                <div class="box-content">
-                                                    <p>หรือ</p>
-                                                </div>
-                                                <button type="button" class="btn btn-warning btn-pill btn-block" id="btnCarPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
-                                            </div>
-                                        </div>
-
+                                        <button type="button" class="btn btn-warning btn-pill btn-block" id="btnCarPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
                                     </div>
                                 </div>
-                                <div class="col-md-2"></div>
+                                <div role="tabpanel" class="tab-pane animated fadeIn" id="tab2">
+                                    <div class="col-md-6">
+                                        <h2>ประกันรถจักรยานยนต์</h2>ค้นพบข้อเสนอประกันรถจักรยานยนต์โดนๆ โดยบริษัทประกันภัยชั้นนำ
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <button type="button" class="btn btn-success btn-rounded btn-block" id="btnMotoInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถจักรยานยนต์เลย!</strong></span></button>
+                                        <div class="box-content">
+                                            <p>หรือ</p>
+                                        </div>
+                                        <button type="button" class="btn btn-warning btn-pill btn-block" id="btnMotoPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-2"></div>
                     </div>
-		</div>
-		<!--=== End Content ===-->
-		<!--=== Footer Version 1 ===-->
-		<div class="footer-v1">
-			<div class="footer">
-				<div class="container">
-					<div class="row">
-						<!-- About -->
-						<div class="col-md-3 md-margin-bottom-40">
-							<a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo3-light.png" alt=""></a>
-							<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-							<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
-						</div><!--/col-md-3-->
-						<!-- End About -->
+                </div>
+            </div>
+        </div>
+        <!--=== End Content ===-->
+        <!--=== Footer Version 1 ===-->
+        <div class="footer-v1">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                            <!-- About -->
+                            <div class="col-md-3 md-margin-bottom-40">
+                                    <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo3-light.png" alt=""></a>
+                                    <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+                                    <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+                            </div><!--/col-md-3-->
+                            <!-- End About -->
 
-						<!-- Latest -->
-						<div class="col-md-3 md-margin-bottom-40">
-							<div class="posts">
-								<div class="headline"><h2>Latest Posts</h2></div>
-								<ul class="list-unstyled latest-list">
-									<li>
-										<a href="#">Incredible content</a>
-										<small>May 8, 2014</small>
-									</li>
-									<li>
-										<a href="#">Best shoots</a>
-										<small>June 23, 2014</small>
-									</li>
-									<li>
-										<a href="#">New Terms and Conditions</a>
-										<small>September 15, 2014</small>
-									</li>
-								</ul>
-							</div>
-						</div><!--/col-md-3-->
-						<!-- End Latest -->
+                            <!-- Latest -->
+                            <div class="col-md-3 md-margin-bottom-40">
+                                    <div class="posts">
+                                            <div class="headline"><h2>Latest Posts</h2></div>
+                                            <ul class="list-unstyled latest-list">
+                                                    <li>
+                                                            <a href="#">Incredible content</a>
+                                                            <small>May 8, 2014</small>
+                                                    </li>
+                                                    <li>
+                                                            <a href="#">Best shoots</a>
+                                                            <small>June 23, 2014</small>
+                                                    </li>
+                                                    <li>
+                                                            <a href="#">New Terms and Conditions</a>
+                                                            <small>September 15, 2014</small>
+                                                    </li>
+                                            </ul>
+                                    </div>
+                            </div><!--/col-md-3-->
+                            <!-- End Latest -->
 
-						<!-- Link List -->
-						<div class="col-md-3 md-margin-bottom-40">
-							<div class="headline"><h2>Useful Links</h2></div>
-							<ul class="list-unstyled link-list">
-								<li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
-							</ul>
-						</div><!--/col-md-3-->
-						<!-- End Link List -->
+                            <!-- Link List -->
+                            <div class="col-md-3 md-margin-bottom-40">
+                                    <div class="headline"><h2>Useful Links</h2></div>
+                                    <ul class="list-unstyled link-list">
+                                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                                    </ul>
+                            </div><!--/col-md-3-->
+                            <!-- End Link List -->
 
-						<!-- Address -->
-						<div class="col-md-3 map-img md-margin-bottom-40">
-							<div class="headline"><h2>Contact Us</h2></div>
-							<address class="md-margin-bottom-40">
-								25, Lorem Lis Street, Orange <br />
-								California, US <br />
-								Phone: 800 123 3456 <br />
-								Fax: 800 123 3456 <br />
-								Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
-							</address>
-						</div><!--/col-md-3-->
-						<!-- End Address -->
-					</div>
-				</div>
-			</div><!--/footer-->
+                            <!-- Address -->
+                            <div class="col-md-3 map-img md-margin-bottom-40">
+                                    <div class="headline"><h2>Contact Us</h2></div>
+                                    <address class="md-margin-bottom-40">
+                                            25, Lorem Lis Street, Orange <br />
+                                            California, US <br />
+                                            Phone: 800 123 3456 <br />
+                                            Fax: 800 123 3456 <br />
+                                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                                    </address>
+                            </div><!--/col-md-3-->
+                            <!-- End Address -->
+                    </div>
+                </div>
+            </div><!--/footer-->
 
-			<div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<p>
-								2015 &copy; All Rights Reserved.
-								<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-							</p>
-						</div>
+            <div class="copyright">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-6">
+                                        <p>
+                                                2015 &copy; All Rights Reserved.
+                                                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                                        </p>
+                                </div>
 
-						<!-- Social Links -->
-						<div class="col-md-6">
-							<ul class="footer-socials list-inline">
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
-										<i class="fa fa-facebook"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
-										<i class="fa fa-skype"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
-										<i class="fa fa-google-plus"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
-										<i class="fa fa-linkedin"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
-										<i class="fa fa-pinterest"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-										<i class="fa fa-dribbble"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- End Social Links -->
-					</div>
-				</div>
-			</div><!--/copyright-->
-		</div>
-		<!--=== End Footer Version 1 ===-->
-	</div><!--/wrapper-->
+                                <!-- Social Links -->
+                                <div class="col-md-6">
+                                        <ul class="footer-socials list-inline">
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                                                <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                                                <i class="fa fa-skype"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                                                <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                                                <i class="fa fa-linkedin"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+                                                                <i class="fa fa-pinterest"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                                                <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                                                <i class="fa fa-dribbble"></i>
+                                                        </a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <!-- End Social Links -->
+                        </div>
+                </div>
+            </div><!--/copyright-->
+        </div>
+        <!--=== End Footer Version 1 ===-->
+    </div><!--/wrapper-->
 
 	<!--=== Style Switcher ===-->
 	<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
@@ -339,8 +337,13 @@
 		jQuery(document).ready(function() {
 			App.init();
 			StyleSwitcher.initStyleSwitcher();
+                        $("#btnCarInsur").click(calCar);
                         
 		});
+                function calCar(){
+                    //alert("aaaaa");
+                    window.location.assign('cal_car.php')
+                }
 	</script>
 	<!--[if lt IE 9]>
 		<script src="assets/plugins/respond.js"></script>
