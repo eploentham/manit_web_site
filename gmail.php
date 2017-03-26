@@ -17,8 +17,8 @@ if($_GET['flagPage']=="regis"){
     $row = mysqli_fetch_array($obj);
     $uuid = $row["uuid"];
     //$resultArray = array();
-    $objQuery = mysqli_query($objConnect,"Insert into b_customer(cust_id, user_login, password, email, status_regis, date_create) "
-            ."Value ('".$uuid."', '".$_GET['reUsername']."','".$_GET['rePassword']."','".$_GET['reEmail']."','1',NOW())");
+    $objQuery = mysqli_query($objConnect,"Insert into b_customer(cust_id, user_login, cust_name_t, cust_lastname_t, password, email, tele, status_regis, date_create) "
+            ."Value ('".$uuid."', '".$_GET['reUsername']."','".$_GET['reName']."','".$_GET['reLastname']."','".$_GET['rePassword']."','".$_GET['reEmail']."','".$_GET['reTele']."','1',NOW())");
 //    $cnt=0;
 //    while($row = mysqli_fetch_array($objQuery)){
 //        //$tmp = array();

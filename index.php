@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <?php
+@session_start();
     require 'config.php';
+        
     setIPView();
     $menu = file_get_contents('menu.php',TRUE);
+    if(isset($_SESSION["status_regis"])){
+        $txt = "<a href='#' class='dropdown-toggle' > ".$_SESSION["cust_name_t"]." ".$_SESSION["cust_lastname_t"]."</a>";
+        $menu = str_replace('<a href="login.php" class="dropdown-toggle" >ลงชื่อเข้าระบบ</a>',$txt,$menu);
+    }
+    
   //$switcher = file_get_contents('switcher.php',TRUE);
   //$footer = file_get_contents('footer.php',TRUE);
   //$ourclient = file_get_contents('ourclient.php',TRUE);
@@ -118,7 +125,6 @@
                     </div>
 		</div>
 		<!--=== End Content ===-->
-
 		<!--=== Footer Version 1 ===-->
 		<div class="footer-v1">
 			<div class="footer">
@@ -333,6 +339,7 @@
 		jQuery(document).ready(function() {
 			App.init();
 			StyleSwitcher.initStyleSwitcher();
+                        
 		});
 	</script>
 	<!--[if lt IE 9]>

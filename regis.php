@@ -68,6 +68,18 @@
 				<span class="input-group-addon"><i class="fa fa-user"></i></span>
 				<input type="text" id="reUsername" class="form-control" placeholder="Username">
 			</div>
+                        <div class="input-group margin-bottom-20">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" id="reName" class="form-control" placeholder="Name">
+			</div>
+                        <div class="input-group margin-bottom-20">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" id="reLastName" class="form-control" placeholder="LastName">
+			</div>
+                        <div class="input-group margin-bottom-20">
+				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+				<input type="text" id="reTele" class="form-control" placeholder="Telephone">
+			</div>
 			<div class="input-group margin-bottom-20">
 				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
 				<input type="text" id="reEmail" class="form-control" placeholder="Email">
@@ -80,7 +92,7 @@
 				<span class="input-group-addon"><i class="fa fa-key"></i></span>
                                 <input type="password" id="reCPassword" class="form-control" placeholder="Confirm Password">
 			</div>
-			<hr>
+			<br>
 
 			<div class="checkbox">
 				<label>
@@ -171,7 +183,10 @@
                         $.ajax({
                             type: 'GET', url: 'gmail.php', contentType: "application/json", dataType: 'text', 
                             data: {'flagPage': "regis"
+                                , 'reName':$("#reName").val()
+                                , 'reLastname':$("#reLastname").val()
                                 , 'reUsername':$("#reUsername").val()
+                                , 'reTele':$("#reTele").val()
                                 , 'reEmail':$("#reEmail").val()
                                 , 'rePassword':$("#rePassword").val()
                                 }, 
