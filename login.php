@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
-  $menu = file_get_contents('menu.php',TRUE);
+//ob_start();
+    @session_start();
+    $menu = file_get_contents('menu.php',TRUE);
   //$switcher = file_get_contents('switcher.php',TRUE);
   //$footer = file_get_contents('footer.php',TRUE);
   //$ourclient = file_get_contents('ourclient.php',TRUE);
@@ -125,6 +127,8 @@
                 App.init();
                 //alert('bbbbb');
                 hideLoader();
+                //$("#btnLogin").click(alert("aaaa"));
+                $("#btnLogin").click(login);
                 //$("#loEmail").focusout(loginCheckEmail("login_check_email"));
             });
             function showLoader() {
@@ -134,15 +138,38 @@
                 //alert('bbbbb');
                 $("#loading").hide();
             }
+            function login(){
+                //alert("aaaaaaaaaaaaa");
+                $.ajax({
+                    type: 'GET', url: 'login_check.php', contentType: "application/json", dataType: 'text', 
+                    data: {'flagPage': "login"
+                        //, 'reUsername':$("#reUsername").val()
+                        , 'loEmail':$("#loEmail").val()
+                        , 'loPassword':$("#loPassword").val()
+                        }
+                    ,progress: function(e){
+                        showLoader();
+                    }
+                    ,success: function (data) {
+                        //alert('bbbbb '.data);
+                        $("#divView").append(data);
+                        //$("#divView").append("<br>ขอบคุณสำหรับการสมัครสมาชิก กับManit Insurance <br>โปรดตรวจสอบ email และconfirm ");
+                        hideLoader();
+                        
+                        //if(user!=""){
+                            window.location.assign('index.php')
+                        //}
+                    }
+                });
+            }
             function loginCheckEmail(flag){
+                //alert("aaaa");
                 if(flag=="login_check_email"){
                     if ($("#loEmail").val()=="") {
                         return ;
                     }
-
-                    
                 }
-                $.ajax({ 
+                $.ajax({
                     type: 'GET', url: 'login_check.php', contentType: "application/json", dataType: 'text', 
                     data: {'flagPage': flag
                         //, 'reUsername':$("#reUsername").val()
@@ -181,14 +208,19 @@
           blur = 0;
         $( "input" )
           .focusout(function() {
-            focus++;
-            $( "#divView" ).text( "focusout fired: " + focus + "x" );
-            loginCheckEmail("login_check_email");
-            //alert($(this).attr("id"));
+              //alert($(this).attr("id"));
+            //focus++;
+            //$( "#divView" ).text( "focusout fired: " + focus + "x" );
+                if ($(this).attr("id")=="loEmail"){
+                    loginCheckEmail("login_check_email");
+                }else if ($(this).attr("id")=="loPassword"){
+                    //loginCheckEmail("login_check");
+                }
+            
           })
           .blur(function() {
-            blur++;
-            $( "#divView" ).text( "blur fired: " + blur + "x" );
+            //blur++;
+            //$( "#divView" ).text( "blur fired: " + blur + "x" );
           });
         </script>
 	<!--[if lt IE 9]>
