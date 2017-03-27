@@ -64,10 +64,10 @@
 
 		<!-- Interactive Slider v2 -->
 		<div class="interactive-slider-v2">
-			<div class="container">
-				<h1>ข้อเสนอดีๆ สำหรับครอบครัวคุณ</h1>
-				<p>สะดวก รวดเร็ว มั่นใจ ไร้กังวล ซื้อประกันกับเรา ประหยัดเงินมากกว่า</p>
-			</div>
+                    <div class="container">
+                        <h1>ข้อเสนอดีๆ สำหรับครอบครัวคุณ</h1>
+                        <p>สะดวก รวดเร็ว มั่นใจ ไร้กังวล ซื้อประกันกับเรา ประหยัดเงินมากกว่า</p>
+                    </div>
 		</div>
 		<!-- End Interactive Slider v2 -->
 
@@ -80,7 +80,7 @@
                                 <div class="col-md-8">
                                     <ul class="nav nav-pills" role="tablist">
                                         <li class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="true"><h4>ประกันรถยนต์</h4></a></li>
-                                      <li class=""><a href="#tab2" role="tab" data-toggle="tab" aria-expanded="false"><h4>ประกันรถจักรยานยนต์</h4></a></li>
+                                        <li class=""><a href="#tab2" role="tab" data-toggle="tab" aria-expanded="false"><h4>ประกันรถจักรยานยนต์</h4></a></li>
                                     </ul>
                                     <div class="tab-content">
 
