@@ -7,6 +7,7 @@ session_start();
  */
 require 'config.php';
 $con = mysqli_connect("localhost",'root','Ekartc2c5','manit');
+mysqli_set_charset($con, "UTF8");
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();

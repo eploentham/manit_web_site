@@ -12,13 +12,14 @@ require 'phpmailer/class.phpmailer.php';
 require 'config.php';
 $uuid = "";
 if($_GET['flagPage']=="regis"){
-    $objConnect = mysqli_connect("localhost",'root','Ekartc2c5','manit');
-    $obj = mysqli_query($objConnect, "Select uuid() as uuid");
+    $con = mysqli_connect("localhost",'root','Ekartc2c5','manit');
+    mysqli_set_charset($con, "UTF8");
+    $obj = mysqli_query($con, "Select uuid() as uuid");
     $row = mysqli_fetch_array($obj);
     $uuid = $row["uuid"];
     //$resultArray = array();
-    $objQuery = mysqli_query($objConnect,"Insert into b_customer(cust_id, user_login, cust_name_t, cust_lastname_t, password, email, tele, status_regis, date_create) "
-            ."Value ('".$uuid."', '".$_GET['reUsername']."','".$_GET['reName']."','".$_GET['reLastname']."','".$_GET['rePassword']."','".$_GET['reEmail']."','".$_GET['reTele']."','1',NOW())");
+    $objQuery = mysqli_query($con,"Insert into b_customer(cust_id, user_login, cust_name_t, cust_lastname_t, password, email, tele, status_regis, date_create) "
+        ."Value ('".$uuid."', '".$_GET['reUsername']."','".$_GET['reName']."','".$_GET['reLastname']."','".$_GET['rePassword']."','".$_GET['reEmail']."','".$_GET['reTele']."','1',NOW())");
 //    $cnt=0;
 //    while($row = mysqli_fetch_array($objQuery)){
 //        //$tmp = array();
@@ -27,7 +28,7 @@ if($_GET['flagPage']=="regis"){
 //        //$tmp["prov_name"] = $row["prov_name"];
 //        //array_push($resultArray,$tmp);
 //    }
-    mysqli_close($objConnect);
+    mysqli_close($con);
 }
 
 
@@ -68,15 +69,15 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "ekapop@nakoyagarden.com";
-//$mail->Username = "info@thaihotels.org.in";
+//$mail->Username = "ekapop@nakoyagarden.com";
+$mail->Username = "info@thaihotels.org.in";
 
 //Password to use for SMTP authentication
-$mail->Password = "eploentham";
-//$mail->Password = "Thahr30*";
+//$mail->Password = "eploentham";
+$mail->Password = "Thahr30*";
 
 //Set who the message is to be sent from
-$mail->setFrom('ekapop@nakoyagarden.com', 'Info Thaihotels(news)');
+$mail->setFrom('info@thaihotels.org.in', 'Info Thaihotels(news)');
 
 //Set an alternative reply-to address
 //$mail->addReplyTo('replyto@example.com', 'First Last');
@@ -90,9 +91,10 @@ $mail->addAddress($_GET['reEmail'], $_GET['reEmail']);
 $mail->Subject = 'โปรดยืนยัน email ';
 
 //Read an HTML message body from an external file, convert referenced images to embedded,
-//convert HTML into a basic plain-text alternative body 
+//convert HTML into a basic plain-text alternative body  ท่านได้สมัคร
 $html = file_get_contents('email_regis.html');
 $html = str_replace("nakoyasoft.com/manit/email_confirm.php", "nakoyasoft.com/manit/email_confirm.php?cust_id=".$uuid,$html);
+$html = str_replace("ท่านได้สมัคร", "คุณ ".$_GET['reName']." ".$_GET['reLastname']." ได้สมัคร",$html);
 $mail->msgHTML($html, dirname(__FILE__));
 
 //Replace the plain text body with one created manually

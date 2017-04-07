@@ -14,6 +14,8 @@ and open the template in the editor.
     $switcher = file_get_contents('switcher.php',TRUE);
     $carTypeInsur = file_get_contents('car_type_insur.php',TRUE);
     $carYear = file_get_contents('car_year.php',TRUE);
+    $divYear = divYear();
+    $divBrand = divBrand();
     if(isset($_SESSION["status_regis"])){
         $txt = "<a href='#' class='dropdown-toggle' > ".$_SESSION["cust_name_t"]." ".$_SESSION["cust_lastname_t"]."</a>";
         $menu = str_replace('<a href="login.php" class="dropdown-toggle" >ลงชื่อเข้าระบบ</a>',$txt,$menu);
@@ -80,72 +82,93 @@ and open the template in the editor.
         <div class="interactive-slider-v2">
             <div class="container content-sm">
                 <div class="row">
-                    <div class="col-md-6">
-                        
-                    </div>
-                    <div class="col-md-6">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
                         <div class="panel panel-primary" id="divInsurYear">
                             <div class="panel-heading">
-                                <h3 class="panel-title">เลือกปีรถยนต์ </h3>
+                                <h3 class="panel-title">เลือกเงื่อนไขรถยนต์ </h3>
                             </div>
+                            <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <div class="checkbox checkbox-danger space-bottom ">
+                                        <label class="hide"><input type="checkbox"></label>
+                                        <input id="checkbox1" type="checkbox" checked="">
+                                        <label for="checkbox1"><span>1</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox checkbox-danger space-bottom ">
+                                        <label class="hide"><input type="checkbox"></label>
+                                        <input id="checkbox1" type="checkbox" checked="">
+                                        <label for="checkbox1"><span>2</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox checkbox-danger space-bottom ">
+                                        <label class="hide"><input type="checkbox"></label>
+                                        <input id="checkbox1" type="checkbox" checked="">
+                                        <label for="checkbox1"><span>3</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                เลือกประเภท
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <div class="checkbox checkbox-danger space-bottom ">
+                                        <label class="hide"><input type="checkbox"></label>
+                                        <input id="checkbox1" type="checkbox" checked="">
+                                        <label for="checkbox1"><span>พ.ร.บ</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox checkbox-danger space-bottom ">
+                                        <label class="hide"><input type="checkbox"></label>
+                                        <input id="checkbox1" type="checkbox" checked="">
+                                        <label for="checkbox1"><span>2+</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox checkbox-danger space-bottom ">
+                                        <label class="hide"><input type="checkbox"></label>
+                                        <input id="checkbox1" type="checkbox" checked="">
+                                        <label for="checkbox1"><span>3+</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
                             <div class="panel-body form-group-sm">
-                                <div class="col-md-8">
-                                    <select class="selectpicker show-tick" data-width="100%" data-style="btn-primary" id="cboInsurYear">
-                                        <option>2017</option>
-                                        <option>2016</option>
-                                        <option>2015</option>
-                                    </select>
+                                <div class="col-md-6">
+                                    <?php echo $divYear;?>
                                 </div>
-                                <div class="col-md-8">
-                                    <select class="selectpicker show-tick" data-width="100%" id="cboInsurBrand">
-                                        <option>TOYOTA</option>
-                                        <option>HONDA</option>
-                                        <option>MAZDA</option>
-                                        <option>NISSAN</option>
-                                        <option>ISUZU</option>
-                                        <option>BENZ</option>
-                                        <option>BMW</option>
-                                    </select>
+                                <div class="col-md-6">
+                                    <div class="input-group margin-bottom-5">
+                                        <span class="input-group-addon"><i class="fa fa-user" ></i></span>
+                                        <input type="text" id="clYear" class="form-control" placeholder="Year">
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <select class="selectpicker  show-tick" data-width="100%" data-style="btn-primary" id="cboInsurModel">
-                                        <option>CIIVIC</option>
-                                        <option>CITY</option>
-                                        <option>MAZDA</option>
-                                        <option>NISSAN</option>
-                                        <option>ISUZU</option>
-                                        <option>BENZ</option>
-                                        <option>BMW</option>
-                                    </select>
+                                <div class="col-md-6">
+                                    <?php echo $divBrand;?>
                                 </div>
-                                <div class="col-md-8">
-                                    <select class="selectpicker  show-tick" data-width="100%" id="cboInsurModelSub">
-                                        <option>วิริยะ</option>
-                                        <option>HONDA</option>
-                                        <option>MAZDA</option>
-                                        <option>NISSAN</option>
-                                        <option>ISUZU</option>
-                                        <option>BENZ</option>
-                                        <option>BMW</option>
-                                    </select>
+                                <div class="col-md-6">
+                                    <div class="input-group margin-bottom-5">
+                                        <span class="input-group-addon"><i class="fa fa-user" ></i></span>
+                                        <input type="text" id="clBrand" class="form-control" placeholder="Brand">
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <select class="selectpicker  show-tick" data-width="100%" data-style="btn-info" id="cboInsurComp">
-                                        <option>วิริยะ</option>
-                                        <option>HONDA</option>
-                                        <option>MAZDA</option>
-                                        <option>NISSAN</option>
-                                        <option>ISUZU</option>
-                                        <option>BENZ</option>
-                                        <option>BMW</option>
-                                    </select>
-                                </div>
+                                
                                 <div class="checkbox checkbox-danger space-bottom col-md-8" data-width="100%">
                                     <button type="button" class="btn btn-pill btn-info-filled btn-block" id="btnCarInsur"><span>เปรียบเทียบ</span><i class="fa fa-rocket"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
         </div>
@@ -177,9 +200,17 @@ and open the template in the editor.
 	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
-			App.init();
-			StyleSwitcher.initStyleSwitcher();
+                    App.init();
+                    StyleSwitcher.initStyleSwitcher();
+                    $('ul.dropdown-menu li').live("click", function() {
+                        //alert($(this).attr("id"));
+                        if ($(this).attr("id")=="liYear"){
+                            $("#clYear").val($(this).text());
+                        }else if ($(this).attr("id")=="liBrand"){
+                            $("#clBrand").val($(this).text());
+                        }
                         
+                    });
 		});
 	</script>
 	<!--[if lt IE 9]>

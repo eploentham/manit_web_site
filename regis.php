@@ -61,7 +61,7 @@
 					<li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="#"></a></li>
 					<li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="#"></a></li>
 				</ul>
-				<p>Already Signed Up? Click <a class="color-green" href="page_login1.html">Sign In</a> to login your account.</p>
+                                <p>Already Signed Up? Click <a class="color-green" href="login.php">Sign In</a> to login your account.</p>
 			</div>
 
 			<div class="input-group margin-bottom-20">
@@ -74,7 +74,7 @@
 			</div>
                         <div class="input-group margin-bottom-20">
                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" id="reLastName" class="form-control" placeholder="LastName">
+                            <input type="text" id="reLastname" class="form-control" placeholder="LastName">
 			</div>
                         <div class="input-group margin-bottom-20">
 				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
@@ -169,7 +169,7 @@
                 function sendEmail(){
                     //alert('bbbbb');
                     //$("#divView").append("aaaaaaaaaaaaa");
-                    //alert("aaa"+$("#reterms").is(':checked'));
+                    //alert("aaa"+$("#reLastname").val());
                     if($("#reterms").is(':checked')==true){
                         if($("#rePassword").val()==""){
                             alert("Password ไม่สามารถว่างได้");
