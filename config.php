@@ -65,7 +65,7 @@ function carYear(){
     return json_encode($resultArray);
 }
 function divYear(){
-    global $passDb;
+    global $userDB, $passDB,$databaseName;
     $year = '<div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">'
             .'เลือกปีรถยนต์<span class="caret"></span></button>'        
             .'<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">';
@@ -84,6 +84,7 @@ function divYear(){
     return $year.$year1."</ul></div>";
 }
 function divBrand(){
+    global $userDB, $passDB,$databaseName;
     $year = '<div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">'
             .'เลือกยี่ห้อ<span class="caret"></span></button>'        
             .'<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">';
@@ -103,7 +104,7 @@ function divBrand(){
     return $year.$year1."</ul></div>";
 }
 function CboYear(){
-    global $passDb;
+    global $userDB, $passDB,$databaseName;
     $year = '<select name="cboYear" id="cboYear">';
     $year1="";
     $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
@@ -120,7 +121,7 @@ function CboYear(){
     return $year.$year1."</select>";
 }
 function CboBrand(){
-    global $passDb;
+    global $userDB, $passDB,$databaseName;
     $year = '<select name="cboBrand" id="cboBrand">';
     $year1="";
     $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
