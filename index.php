@@ -61,6 +61,7 @@
     <link href="assets/king-ui/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='assets/king-ui/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/king-ui/css/linear-icons.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
 
 </head>
 
@@ -80,7 +81,7 @@
         <!-- End Interactive Slider v2 -->
 
         <!--=== Content ===-->
-        <div class="container content-md">
+        <!--<div class="container content-md">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -121,7 +122,142 @@
                     </div>
                 </div>
             </div>
+        </div>-->
+        <div class="margin-bottom-40"></div>
+        <!-- Tab v3 -->
+        <div class="container">
+            <div class="row tab-v3">
+                <div class="col-lg-3">
+                        <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a href="#car-1" data-toggle="tab"><i class="fa fa-home"></i> ประกันรถยนต์</a></li>
+                                <li><a href="#moto-1" data-toggle="tab"><i class="fa fa-cloud"></i> ประกันรถจักรยานยนต์</a></li>
+                                <li><a href="#travel-1" data-toggle="tab"><i class="fa fa-comments"></i> ประกันเดินทาง</a></li>
+                                <li><a href="#settings-2" data-toggle="tab"><i class="fa fa-gear"></i> Settings3</a></li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-9">
+                        <div class="tab-content">
+                                <div class="tab-pane fade in active" id="car-1">
+                                        <h5>เลือกประเภทประกันรถยนต์</h5>
+                                        <div class="row">
+                                            <div class="col col-md-3">
+                                                <div class="checkbox checkbox-danger space-bottom ">
+                                                    <label class="hide"><input type="checkbox"></label>
+                                                    <input id="checkbox1" type="checkbox" checked="">
+                                                    <label for="checkbox1"><span>1</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-3">
+                                                <div class="checkbox checkbox-danger space-bottom ">
+                                                    <label class="hide"><input type="checkbox"></label>
+                                                    <input id="checkbox1" type="checkbox" checked="">
+                                                    <label for="checkbox1"><span>2+</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-3">
+                                                <div class="checkbox checkbox-danger space-bottom ">
+                                                    <label class="hide"><input type="checkbox"></label>
+                                                    <input id="checkbox2" type="checkbox" checked="">
+                                                    <label for="checkbox2"><span>2</span></label>
+                                                </div>
+                                            </div>                                            
+                                            
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col col-md-3">
+                                                <div class="checkbox checkbox-danger space-bottom ">
+                                                    <label class="hide"><input type="checkbox"></label>
+                                                    <input id="checkbox2" type="checkbox" checked="">
+                                                    <label for="checkbox2"><span>3</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-3">
+                                                <div class="checkbox checkbox-danger space-bottom ">
+                                                    <label class="hide"><input type="checkbox"></label>
+                                                    <input id="checkbox1" type="checkbox" checked="">
+                                                    <label for="checkbox1"><span>3+</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-3">
+                                                <div class="checkbox checkbox-danger space-bottom ">
+                                                    <label class="hide"><input type="checkbox"></label>
+                                                    <input id="checkbox1" type="checkbox" checked="">
+                                                    <label for="checkbox1"><span>พ.ร.บ</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col col-md-3">
+                                                <h5 >เลือกปี</h5>
+                                            </div>
+                                            <div class="col col-md-5">
+                                                    <section >
+                                                        <label class="label">Select</label>
+                                                        <label class="select state-success">
+                                                                <?php echo CboYear(); ?>
+                                                                <i></i>
+                                                        </label>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-md-3">
+                                                <h5 >เลือกยี่ห้อรถ</h5>
+                                            </div>
+                                            <div class="col col-md-5">
+                                                    <section >
+                                                        <label class="label">Select</label>
+                                                        <label class="select state-success">
+                                                                <?php echo CboYear(); ?>
+                                                                <i></i>
+                                                        </label>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-md-3">
+                                                <h5 >เลือกรุ่นรถ</h5>
+                                            </div>
+                                            <div class="col col-md-5">
+                                                <section >
+                                                    <label class="label">Select</label>
+                                                    <label class="select state-success">
+                                                            <?php echo CboYear(); ?>
+                                                            <i></i>
+                                                    </label>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="checkbox checkbox-danger space-bottom col-md-8" data-width="100%">
+                                                <button type="button" class="btn btn-pill btn-info-filled btn-block" id="btnCarInsur"><span>เปรียบเทียบ</span><i class="fa fa-rocket"></i></button>
+                                            </div>
+                                        </div>
+                                        
+                                </div>
+                                <div class="tab-pane fade in" id="moto-1">
+                                        <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img22.jpg">
+                                        <h4>Heading Sample 2</h4>
+                                        <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
+                                </div>
+                                <div class="tab-pane fade in" id="travel-1">
+                                        <h4>Heading Sample 3</h4>
+                                        <p><img alt="" class="pull-right rgt-img-margin img-width-200" src="assets/img/main/img13.jpg"> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
+                                </div>
+                                <div class="tab-pane fade in" id="settings-2">
+                                        <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img10.jpg">
+                                        <h4>Heading Sample 4</h4>
+                                        <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
+                                </div>
+                        </div>
+                </div>
+            </div>
         </div>
+        
+        <!-- Tab v3 -->
         <!--=== End Content ===-->
         <!--=== Footer Version 1 ===-->
         <div class="footer-v1">

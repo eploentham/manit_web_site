@@ -11,6 +11,10 @@ $hostDB="localhost";
 $userDB="root";
 $passDB="Ekartc2c5";
 $passDB="";
+
+$hostDB="mysql-5.5.chaiyohosting.com:3306";
+$userDB="manit";
+$passDB="Cras9&15";
 //$passDb="Ekartc2c5";
 //defined("userDB") ? null : define("userDB", "127.0.0.1");
 //defined("DB_USER") ? null : define("DB_USER", "root");
@@ -40,16 +44,17 @@ function get_client_ip() {
     return $ipaddress;
 }
 function setIPView(){
-    global $userDB, $passDB,$databaseName;
+    global $userDB, $passDB,$databaseName,$hostDB;
     $ipaddress = get_client_ip();
     //echo $ipaddress;
-    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $obj = mysqli_query($con, "Insert Into oc_customer_ip (ip, date_added) Value('".$ipaddress."',now());");
     mysqli_close($con);
 }
 function carYear(){
-    $con = mysqli_connect("localhost",$userDB,'Ekartc2c5',$databaseName);
+    global $userDB, $passDB,$databaseName,$hostDB;
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select year_code From car_year Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
@@ -65,12 +70,12 @@ function carYear(){
     return json_encode($resultArray);
 }
 function divYear(){
-    global $userDB, $passDB,$databaseName;
+    global $userDB, $passDB,$databaseName,$hostDB;
     $year = '<div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">'
             .'เลือกปีรถยนต์<span class="caret"></span></button>'        
             .'<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">';
     $year1="";
-    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select year_code From car_year Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
@@ -84,13 +89,13 @@ function divYear(){
     return $year.$year1."</ul></div>";
 }
 function divBrand(){
-    global $userDB, $passDB,$databaseName;
+    global $userDB, $passDB,$databaseName,$hostDB;
     $year = '<div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">'
             .'เลือกยี่ห้อ<span class="caret"></span></button>'        
             .'<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">';
     $year1="";
     //$con = mysqli_connect("localhost",'root',$GLOBALS['passDb'],'manit');
-    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select brand_name From car_brand Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
@@ -104,10 +109,10 @@ function divBrand(){
     return $year.$year1."</ul></div>";
 }
 function CboYear(){
-    global $userDB, $passDB,$databaseName;
+    global $userDB, $passDB,$databaseName,$hostDB;
     $year = '<select name="cboYear" id="cboYear">';
     $year1="";
-    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select year_code From car_year Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
@@ -121,10 +126,10 @@ function CboYear(){
     return $year.$year1."</select>";
 }
 function CboBrand(){
-    global $userDB, $passDB,$databaseName;
+    global $userDB, $passDB,$databaseName,$hostDB;
     $year = '<select name="cboBrand" id="cboBrand">';
     $year1="";
-    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select brand_name From car_brand Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
