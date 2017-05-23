@@ -103,11 +103,11 @@
                                         <button type="button" class="btn btn-warning btn-pill btn-block" id="btnCarPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane animated fadeIn" id="tab2">
-                                    <div class="col-md-6">
+                                <div role="tabpanel" class="tab-pane animated fadeIn" id="tab2" style="background: #005384">
+                                    <div class="col-md-6" style="background: #005384">
                                         <h2>ประกันรถจักรยานยนต์</h2>ค้นพบข้อเสนอประกันรถจักรยานยนต์โดนๆ โดยบริษัทประกันภัยชั้นนำ
                                     </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-md-6 col-sm-6 col-xs-12" style="background: #005384">
                                         <button type="button" class="btn btn-success btn-rounded btn-block" id="btnMotoInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถจักรยานยนต์เลย!</strong></span></button>
                                         <div class="box-content">
                                             <p>หรือ</p>
