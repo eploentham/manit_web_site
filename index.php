@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 @session_start();
-    require 'config.php';
-
+    //require 'config.php';
+    require_once("config.php");
     setIPView();
     $menu = file_get_contents('menu.php',TRUE);
     $footer = file_get_contents('footer.php',TRUE);

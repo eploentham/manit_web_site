@@ -6,7 +6,19 @@
  * and open the template in the editor.
  */
 //$passDb="";
-$passDb="Ekartc2c5";
+$databaseName="manit";
+$hostDB="localhost";
+$userDB="root";
+$passDB="Ekartc2c5";
+$passDB="";
+//$passDb="Ekartc2c5";
+//defined("userDB") ? null : define("userDB", "127.0.0.1");
+//defined("DB_USER") ? null : define("DB_USER", "root");
+//defined("DB_PASSWORD") ? null : define("DB_PASSWORD", "root_password");
+//defined("DB_NAME") ? null : define("DB_NAME", "db");
+
+//$get_id = (isset($_GET['id'])) ? $_GET['id'] : '';
+
 $ipaddress = '';
 function get_client_ip() {
     if (isset($_SERVER['HTTP_CLIENT_IP']))
@@ -28,15 +40,16 @@ function get_client_ip() {
     return $ipaddress;
 }
 function setIPView(){
+    global $userDB, $passDB,$databaseName;
     $ipaddress = get_client_ip();
     //echo $ipaddress;
-    $con = mysqli_connect("localhost",'root',$GLOBALS['passDb'],'manit');
+    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $obj = mysqli_query($con, "Insert Into oc_customer_ip (ip, date_added) Value('".$ipaddress."',now());");
     mysqli_close($con);
 }
 function carYear(){
-    $con = mysqli_connect("localhost",'root','Ekartc2c5','manit');
+    $con = mysqli_connect("localhost",$userDB,'Ekartc2c5',$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select year_code From car_year Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
@@ -57,7 +70,7 @@ function divYear(){
             .'เลือกปีรถยนต์<span class="caret"></span></button>'        
             .'<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">';
     $year1="";
-    $con = mysqli_connect("localhost",'root',$passDb,'manit');
+    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select year_code From car_year Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
@@ -76,7 +89,7 @@ function divBrand(){
             .'<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">';
     $year1="";
     //$con = mysqli_connect("localhost",'root',$GLOBALS['passDb'],'manit');
-    $con = mysqli_connect("localhost",'root',"Ekartc2c5",'manit');
+    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
     $sql = "Select brand_name From car_brand Where active = '1'";
     if ($result=mysqli_query($con,$sql)){
@@ -88,4 +101,38 @@ function divBrand(){
     }
     mysqli_close($con);
     return $year.$year1."</ul></div>";
+}
+function CboYear(){
+    global $passDb;
+    $year = '<select name="cboYear" id="cboYear">';
+    $year1="";
+    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
+    mysqli_set_charset($con, "UTF8");
+    $sql = "Select year_code From car_year Where active = '1'";
+    if ($result=mysqli_query($con,$sql)){
+//        $resultArray = array();
+//        $row = mysqli_num_rows($result);
+        while($row = mysqli_fetch_array($result)){
+            $year1 = $year1.'<option value='.$row["year_code"].'>'.$row["year_code"].'</option>';
+        }
+    }
+    mysqli_close($con);
+    return $year.$year1."</select>";
+}
+function CboBrand(){
+    global $passDb;
+    $year = '<select name="cboBrand" id="cboBrand">';
+    $year1="";
+    $con = mysqli_connect("localhost",$userDB,$passDB,$databaseName);
+    mysqli_set_charset($con, "UTF8");
+    $sql = "Select brand_name From car_brand Where active = '1'";
+    if ($result=mysqli_query($con,$sql)){
+//        $resultArray = array();
+//        $row = mysqli_num_rows($result);
+        while($row = mysqli_fetch_array($result)){
+            $year1 = $year1.'<option value='.$row["brand_name"].'>'.$row["brand_name"].'</option>';
+        }
+    }
+    mysqli_close($con);
+    return $year.$year1."</select>";
 }
