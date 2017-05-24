@@ -42,25 +42,23 @@
     <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/plugins/animate.css">
-    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/animate.css">
+	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 
-    <!-- CSS Theme -->
-    <link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
-    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
-
-    <!-- CSS Customization -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
-    <link href="assets/king-ui/css/animate.css" rel="stylesheet">
-    <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+    
+    
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
-    <link href="assets/king-ui/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
     <link href='assets/king-ui/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/king-ui/css/linear-icons.css">
+    
     <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
 
 </head>
@@ -128,12 +126,12 @@
         <div class="container">
             <div class="row tab-v3">
                 <div class="col-lg-3">
-                        <ul class="nav nav-pills nav-stacked">
-                                <li class="active"><a href="#car-1" data-toggle="tab"><i class="fa fa-home"></i> ประกันรถยนต์</a></li>
-                                <li><a href="#moto-1" data-toggle="tab"><i class="fa fa-cloud"></i> ประกันรถจักรยานยนต์</a></li>
-                                <li><a href="#travel-1" data-toggle="tab"><i class="fa fa-comments"></i> ประกันเดินทาง</a></li>
-                                <li><a href="#settings-2" data-toggle="tab"><i class="fa fa-gear"></i> Settings3</a></li>
-                        </ul>
+                    <ul class="nav nav-pills nav-stacked">
+                            <li class="active"><a href="#car-1" data-toggle="tab"><i class="fa fa-home"></i> ประกันรถยนต์</a></li>
+                            <li><a href="#moto-1" data-toggle="tab"><i class="fa fa-cloud"></i> ประกันรถจักรยานยนต์</a></li>
+                            <li><a href="#travel-1" data-toggle="tab"><i class="fa fa-comments"></i> ประกันเดินทาง</a></li>
+                            <li><a href="#settings-2" data-toggle="tab"><i class="fa fa-gear"></i> Settings3</a></li>
+                    </ul>
                 </div>
 
                 <div class="col-lg-9">
@@ -217,20 +215,43 @@
                                                 </section>
                                             </div>
                                         </div>
+                                        <form action="#" id="sky-form" class="sky-form">
+                                            
+                                        
                                         <div class="row">
                                             <div class="col col-md-3">
                                                 <h5 >เลือกรุ่นรถ</h5>
                                             </div>
-                                            <div class="col col-md-5">
-                                                <section >
-                                                    <label class="label">Select</label>
-                                                    <label class="select state-success">
-                                                            <?php echo CboYear(); ?>
-                                                            <i></i>
-                                                    </label>
-                                                </section>
+                                            <div class="row">
+                                                            <label class="label col col-4">Expiration date</label>
+                                                            <section class="col col-5">
+                                                                    <label class="select">
+                                                                            <select name="month">
+                                                                                <option value="0" selected disabled>Month</option>
+                                                                                <option value="1">January</option>
+                                                                                <option value="1">February</option>
+                                                                                <option value="3">March</option>
+                                                                                <option value="4">April</option>
+                                                                                <option value="5">May</option>
+                                                                                <option value="6">June</option>
+                                                                                <option value="7">July</option>
+                                                                                <option value="8">August</option>
+                                                                                <option value="9">September</option>
+                                                                                <option value="10">October</option>
+                                                                                <option value="11">November</option>
+                                                                                <option value="12">December</option>
+                                                                            </select>
+                                                                            <i></i>
+                                                                    </label>
+                                                            </section>
+                                                            <section class="col col-3">
+                                                                    <label class="input">
+                                                                            <input type="text" name="year" id="year" placeholder="Year">
+                                                                    </label>
+                                                            </section>
                                             </div>
                                         </div>
+                                            </form>
                                         <div class="row">
                                             <div class="checkbox checkbox-danger space-bottom col-md-8" data-width="100%">
                                                 <button type="button" class="btn btn-pill btn-info-filled btn-block" id="btnCarInsur"><span>เปรียบเทียบ</span><i class="fa fa-rocket"></i></button>
@@ -260,123 +281,10 @@
         <!-- Tab v3 -->
         <!--=== End Content ===-->
         <!--=== Footer Version 1 ===-->
-        <div class="footer-v1">
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                            <!-- About -->
-                            <div class="col-md-3 md-margin-bottom-40">
-                                    <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo3-light.png" alt=""></a>
-                                    <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                                    <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
-                            </div><!--/col-md-3-->
-                            <!-- End About -->
+        <?php echo $footer; ?>
+        <!--/footer-->
 
-                            <!-- Latest -->
-                            <div class="col-md-3 md-margin-bottom-40">
-                                    <div class="posts">
-                                            <div class="headline"><h2>Latest Posts</h2></div>
-                                            <ul class="list-unstyled latest-list">
-                                                    <li>
-                                                            <a href="#">Incredible content</a>
-                                                            <small>May 8, 2014</small>
-                                                    </li>
-                                                    <li>
-                                                            <a href="#">Best shoots</a>
-                                                            <small>June 23, 2014</small>
-                                                    </li>
-                                                    <li>
-                                                            <a href="#">New Terms and Conditions</a>
-                                                            <small>September 15, 2014</small>
-                                                    </li>
-                                            </ul>
-                                    </div>
-                            </div><!--/col-md-3-->
-                            <!-- End Latest -->
-
-                            <!-- Link List -->
-                            <div class="col-md-3 md-margin-bottom-40">
-                                    <div class="headline"><h2>Useful Links</h2></div>
-                                    <ul class="list-unstyled link-list">
-                                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
-                                    </ul>
-                            </div><!--/col-md-3-->
-                            <!-- End Link List -->
-
-                            <!-- Address -->
-                            <div class="col-md-3 map-img md-margin-bottom-40">
-                                    <div class="headline"><h2>Contact Us</h2></div>
-                                    <address class="md-margin-bottom-40">
-                                            25, Lorem Lis Street, Orange <br />
-                                            California, US <br />
-                                            Phone: 800 123 3456 <br />
-                                            Fax: 800 123 3456 <br />
-                                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
-                                    </address>
-                            </div><!--/col-md-3-->
-                            <!-- End Address -->
-                    </div>
-                </div>
-            </div><!--/footer-->
-
-            <div class="copyright">
-                <div class="container">
-                        <div class="row">
-                                <div class="col-md-6">
-                                        <p>
-                                            2015 &copy; All Rights Reserved.
-                                            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                                        </p>
-                                </div>
-
-                                <!-- Social Links -->
-                                <div class="col-md-6">
-                                        <ul class="footer-socials list-inline">
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
-                                                                <i class="fa fa-facebook"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
-                                                                <i class="fa fa-skype"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
-                                                                <i class="fa fa-google-plus"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
-                                                                <i class="fa fa-linkedin"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
-                                                                <i class="fa fa-pinterest"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
-                                                                <i class="fa fa-twitter"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-                                                                <i class="fa fa-dribbble"></i>
-                                                        </a>
-                                                </li>
-                                        </ul>
-                                </div>
-                                <!-- End Social Links -->
-                        </div>
-                </div>
-            </div><!--/copyright-->
+            
         </div>
         <!--=== End Footer Version 1 ===-->
     </div><!--/wrapper-->
@@ -463,11 +371,17 @@
 	<!-- JS Implementing Plugins -->
 	<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 	<script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-	<script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
 	<!-- JS Customization -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/forms/order.js"></script>
+	<script type="text/javascript" src="assets/js/forms/review.js"></script>
+	<script type="text/javascript" src="assets/js/forms/checkout.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
