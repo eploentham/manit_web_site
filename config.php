@@ -110,7 +110,8 @@ function divBrand(){
 }
 function CboYear(){
     global $userDB, $passDB,$databaseName,$hostDB;
-    $year = '<select name="cboYear" id="cboYear">';
+//    $year = '<select name="cboYear" id="cboYear">';
+    $year = "";
     $year1="";
     $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
@@ -119,15 +120,15 @@ function CboYear(){
 //        $resultArray = array();
 //        $row = mysqli_num_rows($result);
         while($row = mysqli_fetch_array($result)){
-            $year1 = $year1.'<option value='.$row["year_code"].'>'.$row["year_code"].'</option>';
+            $year1 .= '<option value='.$row["year_code"].'>'.$row["year_code"].'</option>';
         }
     }
     mysqli_close($con);
-    return $year.$year1."</select>";
+    return $year1;
 }
 function CboBrand(){
     global $userDB, $passDB,$databaseName,$hostDB;
-    $year = '<select name="cboBrand" id="cboBrand">';
+    //$year = '<select name="cboBrand" id="cboBrand">';
     $year1="";
     $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
@@ -136,9 +137,9 @@ function CboBrand(){
 //        $resultArray = array();
 //        $row = mysqli_num_rows($result);
         while($row = mysqli_fetch_array($result)){
-            $year1 = $year1.'<option value='.$row["brand_name"].'>'.$row["brand_name"].'</option>';
+            $year1 .= '<option value='.$row["brand_name"].'>'.$row["brand_name"].'</option>';
         }
     }
     mysqli_close($con);
-    return $year.$year1."</select>";
+    return $year1;
 }

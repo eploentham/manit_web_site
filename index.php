@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <?php
 @session_start();
     //require 'config.php';
@@ -15,33 +18,30 @@
   //$footer = file_get_contents('footer.php',TRUE);
   //$ourclient = file_get_contents('ourclient.php',TRUE);
 ?>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>Manit Insurance</title>
+	<title>Manit Insurance</title>
 
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Web Fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+	<!-- Web Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
 
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="assets/css/headers/header-v6.css">
-    <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="assets/css/headers/header-v6.css">
+        <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
-    <!-- CSS Implementing Plugins -->
+	<!-- CSS Implementing Plugins -->
 	<link rel="stylesheet" href="assets/plugins/animate.css">
 	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
 	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
@@ -52,92 +52,54 @@
 	<!-- CSS Theme -->
 	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
 	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
-    
-    
-    <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
-    
-    <link href='assets/king-ui/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-    
-    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
 
+        <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
+        <link href="assets/king-ui/css/animate.css" rel="stylesheet">
+        <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
+    
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body class="header-fixed">
     <div class="wrapper">
-        <!--=== Header v6 ===-->
+        <!--=== Header ===-->
         <?php echo $menu; ?>
-        <!--=== End Header v6 ===-->
+        <!--=== End Header ===-->
 
-        <!-- Interactive Slider v2 -->
         <div class="interactive-slider-v2">
             <div class="container">
                 <h1>ข้อเสนอดีๆ สำหรับครอบครัวคุณ</h1>
                 <p>สะดวก รวดเร็ว มั่นใจ ไร้กังวล ซื้อประกันกับเรา ประหยัดเงินมากกว่า</p>
             </div>
         </div>
-        <!-- End Interactive Slider v2 -->
 
-        <!--=== Content ===-->
-        <!--<div class="container content-md">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <ul class="nav nav-pills" role="tablist">
-                                <li class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="true"><h4>ประกันรถยนต์</h4></a></li>
-                                <li class=""><a href="#tab2" role="tab" data-toggle="tab" aria-expanded="false"><h4>ประกันรถจักรยานยนต์</h4></a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane animated fadeIn active" id="tab1">
-                                    <div class="col-md-6">
-                                        <h1>ประกันรถยนต์</h1>ค้นพบข้อเสนอประกันรถยนต์โดนๆ ซื้อ พ.ร.บ. ต่อประกันรถยนต์ โดยบริษัทประกันภัยชั้นนำมากกว่า 30 บริษัท
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <button type="button" class="btn btn-success btn-rounded btn-block" id="btnCarInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถยนต์เลย!</strong></span></button>
-                                        <div class="box-content">
-                                            <p>หรือ</p>
-                                        </div>
-                                        <button type="button" class="btn btn-warning btn-pill btn-block" id="btnCarPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane animated fadeIn" id="tab2" style="background: #005384">
-                                    <div class="col-md-6" style="background: #005384">
-                                        <h2>ประกันรถจักรยานยนต์</h2>ค้นพบข้อเสนอประกันรถจักรยานยนต์โดนๆ โดยบริษัทประกันภัยชั้นนำ
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12" style="background: #005384">
-                                        <button type="button" class="btn btn-success btn-rounded btn-block" id="btnMotoInsur"><i class="glyphicon glyphicon-search"></i><span><strong>ค้นหาประกันรถจักรยานยนต์เลย!</strong></span></button>
-                                        <div class="box-content">
-                                            <p>หรือ</p>
-                                        </div>
-                                        <button type="button" class="btn btn-warning btn-pill btn-block" id="btnMotoPRB"><i class="glyphicon glyphicon-comment"></i><span>ค้นหาเฉพาะ พ.ร.บ</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <div class="margin-bottom-40"></div>
-        <!-- Tab v3 -->
-        <div class="container">
-            <div class="row tab-v3">
-                <div class="col-lg-3">
-                    <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a href="#car-1" data-toggle="tab"><i class="fa fa-home"></i> ประกันรถยนต์</a></li>
-                            <li><a href="#moto-1" data-toggle="tab"><i class="fa fa-cloud"></i> ประกันรถจักรยานยนต์</a></li>
-                            <li><a href="#travel-1" data-toggle="tab"><i class="fa fa-comments"></i> ประกันเดินทาง</a></li>
-                            <li><a href="#settings-2" data-toggle="tab"><i class="fa fa-gear"></i> Settings3</a></li>
-                    </ul>
-                </div>
+        <!--=== Content Part ===-->
+        <div class="container content">
+            <div class="row">
+                <!-- Begin Sidebar Menu -->
 
-                <div class="col-lg-9">
+                <!-- End Sidebar Menu -->
+
+                <!-- Begin Content -->
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-10">
+                    <!-- Tabs -->
+                    <div class="tab-v3">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home-1" data-toggle="tab"><h5>ประกันรถยนต์</h5></a></li>
+                            <li><a href="#profile-1" data-toggle="tab"><h5>ประกันรถจักรยานยนต์</h5></a></li>
+                            <li><a href="#messages-1" data-toggle="tab"><h5>ประกันเดินทาง</h5></a></li>
+                        </ul>
                         <div class="tab-content">
-                                <div class="tab-pane fade in active" id="car-1">
-                                        <h5>เลือกประเภทประกันรถยนต์</h5>
+                            <!-- Success Forms -->
+                            <div class="tab-pane fade in active" id="home-1">
+                                <form action="#" class="sky-form">
+                                    <header>เลือกประเภทประกันรถยนต์</header>
+                                    <fieldset>
                                         <div class="row">
                                             <div class="col col-md-3">
                                                 <div class="checkbox checkbox-danger space-bottom ">
@@ -160,7 +122,7 @@
                                                     <label for="checkbox2"><span>2</span></label>
                                                 </div>
                                             </div>                                            
-                                            
+
                                         </div>
 
                                         <div class="row">
@@ -186,108 +148,351 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <div class="row">
-                                            <div class="col col-md-3">
-                                                <h5 >เลือกปี</h5>
-                                            </div>
-                                            <div class="col col-md-5">
-                                                    <section >
-                                                        <label class="label">Select</label>
-                                                        <label class="select state-success">
-                                                                <?php echo CboYear(); ?>
-                                                                <i></i>
-                                                        </label>
-                                                </section>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col col-md-3">
-                                                <h5 >เลือกยี่ห้อรถ</h5>
-                                            </div>
-                                            <div class="col col-md-5">
-                                                    <section >
-                                                        <label class="label">Select</label>
-                                                        <label class="select state-success">
-                                                                <?php echo CboYear(); ?>
-                                                                <i></i>
-                                                        </label>
-                                                </section>
-                                            </div>
-                                        </div>
-                                        <form action="#" id="sky-form" class="sky-form">
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <section>
+                                            <label class="label">เลือกปีรถ</label>
+                                            <label class="select state-success">
+                                                <select>
+                                                    <?php echo CboYear(); ?>
+                                                </select>
+                                                <i></i>
+                                            </label>
                                             
+                                        </section>
+                                        <section>
+                                            <label class="label">เลือกยี่ห้อรถ</label>
+                                            <label class="select state-success">
+                                                <select>
+                                                    <?php echo CboBrand(); ?>
+                                                </select>
+                                                <i></i>
+                                            </label>
+                                            
+                                        </section>
+                                    </fieldset>
+
+                                    <fieldset>
                                         
-                                        <div class="row">
-                                            <div class="col col-md-3">
-                                                <h5 >เลือกรุ่นรถ</h5>
-                                            </div>
-                                            <div class="row">
-                                                            <label class="label col col-4">Expiration date</label>
-                                                            <section class="col col-5">
-                                                                    <label class="select">
-                                                                            <select name="month">
-                                                                                <option value="0" selected disabled>Month</option>
-                                                                                <option value="1">January</option>
-                                                                                <option value="1">February</option>
-                                                                                <option value="3">March</option>
-                                                                                <option value="4">April</option>
-                                                                                <option value="5">May</option>
-                                                                                <option value="6">June</option>
-                                                                                <option value="7">July</option>
-                                                                                <option value="8">August</option>
-                                                                                <option value="9">September</option>
-                                                                                <option value="10">October</option>
-                                                                                <option value="11">November</option>
-                                                                                <option value="12">December</option>
-                                                                            </select>
-                                                                            <i></i>
-                                                                    </label>
-                                                            </section>
-                                                            <section class="col col-3">
-                                                                    <label class="input">
-                                                                            <input type="text" name="year" id="year" placeholder="Year">
-                                                                    </label>
-                                                            </section>
-                                            </div>
-                                        </div>
-                                            </form>
-                                        <div class="row">
-                                            <div class="checkbox checkbox-danger space-bottom col-md-8" data-width="100%">
-                                                <button type="button" class="btn btn-pill btn-info-filled btn-block" id="btnCarInsur"><span>เปรียบเทียบ</span><i class="fa fa-rocket"></i></button>
-                                            </div>
-                                        </div>
-                                        
+                                    </fieldset>
+
+                                        <fieldset>
+                                                <section>
+                                                        <label class="label">Radios</label>
+                                                        <div class="row">
+                                                                <div class="col col-4">
+                                                                        <label class="radio state-success"><input type="radio" name="radio"><i class="rounded-x"></i>Alexandra</label>
+                                                                        <label class="radio state-success"><input type="radio" name="radio"><i class="rounded-x"></i>Alice</label>
+                                                                </div>
+                                                                <div class="col col-4">
+                                                                        <label class="radio state-success"><input type="radio" name="radio" checked><i class="rounded-x"></i>Avelina</label>
+                                                                        <label class="radio state-success"><input type="radio" name="radio"><i class="rounded-x"></i>Basilia</label>
+                                                                </div>
+                                                                <div class="col col-4">
+                                                                        <label class="radio state-success"><input type="radio" name="radio"><i class="rounded-x"></i>Cassandra</label>
+                                                                        <label class="radio state-success"><input type="radio" name="radio"><i class="rounded-x"></i>Clemencia</label>
+                                                                </div>
+                                                        </div>
+                                                        <div class="note note-success">Thanks for your selection.</div>
+                                                </section>
+                                        </fieldset>
+
+                                        <fieldset>
+                                                <section>
+                                                        <label class="label">Checkboxes</label>
+                                                        <div class="row">
+                                                                <div class="col col-4">
+                                                                        <label class="checkbox state-success"><input type="checkbox" name="checkbox"><i></i>Alexandra</label>
+                                                                        <label class="checkbox state-success"><input type="checkbox" name="checkbox" checked><i></i>Alice</label>
+                                                                </div>
+                                                                <div class="col col-4">
+                                                                        <label class="checkbox state-success"><input type="checkbox" name="checkbox"><i></i>Avelina</label>
+                                                                        <label class="checkbox state-success"><input type="checkbox" name="checkbox"><i></i>Basilia</label>
+                                                                </div>
+                                                                <div class="col col-4">
+                                                                        <label class="checkbox state-success"><input type="checkbox" name="checkbox" checked><i></i>Cassandra</label>
+                                                                        <label class="checkbox state-success"><input type="checkbox" name="checkbox"><i></i>Clemencia</label>
+                                                                </div>
+                                                        </div>
+                                                        <div class="note note-success">Thanks for your selection.</div>
+                                                </section>
+                                        </fieldset>
+
+                                        <fieldset>
+                                                <div class="row">
+                                                        <section class="col col-5">
+                                                                <label class="label">Toggles based on radios</label>
+                                                                <label class="toggle state-success"><input type="radio" name="radio-toggle" checked><i class="rounded-4x"></i>Alexandra</label>
+                                                                <label class="toggle state-success"><input type="radio" name="radio-toggle"><i class="rounded-4x"></i>Anastasia</label>
+                                                                <label class="toggle state-success"><input type="radio" name="radio-toggle"><i class="rounded-4x"></i>Avelina</label>
+                                                                <div class="note note-success">Thanks for your selection.</div>
+                                                        </section>
+
+                                                        <div class="col col-2"></div>
+
+                                                        <section class="col col-5">
+                                                                <label class="label">Toggles based on checkboxes</label>
+                                                                <label class="toggle state-success"><input type="checkbox" name="checkbox-toggle" checked><i class="rounded-4x"></i>Cassandra</label>
+                                                                <label class="toggle state-success"><input type="checkbox" name="checkbox-toggle"><i class="rounded-4x"></i>Clemencia</label>
+                                                                <label class="toggle state-success"><input type="checkbox" name="checkbox-toggle"><i class="rounded-4x"></i>Desiderata</label>
+                                                                <div class="note note-success">Thanks for your selection.</div>
+                                                        </section>
+                                                </div>
+                                        </fieldset>
+
+                                        <footer>
+                                                <button type="submit" class="btn-u btn-u-default">Submit</button>
+                                                <button type="button" class="btn-u" onclick="window.history.back();">Back</button>
+                                        </footer>
+                                </form>
+                                <!--/ Success states for elements -->
+                            </div>
+                            <!-- End Success Forms -->
+
+                                <!-- Error Forms -->
+                                <div class="tab-pane fade" id="profile-1">
+                                        <form action="#" class="sky-form">
+                                                <header>Error states for elements</header>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Text input</label>
+                                                                <label class="input state-error">
+                                                                        <input type="text">
+                                                                </label>
+                                                                <div class="note note-error">This is a required field.</div>
+                                                        </section>
+
+                                                        <section>
+                                                                <label class="label">File input</label>
+                                                                <label for="file" class="input input-file state-error">
+                                                                        <div class="button"><input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Browse</div><input type="text" readonly>
+                                                                </label>
+                                                                <div class="note note-error">File size must be less than 3Mb.</div>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Select</label>
+                                                                <label class="select state-error">
+                                                                        <select>
+                                                                                <option value="0">Choose name</option>
+                                                                                <option value="1">Alexandra</option>
+                                                                                <option value="2">Alice</option>
+                                                                                <option value="3">Anastasia</option>
+                                                                                <option value="4">Avelina</option>
+                                                                        </select>
+                                                                        <i></i>
+                                                                </label>
+                                                                <div class="note note-error">You must select an option.</div>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Textarea</label>
+                                                                <label class="textarea state-error">
+                                                                        <textarea rows="3"></textarea>
+                                                                </label>
+                                                                <div class="note note-error">This is a required field.</div>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Radios</label>
+                                                                <div class="row">
+                                                                        <div class="col col-4">
+                                                                                <label class="radio state-error"><input type="radio" name="radio"><i class="rounded-x"></i>Alexandra</label>
+                                                                                <label class="radio state-error"><input type="radio" name="radio"><i class="rounded-x"></i>Alice</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="radio state-error"><input type="radio" name="radio"><i class="rounded-x"></i>Avelina</label>
+                                                                                <label class="radio state-error"><input type="radio" name="radio"><i class="rounded-x"></i>Basilia</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="radio state-error"><input type="radio" name="radio"><i class="rounded-x"></i>Cassandra</label>
+                                                                                <label class="radio state-error"><input type="radio" name="radio"><i class="rounded-x"></i>Clemencia</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="note note-error">You must select one option.</div>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Checkboxes</label>
+                                                                <div class="row">
+                                                                        <div class="col col-4">
+                                                                                <label class="checkbox state-error"><input type="checkbox" name="checkbox"><i></i>Alexandra</label>
+                                                                                <label class="checkbox state-error"><input type="checkbox" name="checkbox"><i></i>Alice</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="checkbox state-error"><input type="checkbox" name="checkbox"><i></i>Avelina</label>
+                                                                                <label class="checkbox state-error"><input type="checkbox" name="checkbox"><i></i>Basilia</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="checkbox state-error"><input type="checkbox" name="checkbox"><i></i>Cassandra</label>
+                                                                                <label class="checkbox state-error"><input type="checkbox" name="checkbox"><i></i>Clemencia</label>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="note note-error">You must select at least one option.</div>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <div class="row">
+                                                                <section class="col col-5">
+                                                                        <label class="label">Toggles based on radios</label>
+                                                                        <label class="toggle state-error"><input type="radio" name="radio-toggle"><i class="rounded-4x"></i>Alexandra</label>
+                                                                        <label class="toggle state-error"><input type="radio" name="radio-toggle"><i class="rounded-4x"></i>Anastasia</label>
+                                                                        <label class="toggle state-error"><input type="radio" name="radio-toggle"><i class="rounded-4x"></i>Avelina</label>
+                                                                        <div class="note note-error">You must select one option.</div>
+                                                                </section>
+
+                                                                <div class="col col-2"></div>
+
+                                                                <section class="col col-5">
+                                                                        <label class="label">Toggles based on checkboxes</label>
+                                                                        <label class="toggle state-error"><input type="checkbox" name="checkbox-toggle"><i class="rounded-4x"></i>Cassandra</label>
+                                                                        <label class="toggle state-error"><input type="checkbox" name="checkbox-toggle"><i class="rounded-4x"></i>Clemencia</label>
+                                                                        <label class="toggle state-error"><input type="checkbox" name="checkbox-toggle"><i class="rounded-4x"></i>Desiderata</label>
+                                                                        <div class="note note-error">You must select at least one option.</div>
+                                                                </section>
+                                                        </div>
+                                                </fieldset>
+
+                                                <footer>
+                                                        <button type="submit" class="btn-u btn-u-default">Submit</button>
+                                                        <button type="button" class="btn-u" onclick="window.history.back();">Back</button>
+                                                </footer>
+                                        </form>
+                                        <!--/ Error states for elements -->
                                 </div>
-                                <div class="tab-pane fade in" id="moto-1">
-                                        <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img22.jpg">
-                                        <h4>Heading Sample 2</h4>
-                                        <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
+                                <!-- End Error Forms -->
+
+                                <!-- Disabled Forms -->
+                                <div class="tab-pane fade" id="messages-1">
+                                        <form action="#" class="sky-form">
+                                                <header>Disabled states for elements</header>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Text input</label>
+                                                                <label class="input state-disabled">
+                                                                        <input type="text" disabled>
+                                                                </label>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Select</label>
+                                                                <label class="select state-disabled">
+                                                                        <select name="" disabled id="">
+                                                                                <option value="0"></option>
+                                                                                <option value="1">Alexandra</option>
+                                                                                <option value="2">Alice</option>
+                                                                                <option value="3">Anastasia</option>
+                                                                                <option value="4">Avelina</option>
+                                                                        </select>
+                                                                        <i></i>
+                                                                </label>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Textarea</label>
+                                                                <label class="textarea state-disabled">
+                                                                        <textarea rows="3" disabled></textarea>
+                                                                </label>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Radios</label>
+                                                                <div class="row">
+                                                                        <div class="col col-4">
+                                                                                <label class="radio state-disabled"><input type="radio" name="radio" disabled><i class="rounded-x"></i>Alexandra</label>
+                                                                                <label class="radio state-disabled"><input type="radio" name="radio" disabled><i class="rounded-x"></i>Alice</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="radio state-disabled"><input type="radio" name="radio" disabled><i class="rounded-x"></i>Avelina</label>
+                                                                                <label class="radio state-disabled"><input type="radio" name="radio" disabled><i class="rounded-x"></i>Basilia</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="radio state-disabled"><input type="radio" name="radio" disabled><i class="rounded-x"></i>Cassandra</label>
+                                                                                <label class="radio state-disabled"><input type="radio" name="radio" disabled><i class="rounded-x"></i>Clemencia</label>
+                                                                        </div>
+                                                                </div>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <section>
+                                                                <label class="label">Checkboxes</label>
+                                                                <div class="row">
+                                                                        <div class="col col-4">
+                                                                                <label class="checkbox state-disabled"><input type="checkbox" name="checkbox" disabled><i></i>Alexandra</label>
+                                                                                <label class="checkbox state-disabled"><input type="checkbox" name="checkbox" disabled><i></i>Alice</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="checkbox state-disabled"><input type="checkbox" name="checkbox" disabled><i></i>Avelina</label>
+                                                                                <label class="checkbox state-disabled"><input type="checkbox" name="checkbox" disabled><i></i>Basilia</label>
+                                                                        </div>
+                                                                        <div class="col col-4">
+                                                                                <label class="checkbox state-disabled"><input type="checkbox" name="checkbox" disabled><i></i>Cassandra</label>
+                                                                                <label class="checkbox state-disabled"><input type="checkbox" name="checkbox" disabled><i></i>Clemencia</label>
+                                                                        </div>
+                                                                </div>
+                                                        </section>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                        <div class="row">
+                                                                <section class="col col-5">
+                                                                        <label class="label">Toggles based on radios</label>
+                                                                        <label class="toggle state-disabled"><input type="radio" name="radio-toggle" disabled><i class="rounded-4x"></i>Alexandra</label>
+                                                                        <label class="toggle state-disabled"><input type="radio" name="radio-toggle" disabled><i class="rounded-4x"></i>Anastasia</label>
+                                                                        <label class="toggle state-disabled"><input type="radio" name="radio-toggle" disabled><i class="rounded-4x"></i>Avelina</label>
+                                                                </section>
+
+                                                                <div class="col col-2"></div>
+
+                                                                <section class="col col-5">
+                                                                        <label class="label">Toggles based on checkboxes</label>
+                                                                        <label class="toggle state-disabled"><input type="checkbox" name="checkbox-toggle" disabled><i class="rounded-4x"></i>Cassandra</label>
+                                                                        <label class="toggle state-disabled"><input type="checkbox" name="checkbox-toggle" disabled><i class="rounded-4x"></i>Clemencia</label>
+                                                                        <label class="toggle state-disabled"><input type="checkbox" name="checkbox-toggle" disabled><i class="rounded-4x"></i>Desiderata</label>
+                                                                </section>
+                                                        </div>
+                                                </fieldset>
+
+                                                <footer>
+                                                        <button type="submit" disabled class="button state-disabled">Submit</button>
+                                                        <button type="button" class="button state-disabled button-secondary" onclick="window.history.back();">Back</button>
+                                                </footer>
+                                        </form>
+                                        <!--/ Disabled states for elements -->
                                 </div>
-                                <div class="tab-pane fade in" id="travel-1">
-                                        <h4>Heading Sample 3</h4>
-                                        <p><img alt="" class="pull-right rgt-img-margin img-width-200" src="assets/img/main/img13.jpg"> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
-                                </div>
-                                <div class="tab-pane fade in" id="settings-2">
-                                        <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img10.jpg">
-                                        <h4>Heading Sample 4</h4>
-                                        <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
-                                </div>
+                                <!-- End Disabled Forms -->
                         </div>
+                    </div>
+                    <!-- End Tabs-->
                 </div>
+                <!-- End Content -->
             </div>
-        </div>
-        
-        <!-- Tab v3 -->
-        <!--=== End Content ===-->
+        </div><!--/container-->
+        <!--=== End Content Part ===-->
+
         <!--=== Footer Version 1 ===-->
         <?php echo $footer; ?>
-        <!--/footer-->
-
-            
-        </div>
         <!--=== End Footer Version 1 ===-->
-    </div><!--/wrapper-->
+    </div><!--/End Wrapepr-->
 
 	<!--=== Style Switcher ===-->
 	<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
@@ -379,26 +584,25 @@
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
-	<script type="text/javascript" src="assets/js/forms/order.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+        <script type="text/javascript" src="assets/js/forms/order.js"></script>
 	<script type="text/javascript" src="assets/js/forms/review.js"></script>
 	<script type="text/javascript" src="assets/js/forms/checkout.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
 			StyleSwitcher.initStyleSwitcher();
-                        $("#btnCarInsur").click(calCar);
-                        
 		});
-                function calCar(){
-                    //alert("aaaaa");
-                    window.location.assign('cal_car.php')
-                }
 	</script>
 	<!--[if lt IE 9]>
-		<script src="assets/plugins/respond.js"></script>
-		<script src="assets/plugins/html5shiv.js"></script>
-		<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<script src="assets/plugins/respond.js"></script>
+	<script src="assets/plugins/html5shiv.js"></script>
+	<script src="assets/plugins/placeholder-IE-fixes.js"></script>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/sky-forms-ie8.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 10]>
+	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
 	<![endif]-->
 </body>
 </html>
