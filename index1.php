@@ -42,25 +42,25 @@
     <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/plugins/animate.css">
-    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
-    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
-    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+	<link rel="stylesheet" href="assets/plugins/animate.css">
+	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 
-    <!-- CSS Theme -->
-    <link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
-    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
     <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
     <link href="assets/king-ui/css/animate.css" rel="stylesheet">
     <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
-
+    
     <link href='assets/king-ui/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-
+    
     <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
 
 </head>
@@ -128,7 +128,7 @@
         <div class="container">
             <div class="row tab-v3">
                 <div class="col-lg-3">
-                    <ul class="nav nav-pills nav-stacked">
+                    <ul class="nav nav-tabs">
                             <li class="active"><a href="#car-1" data-toggle="tab"><i class="fa fa-home"></i> ประกันรถยนต์</a></li>
                             <li><a href="#moto-1" data-toggle="tab"><i class="fa fa-cloud"></i> ประกันรถจักรยานยนต์</a></li>
                             <li><a href="#travel-1" data-toggle="tab"><i class="fa fa-comments"></i> ประกันเดินทาง</a></li>
