@@ -42,23 +42,25 @@
     <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
     <!-- CSS Implementing Plugins -->
-	<link rel="stylesheet" href="assets/plugins/animate.css">
-	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
-	<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
-	<!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+    <link rel="stylesheet" href="assets/plugins/animate.css">
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 
-	<!-- CSS Theme -->
-	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
-	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
-    
-    
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+    <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
+    <link href="assets/king-ui/css/animate.css" rel="stylesheet">
+    <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
-    
+
     <link href='assets/king-ui/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
 
 </head>
@@ -137,6 +139,7 @@
                 <div class="col-lg-9">
                         <div class="tab-content">
                                 <div class="tab-pane fade in active" id="car-1">
+                                <form action="#" id="sky-form" class="sky-form">
                                         <h5>เลือกประเภทประกันรถยนต์</h5>
                                         <div class="row">
                                             <div class="col col-md-3">
@@ -215,49 +218,47 @@
                                                 </section>
                                             </div>
                                         </div>
-                                        <form action="#" id="sky-form" class="sky-form">
-                                            
                                         
-                                        <div class="row">
-                                            <div class="col col-md-3">
-                                                <h5 >เลือกรุ่นรถ</h5>
-                                            </div>
-                                            <div class="row">
-                                                            <label class="label col col-4">Expiration date</label>
-                                                            <section class="col col-5">
-                                                                    <label class="select">
-                                                                            <select name="month">
-                                                                                <option value="0" selected disabled>Month</option>
-                                                                                <option value="1">January</option>
-                                                                                <option value="1">February</option>
-                                                                                <option value="3">March</option>
-                                                                                <option value="4">April</option>
-                                                                                <option value="5">May</option>
-                                                                                <option value="6">June</option>
-                                                                                <option value="7">July</option>
-                                                                                <option value="8">August</option>
-                                                                                <option value="9">September</option>
-                                                                                <option value="10">October</option>
-                                                                                <option value="11">November</option>
-                                                                                <option value="12">December</option>
-                                                                            </select>
-                                                                            <i></i>
-                                                                    </label>
-                                                            </section>
-                                                            <section class="col col-3">
-                                                                    <label class="input">
-                                                                            <input type="text" name="year" id="year" placeholder="Year">
-                                                                    </label>
-                                                            </section>
-                                            </div>
-                                        </div>
-                                            </form>
+                                                <div class="row">
+                                                    <div class="col col-md-3">
+                                                        <h5 >เลือกรุ่นรถ</h5>
+                                                    </div>
+                                                    <div class="row">
+                        								<label class="label col col-4">Expiration date</label>
+                        								<section class="col col-5">
+                        									<label class="select">
+                        										<select name="month">
+                        											<option value="0" selected disabled>Month</option>
+                        											<option value="1">January</option>
+                        											<option value="1">February</option>
+                        											<option value="3">March</option>
+                        											<option value="4">April</option>
+                        											<option value="5">May</option>
+                        											<option value="6">June</option>
+                        											<option value="7">July</option>
+                        											<option value="8">August</option>
+                        											<option value="9">September</option>
+                        											<option value="10">October</option>
+                        											<option value="11">November</option>
+                        											<option value="12">December</option>
+                        										</select>
+                        										<i></i>
+                        									</label>
+                        								</section>
+                        								<section class="col col-3">
+                        									<label class="input">
+                        										<input type="text" name="year" id="year" placeholder="Year">
+                        									</label>
+                        								</section>
+                        							</div>
+                                                </div>
+                                        
                                         <div class="row">
                                             <div class="checkbox checkbox-danger space-bottom col-md-8" data-width="100%">
                                                 <button type="button" class="btn btn-pill btn-info-filled btn-block" id="btnCarInsur"><span>เปรียบเทียบ</span><i class="fa fa-rocket"></i></button>
                                             </div>
                                         </div>
-                                        
+                                        </form>
                                 </div>
                                 <div class="tab-pane fade in" id="moto-1">
                                         <img alt="" class="pull-left lft-img-margin img-width-200" src="assets/img/main/img22.jpg">
