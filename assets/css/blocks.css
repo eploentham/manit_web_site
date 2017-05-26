@@ -3497,7 +3497,7 @@
 }
 
 .interactive-slider-v1.img-v1 {
-  background: url(../img/bg/18.jpg) no-repeat;
+  background: url(../img/bg/18-1.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -3556,11 +3556,37 @@
   padding: 200px 0;
   position: relative;
   text-align: center;
+  background: url(../img/bg/18-car.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.interactive-slider-v2-old {
+  z-index: 1;
+  padding: 200px 0;
+  position: relative;
+  text-align: center;
   background: url(../img/bg/18.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
-
+.interactive-slider-v2-moto {
+  z-index: 1;
+  padding: 200px 0;
+  position: relative;
+  text-align: center;
+  background: url(../img/bg/18-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.interactive-slider-v2-travel {
+  z-index: 1;
+  padding: 200px 0;
+  position: relative;
+  text-align: center;
+  background: url(../img/bg/18-travel.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .interactive-slider-v2-md {
   padding: 250px 0;
 }
