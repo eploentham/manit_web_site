@@ -171,6 +171,27 @@
                                             </label>
                                             
                                         </section>
+                                        <section>
+                                            <label class="label">เลือกรุ่น</label>
+                                            <label class="select state-success">
+                                                <select>
+                                                    <?php echo CboBrand(); ?>
+                                                </select>
+                                                <i></i>
+                                            </label>
+                                            
+                                        </section>
+                                        <section >
+                                                <label class="label">Toggles based on checkboxes</label>
+                                                <label class="toggle state-success"><input type="checkbox" name="checkbox-toggle" checked><i  data-swchon-text="ใช้งาน" data-swchoff-text="ยกเลิก"></i>Cassandra</label>
+                                                <label class="toggle state-success"><input type="checkbox" name="checkbox-toggle"><i class="rounded-4x"></i>Clemencia</label>
+                                                <label class="toggle state-success"><input type="checkbox" name="checkbox-toggle"><i class="rounded-4x"></i>Desiderata</label>
+                                                <div class="note note-success">Thanks for your selection.</div>
+                                        </section>
+                                        <section class="col col-2">    
+                                        <label class="label">&nbsp;</label>
+                                        <label class="toggle state-error"><input type="checkbox" name="chkGoVoid" checked="true" id="chkGoVoid"><i data-swchon-text="ใช้งาน" data-swchoff-text="ยกเลิก"></i>สถานะ</label>
+                                    </section>
                                     </fieldset>
 
                                     <fieldset>
