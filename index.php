@@ -152,7 +152,7 @@
                                             <label class="label">เลือกปีรถ</label>
                                             <label class="select state-success">
                                                 <select id="cboYear">
-                                                    <?php echo CboYear(); ?>
+                                                    <?php echo CboYearCar(); ?>
                                                 </select>
                                                 <i></i>
                                             </label>
@@ -161,8 +161,8 @@
                                         <section>
                                             <label class="label">เลือกยี่ห้อรถ</label>
                                             <label class="select state-success">
-                                                <select id="cboBrand">
-                                                    <?php echo CboBrand();?>
+                                                <select id="cboBrandCar">
+                                                    <?php echo CboBrandCar();?>
                                                 </select>
                                                 <i></i>
                                             </label>
@@ -171,7 +171,7 @@
                                         <section>
                                             <label class="label">เลือกรุ่น</label>
                                             <label class="select state-success">
-                                                <select id="cboModel">
+                                                <select id="cboModelCar">
                                                     <?php echo ""; ?>
                                                 </select>
                                                 <i></i>
@@ -238,7 +238,7 @@
                                             <label class="label">เลือกปีรถ</label>
                                             <label class="select state-success">
                                                 <select id="cboYear">
-                                                    <?php echo CboYear(); ?>
+                                                    <?php echo CboYearMoto(); ?>
                                                 </select>
                                                 <i></i>
                                             </label>
@@ -247,8 +247,8 @@
                                         <section>
                                             <label class="label">เลือกยี่ห้อรถ</label>
                                             <label class="select state-success">
-                                                <select id="cboBrand">
-                                                    <?php echo CboBrand();?>
+                                                <select id="cboBrandMoto">
+                                                    <?php echo CboBrandMoto();?>
                                                 </select>
                                                 <i></i>
                                             </label>
@@ -257,7 +257,7 @@
                                             <div class="col col-md-3">
                                                 <label class="label">เลือกรุ่น</label>
                                                 <label class="select state-success">
-                                                    <select id="cboModel">
+                                                    <select id="cboModelMoto">
                                                         <?php echo ""; ?>
                                                     </select>
                                                     <i></i>
@@ -266,7 +266,7 @@
                                             <div class="col col-md-3">
                                                 <label class="label">เลือกซี่ซี่รถมอเตอร์ไซด์</label>
                                                 <label class="select state-success">
-                                                    <select id="cboModel">
+                                                    <select id="cboMotoCC">
                                                         <?php echo ""; ?>
                                                     </select>
                                                     <i></i>
@@ -341,18 +341,19 @@
             jQuery(document).ready(function() {
                     App.init();
                     StyleSwitcher.initStyleSwitcher();
-                    $("#cboBrand").change(getModel);
+                    $("#cboBrandCar").change(getModelCar);
+                    $("#cboBrandMoto").change(getModelMoto);
                     $("#tabCar1").click(setBackGroundCar);
                     $("#tabMoto1").click(setBackGroundMoto);
                     $("#tabTravel1").click(setBackGroundTravel);
             });
-            function getModel(){
+            function getModelCar(){
                 //alert("aaaa");
                 $("#cboModel").empty();
                 $.ajax({ 
-                    type: 'GET', url: 'getAmphur.php', contentType: "application/json", dataType: 'text', data: { 'brand_code': $("#cboBrand").val()
-                        ,'year_code': $("#cboYear").val()
-                        , 'flagPage':"model" }, 
+                    type: 'GET', url: 'getAmphur.php', contentType: "application/json", dataType: 'text', data: { 'brand_code': $("#cboBrandCar").val()
+                        ,'year_code': $("#cboYearCar").val()
+                        , 'flagPage':"model_car" }, 
                     success: function (data) {
                         //alert('bbbbb');
                         var json_obj = $.parseJSON(data);
@@ -366,8 +367,33 @@
                             toAppend += '<option value="'+json_obj[i].model_code+'">'+json_obj[i].model_name+'</option>';
                             //
                         }
-                        $("#cboModel").append(toAppend);
-                        $("#cboModel").selectpicker('refresh');
+                        $("#cboModelCar").append(toAppend);
+                        $("#cboModelCar").selectpicker('refresh');
+                    }
+                });
+            }
+            function getModelMoto(){
+                //alert("aaaa");
+                $("#cboModel").empty();
+                $.ajax({ 
+                    type: 'GET', url: 'getAmphur.php', contentType: "application/json", dataType: 'text', data: { 'brand_code': $("#cboBrandMoto").val()
+                        ,'year_code': $("#cboYearMoto").val()
+                        , 'flagPage':"model_moto" }, 
+                    success: function (data) {
+                        //alert('bbbbb');
+                        var json_obj = $.parseJSON(data);
+                        //alert('bbbbb '+json_obj.length);
+                        toAppend = "<option value='0' selected='' disabled=''>เลือกรุ่น</option>";
+                        for (var i in json_obj)
+                        {
+                            if(json_obj[i].amphur_name==null) {
+                                //alert('ddddd ');
+                            }
+                            toAppend += '<option value="'+json_obj[i].model_code+'">'+json_obj[i].model_name+'</option>';
+                            //
+                        }
+                        $("#cboModelMoto").append(toAppend);
+                        $("#cboModelMoto").selectpicker('refresh');
                     }
                 });
             }

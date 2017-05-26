@@ -84,8 +84,31 @@ if($_GET['flagPage']=="amphur"){
         }
         $result->free();
     }
-}else if($_GET['flagPage']=="model"){
-    $sql="Select model_code, model_name From car_model  Where brand_code = '".$_GET['brand_code']."' ";
+}else if($_GET['flagPage']=="model_car"){
+    $sql="Select model_code, model_name From car_model  Where status_car = '1' and brand_code = '".$_GET['brand_code']."' ";
+    if ($result=mysqli_query($conn,$sql) or die(mysqli_error($conn))){
+        $ok="";
+        $err="";
+        if(!$result){
+            $ok="0";
+            $err= mysqli_error($conn);
+            $tmp = array();
+            $tmp["error"] = $err;
+            $tmp["sql"] = $sql;
+            array_push($resultArray,$tmp);
+        }else{
+            while($row = mysqli_fetch_array($result)){
+                $tmp["model_code"] = $row["model_code"];
+                $tmp["model_name"] = $row["model_name"];
+                array_push($resultArray,$tmp);
+            }
+        }
+        $result->free();
+    }else{
+        echo $query.' '.mysqli_error($conn);
+    }
+}else if($_GET['flagPage']=="model_moto"){
+    $sql="Select model_code, model_name From car_model  Where status_moto = '1' and brand_code = '".$_GET['brand_code']."' ";
     if ($result=mysqli_query($conn,$sql) or die(mysqli_error($conn))){
         $ok="";
         $err="";

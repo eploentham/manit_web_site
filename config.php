@@ -108,14 +108,14 @@ function divBrand(){
     mysqli_close($con);
     return $year.$year1."</ul></div>";
 }
-function CboYear(){
+function CboYearCar(){
     global $userDB, $passDB,$databaseName,$hostDB;
 //    $year = '<select name="cboYear" id="cboYear">';
     $year = "";
     $year1="";
     $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
-    $sql = "Select year_code From car_year Where active = '1'";
+    $sql = "Select year_code From car_year Where status_car = '1' and active = '1'";
     if ($result=mysqli_query($con,$sql)){
 //        $resultArray = array();
 //        $row = mysqli_num_rows($result);
@@ -126,13 +126,31 @@ function CboYear(){
     mysqli_close($con);
     return $year1;
 }
-function CboBrand(){
+function CboYearMoto(){
+    global $userDB, $passDB,$databaseName,$hostDB;
+//    $year = '<select name="cboYear" id="cboYear">';
+    $year = "";
+    $year1="";
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
+    mysqli_set_charset($con, "UTF8");
+    $sql = "Select year_code From car_year Where status_moto = '1' and active = '1'";
+    if ($result=mysqli_query($con,$sql)){
+//        $resultArray = array();
+//        $row = mysqli_num_rows($result);
+        while($row = mysqli_fetch_array($result)){
+            $year1 .= '<option value='.$row["year_code"].'>'.$row["year_code"].'</option>';
+        }
+    }
+    mysqli_close($con);
+    return $year1;
+}
+function CboBrandCar(){
     global $userDB, $passDB,$databaseName,$hostDB;
     //$year = '<select name="cboBrand" id="cboBrand">';
     $year1="";
     $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
-    $sql = "Select brand_code, brand_name From car_brand Where active = '1'";
+    $sql = "Select brand_code, brand_name From car_brand Where status_car = '1' and active = '1'";
     if ($result=mysqli_query($con,$sql)){
 //        $resultArray = array();
 //        $row = mysqli_num_rows($result);
@@ -149,7 +167,7 @@ function CboBrandMoto(){
     $year1="";
     $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
     mysqli_set_charset($con, "UTF8");
-    $sql = "Select brand_code, brand_name From car_brand Where active = '1'";
+    $sql = "Select brand_code, brand_name From car_brand Where status_moto = '1' and active = '1'";
     if ($result=mysqli_query($con,$sql)){
 //        $resultArray = array();
 //        $row = mysqli_num_rows($result);
