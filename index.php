@@ -122,7 +122,7 @@
                                                     <input id="chk2" type="checkbox" checked="false">
                                                     <label for="chk2"><span>2</span></label>
                                                 </div>
-                                            </div>                                            
+                                            </div>
                                         </div>
 
                                         <div class="row">
@@ -147,10 +147,7 @@
                                                     <label for="chkprb"><span>พ.ร.บ</span></label>                                                    
                                                 </div>
                                             </div>
-                                        </div>
-                                    </fieldset>
-
-                                    <fieldset>
+                                        </div>                                    
                                         <section>
                                             <label class="label">เลือกปีรถ</label>
                                             <label class="select state-success">

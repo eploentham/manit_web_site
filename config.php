@@ -143,3 +143,20 @@ function CboBrand(){
     mysqli_close($con);
     return $year1;
 }
+function CboBrandMoto(){
+    global $userDB, $passDB,$databaseName,$hostDB;
+    //$year = '<select name="cboBrand" id="cboBrand">';
+    $year1="";
+    $con = mysqli_connect($hostDB,$userDB,$passDB,$databaseName);
+    mysqli_set_charset($con, "UTF8");
+    $sql = "Select brand_code, brand_name From car_brand Where active = '1'";
+    if ($result=mysqli_query($con,$sql)){
+//        $resultArray = array();
+//        $row = mysqli_num_rows($result);
+        while($row = mysqli_fetch_array($result)){
+            $year1 .= '<option value='.$row["brand_code"].'>'.$row["brand_name"].'</option>';
+        }
+    }
+    mysqli_close($con);
+    return $year1;
+}
