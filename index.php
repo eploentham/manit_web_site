@@ -61,6 +61,7 @@
     
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="assets/css/custom.css">
+        <link href="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/css/bootstrap-table-expandable.css" rel="stylesheet">
 </head>
 
 <body class="header-fixed" id="body1">
@@ -180,7 +181,7 @@
                                         </section>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <button type="button" class="btn-u btn-lg rounded btn-u-brown" ><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
+                                                <button type="button" class="btn-u btn-lg rounded btn-u-brown" id="btnSearchCar" ><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
                                             </div>
                                         </div>
                                         
@@ -275,7 +276,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <button type="button" class="btn-u btn-lg rounded btn-u-brown" ><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
+                                                <button type="button" class="btn-u btn-lg rounded btn-u-brown" id="btnSearchMoto"><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
                                             </div>
                                         </div>
                                         
@@ -287,7 +288,7 @@
                                     <header>ค้นพบข้อเสนอประกันการเดินทางโดนๆ </header>
                                     <fieldset>
                                         <div class="col-md-6">
-                                            <button type="button" class="btn-u btn-lg rounded btn-u-brown" ><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันการเดินทาง</button>
+                                            <button type="button" class="btn-u btn-lg rounded btn-u-brown" id="btnSearchTravel"><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันการเดินทาง</button>
                                         </div>
                                     </fieldset>
                                     
@@ -305,6 +306,95 @@
                     <!-- End Tabs-->
                 </div>
                 <!-- End Content -->
+            </div>
+            <div class="row">
+                <div class="col col-lg-12">
+                    <div class="container" id="divView">
+                        <table class="table table-hover table-expandable table-striped">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Population</th>
+        <th>Area</th>
+        <th>Official languages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>United States of America</td>
+        <td>306,939,000</td>
+        <td>9,826,630 km2</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td colspan="5"><h4>Additional information</h4>
+          <ul>
+            <li><a href="http://en.wikipedia.org/wiki/Usa">USA on Wikipedia</a></li>
+            <li><a href="http://nationalatlas.gov/">National Atlas of the United States</a></li>
+            <li><a href="http://www.nationalcenter.org/HistoricalDocuments.html">Historical Documents</a></li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>United Kingdom </td>
+        <td>61,612,300</td>
+        <td>244,820 km2</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td colspan="5"><h4>Additional information</h4>
+          <ul>
+            <li><a href="http://en.wikipedia.org/wiki/United_kingdom">UK on Wikipedia</a></li>
+            <li><a href="http://www.visitbritain.com/">Official tourist guide to Britain</a></li>
+            <li><a href="http://www.statistics.gov.uk/StatBase/Product.asp?vlnk=5703">Official Yearbook of the United Kingdom</a></li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>1,147,995,904</td>
+        <td>3,287,240 km2</td>
+        <td>Hindi, English</td>
+      </tr>
+      <tr>
+        <td colspan="5"><h4>Additional information</h4>
+          <ul>
+            <li><a href="http://en.wikipedia.org/wiki/India">India on Wikipedia</a></li>
+            <li><a href="http://india.gov.in/">Government of India</a></li>
+            <li><a href="http://wikitravel.org/en/India">India travel guide</a></li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>Canada</td>
+        <td>33,718,000</td>
+        <td>9,984,670 km2</td>
+        <td>English, French</td>
+      </tr>
+      <tr>
+        <td colspan="5"><h4>Additional information</h4>
+          <ul>
+            <li><a href="http://en.wikipedia.org/wiki/Canada">Canada on Wikipedia</a></li>
+            <li><a href="http://atlas.gc.ca/site/index.html" >Official 
+              Government of Canada online Atlas of Canada</a></li>
+            <li><a href="http://wikitravel.org/en/Canada">Canada travel guide</a></li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td>Germany</td>
+        <td>82,060,000</td>
+        <td>357,021 km2</td>
+        <td>German</td>
+      </tr>
+      <tr>
+        <td colspan="5"><h4>Additional information</h4>
+          <ul>
+            <li><a href="http://en.wikipedia.org/wiki/Germany">Germany on Wikipedia</a></li>
+            <li><a href="http://www.deutschland.de/home.php?lang=2">Deutschland.de Official Germany portal</a></li>
+            <li><a href="http://www.cometogermany.com/">Germany Travel Info</a></li>
+          </ul></td>
+      </tr>
+    </tbody>
+  </table> 
+                    </div>
+                </div>
             </div>
         </div><!--/container-->
         <!--=== End Content Part ===-->
@@ -337,6 +427,7 @@
         <script type="text/javascript" src="assets/js/forms/order.js"></script>
 	<script type="text/javascript" src="assets/js/forms/review.js"></script>
 	<script type="text/javascript" src="assets/js/forms/checkout.js"></script>
+        <script src="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/js/bootstrap-table-expandable.js"></script>
 	<script type="text/javascript">
             jQuery(document).ready(function() {
                     App.init();
@@ -346,6 +437,7 @@
                     $("#tabCar1").click(setBackGroundCar);
                     $("#tabMoto1").click(setBackGroundMoto);
                     $("#tabTravel1").click(setBackGroundTravel);
+                    $("#btnSearchCar").click(searchCar);
             });
             function getModelCar(){
                 //alert("aaaa");
@@ -411,6 +503,46 @@
             function setBackGroundTravel(){
                 $("#div1").removeClass();
                 $("#div1").addClass("interactive-slider-v2-travel");
+            }
+            function searchCar(){
+                //alert("aaaa");
+                //$("#cboModel").empty();
+                $.ajax({ 
+                    type: 'GET', url: 'searchPrakan.php', contentType: "application/json", dataType: 'text', data: { 'brand_code': $("#cboBrandCar").val()
+                        ,'year_code': $("#cboYearCar").val(),'model_car': $("#cboModelCar").val()
+                        , 'flagPage':"search_car1" }, 
+                    success: function (data) {
+                        //alert('bbbbb');
+                        //var json_obj = $.parseJSON(data);
+                        //alert('bbbbb '+json_obj.length);
+                        //toAppend = "<option value='0' selected='' disabled=''>เลือกรุ่น</option>";
+//                        for (var i in json_obj)
+//                        {
+//                            if(json_obj[i].amphur_name==null) {
+//                                //alert('ddddd ');
+//                            }
+//                            toAppend += '<option value="'+json_obj[i].model_code+'">'+json_obj[i].model_name+'</option>';
+//                            //
+//                        }
+
+        var txt="<table class='table table-hover table-expandable table-striped'><thead><tr><th>Country</th><th>Population</th><th>Area</th><th>Official languages</th></tr></thead><tbody>"
+                +"<tr><td>United States of America</td><td>306,939,000</td><td>9,826,630 km2</td><td>English</td></tr>"
+                +"<tr><td colspan='5'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li><li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li><li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></td>"
+                +"</tr><tr><td>United Kingdom </td><td>61,612,300</td><td>244,820 km2</td><td>English</td></tr><tr>"
+                +"<td colspan='5'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/United_kingdom'>UK on Wikipedia</a></li><li><a href='http://www.visitbritain.com/'>Official tourist guide to Britain</a></li><li><a href='http://www.statistics.gov.uk/StatBase/Product.asp?vlnk=5703'>Official Yearbook of the United Kingdom</a></li>"
+                +"</ul></td></tr><tr><td>India</td><td>1,147,995,904</td><td>3,287,240 km2</td><td>Hindi, English</td></tr><tr>"
+                +"<td colspan='5'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/India'>India on Wikipedia</a></li><li><a href='http://india.gov.in/'>Government of India</a></li><li><a href='http://wikitravel.org/en/India'>India travel guide</a></li></ul></td>"
+                +"</tr><tr><td>Canada</td><td>33,718,000</td><td>9,984,670 km2</td><td>English, French</td></tr><tr><td colspan='5'><h4>Additional information</h4>"
+                +"<ul><li><a href='http://en.wikipedia.org/wiki/Canada'>Canada on Wikipedia</a></li><li><a href='http://atlas.gc.ca/site/index.html' >Official Government of Canada online Atlas of Canada</a></li><li><a href='http://wikitravel.org/en/Canada'>Canada travel guide</a></li>"
+                +"</ul></td></tr></tbody></table>";
+
+
+
+                        $("#tr1").empty();
+                        $("#tr1").append(txt);
+                        //$("#divView").selectpicker('refresh');
+                    }
+                });
             }
 	</script>
 	<!--[if lt IE 9]>
