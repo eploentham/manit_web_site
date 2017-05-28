@@ -268,7 +268,7 @@
                                             <div class="col col-md-3">
                                                 <label class="label">เลือกซี่ซี่รถมอเตอร์ไซด์</label>
                                                 <label class="select state-success">
-                                                    <select id="cboMotoCC">
+                                                    <select id="cboMotoCC>
                                                         <?php echo ""; ?>
                                                     </select>
                                                     <i></i>
@@ -277,7 +277,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <button type="button" class="btn-u btn-lg rounded btn-u-brown" id="btnSearchMoto"><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
+                                                <buttons type="button" class="btn-u btn-lg rounded btn-u-brown" id="btnSearchMoto"><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
                                             </div>
                                         </div>
                                         

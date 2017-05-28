@@ -24,7 +24,7 @@ and open the template in the editor.
         
     }
     $txt="<p>50 ประกันสำหรับคุณ</p>"
-            . "<table class='table table-hover table-expandable table-striped'>"
+            . "<table class='table table-hover table-expandable table-search-results '>"
             ."<thead><tr><th>เลือก</th>"
             . "<th>บริษัทประกัน</th>"
             . "<th>ชั้น</th>"
@@ -36,7 +36,7 @@ and open the template in the editor.
             . "<tbody>"
             ."<tr><td><div class='checkbox checkbox-danger space-bottom '><label class='hide'><input type='checkbox'></label><input id='chkprb' type='checkbox' checked='false'><label for='chkprb'><span>พ.ร.บ</span></label></div></td>"
             . "<td><img class='logo' src='assets/img/prakan/AIC.png' ></td>"
-                ."<td><img class='logo' src='assets/img/prakan/icon_class1.png' ></td>"
+                ."<td class='imgsearch'><img src='assets/img/prakan/2.png' ></td>"
                 ."<td><span class='btn btn-primary active'>300,000</span></td>"
                 ."<td><p><small>ประเภทการซ่อม :</small><span>อู่</span></P></td>"
                 ."<td>5.0</td><td>7,400</td>"
@@ -86,10 +86,13 @@ and open the template in the editor.
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
-    <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
+    <!--<link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
     <link href="assets/king-ui/css/animate.css" rel="stylesheet">
     <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="assets/css/style1.css">
+    
+    
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700' rel='stylesheet' type='text/css'>
     <link href="assets/king-ui/css/font-awesome.min.css" rel="stylesheet" type="text/css">
