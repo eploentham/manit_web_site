@@ -23,6 +23,27 @@ and open the template in the editor.
     if(isset($_SESSION["car_year"])){
         
     }
+    $txt="<p>50 ประกันสำหรับคุณ</p>"
+            . "<table class='table table-hover table-expandable table-striped'>"
+            ."<thead><tr><th>เลือก</th>"
+            . "<th>บริษัทประกัน</th>"
+            . "<th>ชั้น</th>"
+            . "<th>ทุนประกัน</th>"
+            . "<th>ความคุ้มครอง</th>"
+            . "<th>ความนิยม</th>"
+            . "<th>ราคา</th>"
+            . "</tr></thead>"
+            . "<tbody>"
+            ."<tr><td><div class='checkbox checkbox-danger space-bottom '><label class='hide'><input type='checkbox'></label><input id='chkprb' type='checkbox' checked='false'><label for='chkprb'><span>พ.ร.บ</span></label></div></td>"
+            . "<td><img class='logo' src='assets/img/prakan/AIC.png' ></td>"
+                ."<td><img class='logo' src='assets/img/prakan/icon_class1.png' ></td>"
+                ."<td><span class='btn btn-primary active'>300,000</span></td>"
+                ."<td><p><small>ประเภทการซ่อม :</small><span>อู่</span></P></td>"
+                ."<td>5.0</td><td>7,400</td>"
+            ."</tr>"
+            . "<tr><td colspan='8'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li><li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li><li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></td>"
+            ."</tr>"
+      ."</tbody></table>";
   //$switcher = file_get_contents('switcher.php',TRUE);
   //$footer = file_get_contents('footer.php',TRUE);
   //$ourclient = file_get_contents('ourclient.php',TRUE);
@@ -74,107 +95,23 @@ and open the template in the editor.
     <link href="assets/king-ui/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='assets/king-ui/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/king-ui/css/linear-icons.css">
+    <link href="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/css/bootstrap-table-expandable.css" rel="stylesheet">
+    
     </head>
     <body class="header-fixed">
         <!--=== Header v6 ===-->
         <?php echo $menu; ?>
         <!--=== End Header v6 ===-->
-        <div class="interactive-slider-v2">
-            <div class="container content-sm">
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                        <div class="panel panel-primary" id="divInsurYear">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">เลือกเงื่อนไขรถยนต์ </h3>
-                            </div>
-                            <div class="col-md-6">
-                                
-                            </div>
-                            <div class="col-md-6">
-                                <div class="col-md-4">
-                                    <div class="checkbox checkbox-danger space-bottom ">
-                                        <label class="hide"><input type="checkbox"></label>
-                                        <input id="checkbox1" type="checkbox" checked="">
-                                        <label for="checkbox1"><span>1</span></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="checkbox checkbox-danger space-bottom ">
-                                        <label class="hide"><input type="checkbox"></label>
-                                        <input id="checkbox1" type="checkbox" checked="">
-                                        <label for="checkbox1"><span>2</span></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="checkbox checkbox-danger space-bottom ">
-                                        <label class="hide"><input type="checkbox"></label>
-                                        <input id="checkbox1" type="checkbox" checked="">
-                                        <label for="checkbox1"><span>3</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                เลือกประเภท
-                            </div>
-                            <div class="col-md-6">
-                                <div class="col-md-4">
-                                    <div class="checkbox checkbox-danger space-bottom ">
-                                        <label class="hide"><input type="checkbox"></label>
-                                        <input id="checkbox1" type="checkbox" checked="">
-                                        <label for="checkbox1"><span>พ.ร.บ</span></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="checkbox checkbox-danger space-bottom ">
-                                        <label class="hide"><input type="checkbox"></label>
-                                        <input id="checkbox1" type="checkbox" checked="">
-                                        <label for="checkbox1"><span>2+</span></label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="checkbox checkbox-danger space-bottom ">
-                                        <label class="hide"><input type="checkbox"></label>
-                                        <input id="checkbox1" type="checkbox" checked="">
-                                        <label for="checkbox1"><span>3+</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="panel-body form-group-sm">
-                                <div class="col-md-6">
-                                    <?php echo $divYear;?>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group margin-bottom-5">
-                                        <span class="input-group-addon"><i class="fa fa-user" ></i></span>
-                                        <input type="text" id="clYear" class="form-control" placeholder="Year">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <?php echo $divBrand;?>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group margin-bottom-5">
-                                        <span class="input-group-addon"><i class="fa fa-user" ></i></span>
-                                        <input type="text" id="clBrand" class="form-control" placeholder="Brand">
-                                    </div>
-                                </div>
-                                
-                                <div class="checkbox checkbox-danger space-bottom col-md-8" data-width="100%">
-                                    <button type="button" class="btn btn-pill btn-info-filled btn-block" id="btnCarInsur"><span>เปรียบเทียบ</span><i class="fa fa-rocket"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2"></div>
+        
+        <!--=== Content ===-->
+        <br><br><br>
+        <div class="container content">
+            <div  class="rows">
+                <div class="col col-lg-12">
+                    <?php echo $txt;?>
                 </div>
             </div>
         </div>
-        <!--=== Content ===-->
-
-        
         <!--=== End Content ===-->
         
         <!--=== Footer Version 1 ===-->
@@ -182,7 +119,7 @@ and open the template in the editor.
         <!--=== End Footer Version 1 ===-->
         
         <!--=== Style Switcher ===-->
-        <?php echo $switcher; ?>
+        <?php //echo $switcher; ?>
         <!--=== End Style Switcher ===-->
         
         <!-- JS Global Compulsory -->
@@ -198,6 +135,7 @@ and open the template in the editor.
 	<!-- JS Page Level -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+        <script src="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/js/bootstrap-table-expandable.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
                     App.init();

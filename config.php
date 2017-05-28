@@ -10,11 +10,12 @@ $databaseName="manit";
 $hostDB="localhost";
 $userDB="root";
 $passDB="Ekartc2c5";
-$passDB="";
+//$passDB="";
 
-$hostDB="mysql-5.5.chaiyohosting.com:3306";
-$userDB="manit";
-$passDB="Cras9&15";
+//$hostDB="mysql-5.5.chaiyohosting.com:3306";
+//$userDB="manit";
+//$passDB="Cras9&15";
+
 //$passDb="Ekartc2c5";
 //defined("userDB") ? null : define("userDB", "127.0.0.1");
 //defined("DB_USER") ? null : define("DB_USER", "root");

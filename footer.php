@@ -5,28 +5,28 @@
                     <div class="row">
                             <!-- About -->
                             <div class="col-md-3 md-margin-bottom-40">
-                                    <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo3-light.png" alt=""></a>
-                                    <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                                    <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+                                    <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo4-light.png" alt=""></a>
+                                    <!--<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+                                    <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>-->
                             </div><!--/col-md-3-->
                             <!-- End About -->
 
                             <!-- Latest -->
                             <div class="col-md-3 md-margin-bottom-40">
                                     <div class="posts">
-                                            <div class="headline"><h2>Latest Posts</h2></div>
+                                            <div class="headline"><h2>ค้นหาประกันภัย</h2></div>
                                             <ul class="list-unstyled latest-list">
                                                     <li>
-                                                            <a href="#">Incredible content</a>
-                                                            <small>May 8, 2014</small>
+                                                            <a href="#">ประกันรถยนต์</a>
+                                                            
                                                     </li>
                                                     <li>
-                                                            <a href="#">Best shoots</a>
-                                                            <small>June 23, 2014</small>
+                                                            <a href="#">ประกันรถมอเตอร์ไซค์</a>
+                                                            
                                                     </li>
                                                     <li>
-                                                            <a href="#">New Terms and Conditions</a>
-                                                            <small>September 15, 2014</small>
+                                                            <a href="#">ประกันการเดินทาง</a>
+                                                            
                                                     </li>
                                             </ul>
                                     </div>
@@ -35,7 +35,7 @@
 
                             <!-- Link List -->
                             <div class="col-md-3 md-margin-bottom-40">
-                                    <div class="headline"><h2>Useful Links</h2></div>
+                                    <div class="headline"><h2>ช่วยเหลือ</h2></div>
                                     <ul class="list-unstyled link-list">
                                             <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
                                             <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
@@ -48,13 +48,13 @@
 
                             <!-- Address -->
                             <div class="col-md-3 map-img md-margin-bottom-40">
-                                    <div class="headline"><h2>Contact Us</h2></div>
+                                    <div class="headline"><h2>บริษัท</h2></div>
                                     <address class="md-margin-bottom-40">
-                                            25, Lorem Lis Street, Orange <br />
-                                            California, US <br />
-                                            Phone: 800 123 3456 <br />
+                                            105 ซอยมัยลาภ ถนนรามอินทรา แขวงท่าแร้ง  <br />
+                                            เขตบางเขน กรุงเทพ 10230 <br />
+                                            Phone: 084 851 7557 <br />
                                             Fax: 800 123 3456 <br />
-                                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                                            Email: <a href="mailto:info@anybiz.com" class="">info@nakoyasoft.com</a>
                                     </address>
                             </div><!--/col-md-3-->
                             <!-- End Address -->
