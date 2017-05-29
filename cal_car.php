@@ -41,7 +41,13 @@ and open the template in the editor.
                 ."<td><p><small>ประเภทการซ่อม :</small><span>อู่</span></P></td>"
                 ."<td>5.0</td><td>7,400</td>"
             ."</tr>"
-            . "<tr><td colspan='8'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li><li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li><li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></td>"
+            . "<tr><td colspan='8'>"
+                . "<div class='container content'><div class='row'>"
+                . "<div class='col col-mg-12'><h6>บมจ.เคเอสเค ประกันภัย (ประเทศไทย)</h6></div></div>"
+                . "<div class='row'><div class='col col-mg-4'>แพคเกจ : Surprise - KSK </div></div>"
+                . "<ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li>"
+                    . "<li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li>"
+                    . "<li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></div></td>"
             ."</tr>"
       ."</tbody></table>";
   //$switcher = file_get_contents('switcher.php',TRUE);
