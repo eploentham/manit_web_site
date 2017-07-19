@@ -23,27 +23,17 @@ and open the template in the editor.
     if(isset($_SESSION["car_year"])){
         
     }
-    $txt="<p>50 ประกันสำหรับคุณ</p>"
-            . "<table class='table table-hover table-expandable table-search-results '>"
-            ."<thead><tr><th>เลือก</th>"
-            . "<th>บริษัทประกัน</th>"
-            . "<th>ชั้น</th>"
-            . "<th>ทุนประกัน</th>"
-            . "<th>ความคุ้มครอง</th>"
-            . "<th>ความนิยม</th>"
-            . "<th>ราคา</th>"
-            . "</tr></thead>"
-            . "<tbody>"
-            ."<tr><td><div class='checkbox checkbox-danger space-bottom '><label class='hide'><input type='checkbox'></label><input id='chkprb' type='checkbox' checked='false'><label for='chkprb'><span>พ.ร.บ</span></label></div></td>"
+    $txt="<tr><td><div class='checkbox checkbox-danger space-bottom '><label class='hide'><input type='checkbox'></label><input id='chkprb' type='checkbox' checked='false'><label for='chkprb'><span>พ.ร.บ</span></label></div></td>"
             . "<td><img class='logo' src='assets/img/prakan/AIC.png' ></td>"
                 ."<td class='imgsearch'><img src='assets/img/prakan/2.png' ></td>"
                 ."<td><span class='btn btn-primary active'>300,000</span></td>"
                 ."<td><p><small>ประเภทการซ่อม :</small><span>อู่</span></P></td>"
                 ."<td>5.0</td><td>7,400</td>"
+                ."<td>5.0</td><td>7,400</td>"
+                ."<td>5.0</td><td>7,400</td>"
             ."</tr>"
-            . "<tr><td colspan='8'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li><li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li><li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></td>"
-            ."</tr>"
-      ."</tbody></table>";
+            . "<tr><td colspan='9'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li><li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li><li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></td>"
+            ."</tr>";
   //$switcher = file_get_contents('switcher.php',TRUE);
   //$footer = file_get_contents('footer.php',TRUE);
   //$ourclient = file_get_contents('ourclient.php',TRUE);
@@ -111,7 +101,24 @@ and open the template in the editor.
         <div class="container content">
             <div  class="rows">
                 <div class="col col-lg-12">
-                    <?php echo $txt;?>
+                    <p>50 ประกันสำหรับคุณ</p>
+                    <table class='table table-hover table-expandable table-search-results table-insurances '>
+                        <thead><tr><th>เลือก</th>
+                                <th>บริษัทประกัน</th>
+                                <th>ชั้น</th>
+                                <th>ราคา</th>
+                                <th>ทุนประกัน</th>
+                                <th>ความคุ้มครอง</th>
+                                <th>รถเสียหาย/ไฟไหม้</th>
+                                <th>ค่าเสียหาย ส่วนแรก</th>
+                                
+                                
+                                </tr></thead>
+                        <tbody>
+                            <?php echo $txt;?>
+                        </tbody>
+                    </table>
+                    
                 </div>
             </div>
         </div>
@@ -150,7 +157,6 @@ and open the template in the editor.
                         }else if ($(this).attr("id")=="liBrand"){
                             $("#clBrand").val($(this).text());
                         }
-                        
                     });
 		});
 	</script>
