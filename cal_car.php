@@ -32,8 +32,31 @@ and open the template in the editor.
                 ."<td>5.0</td><td>7,400</td>"
                 ."<td>5.0</td><td>7,400</td>"
             ."</tr>"
+<<<<<<< HEAD
             . "<tr><td colspan='9'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li><li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li><li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></td>"
             ."</tr>";
+=======
+            . "<tr><td colspan='8'>"
+                . "<div class='container content package collapse in'><div class='row'>"
+                . "<div class='col-sm-12 col-xs-12'><h6>บมจ.เคเอสเค ประกันภัย (ประเทศไทย)</h6></div></div>"
+                . "<div class='row'><div class='col col-mg-4'>แพคเกจ : Surprise - KSK </div></div>"
+                . "<div class='promotion'><p><small class='color-red'>ราคานี้รวมส่วนลดค่าติดตั้งกล้อง CCTV เรียบร้อยแล้ว</small></p></div>"
+                . "<div class='col-sm-4 col-sm-push-4 col-xs-12'><h4>ความรับผิดต่อบุคคลภายนอก</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>ความเสียหายต่อชีวิต ร่างกาย หรืออนามัยเฉพาะส่วนเกินวงเงินสูงสุดตาม พ.ร.บ.</a></li>"
+                    . "<li><a href='http://nationalatlas.gov/'>ความเสียหายต่อทรัพย์สินบุคคลภายนอก</a></li>"
+                    . "<li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>ความเสียหายเกิดจากภัยธรรมชาติ</a></li></ul></div>"
+                . "</div>"
+//                . "<div class='col-sm-4 col-sm-pull-4 col-xs-12'><h4>รถยนต์เสียหาย สูญหาย ไฟไหม้</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>ความเสียหายต่อชีวิต ร่างกาย หรืออนามัยเฉพาะส่วนเกินวงเงินสูงสุดตาม พ.ร.บ.</a></li>"
+//                    . "<li><a href='http://nationalatlas.gov/'>ความเสียหายต่อรถยนต์</a></li>"
+//                    . "<li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>ความรับผิดชอบรถยนต์สูญหาย/ไฟไหม้</a></li></ul></div>"
+//                . "</div>"
+//                . "<div class='col-sm-4 col-xs-12'><h4>รถยนต์เสียหาย สูญหาย ไฟไหม้</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>ความเสียหายต่อชีวิต ร่างกาย หรืออนามัยเฉพาะส่วนเกินวงเงินสูงสุดตาม พ.ร.บ.</a></li>"
+//                    . "<li><a href='http://nationalatlas.gov/'>ความเสียหายต่อรถยนต์</a></li>"
+//                    . "<li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>ความรับผิดชอบรถยนต์สูญหาย/ไฟไหม้</a></li></ul></div>"
+                . "</div>"
+                . "<a href='#' class='btn-toggle' aria-expaned='true' data-toggle='collapse'></a></td>"
+            ."</tr>"
+      ."</tbody></table>";
+>>>>>>> origin/master
   //$switcher = file_get_contents('switcher.php',TRUE);
   //$footer = file_get_contents('footer.php',TRUE);
   //$ourclient = file_get_contents('ourclient.php',TRUE);
