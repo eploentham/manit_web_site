@@ -268,8 +268,8 @@
                                             <div class="col col-md-3">
                                                 <label class="label">เลือกซี่ซี่รถมอเตอร์ไซด์</label>
                                                 <label class="select state-success">
-                                                    <select id="cboMotoCC>
-                                                        <?php echo ""; ?>
+                                                    <select id="cboMotoCC">
+                                                        <?php echo "aa"; ?>
                                                     </select>
                                                     <i></i>
                                                 </label>

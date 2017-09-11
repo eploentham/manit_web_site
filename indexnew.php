@@ -61,14 +61,84 @@ if(isset($_SESSION["status_regis"])){
 	<link rel="stylesheet" href="assets/css/custom.css">
         <link href="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/css/bootstrap-table-expandable.css" rel="stylesheet">
         <link rel="stylesheet" Type="text/css" href="assets/css/font/font.css">
+        <link rel="stylesheet" Type="text/css" href="assets/css/css.css">
+        <style type="text/css">
+            .bgimg {
+                background-image: url('../img/bg/18-car.jpg');
+            }
+            .wrapper {
+                display: grid;
+                border:1px solid #000;
+                grid-gap: 10px;
+                grid-template-columns: repeat(auto-fill, minmax(100px,1fr) minmax(200px,2fr));
+            }
+            .box {
+                background-color: #444;
+                color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                font-size: 150%;
+            }
+            
+        </style>
 </head>
 <body class="header-fixed" id="body1">
     <div class="wrapper">
         <?php echo $menu; ?>
+
         <div class="interactive-slider-v2" id="div1">
-            <div class="container">
-                <h1>ข้อเสนอดีๆ สำหรับครอบครัวคุณ</h1>
-                <p>สะดวก รวดเร็ว มั่นใจ ไร้กังวล ซื้อประกันกับเรา ประหยัดเงินมากกว่า</p>
+            <div class="ui stackable grid container">
+                <div class="five wide column" style="margin-top:10em;text-align:right">
+                    <div class="mobile-hide">
+                        
+                    </div>
+                </div>
+                <div class="eight wide column" style="margin-top:1.5em;margin-bottom:1em">
+                    <h1 class="thai" style="font-weight:400;color:white;font-size:20px">เปรียบเทียบราคาประกันภัยทุกชนิด</h1>
+                        <div class="ui segment defaultpanel" >
+                            <div class="ui top attached label">โปรดเลือกแบบประกัน</div>
+                            <div class="ui divided items">
+                                <a class="item" href="#">
+                                    <div class="ui tiny image" style="text-align:center">
+                                        <i class="car big icon"></i>
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันรถยนต์</h2>
+                                    </div>
+                                    <div class="ui right floated">
+                                        <i class="chevron circle right icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ui divided items">
+                                <a class="item" href="#">
+                                    <div class="ui tiny image" style="text-align:center">
+                                        <i class="motorcycle big icon"></i>
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันรถจักรยานยนต์</h2>
+                                    </div>
+                                    <div class="ui right floated">
+                                        <i class="chevron circle right icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ui divided items">
+                                <a class="item" href="#">
+                                    <div class="ui tiny image" style="text-align:center">
+                                        <i class="plane big icon"></i>
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันเดินทาง</h2>
+                                    </div>
+                                    <div class="ui right floated">
+                                        <i class="chevron circle right icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
             </div>
         </div>
     </div>
