@@ -32,10 +32,6 @@ and open the template in the editor.
                 ."<td>5.0</td><td>7,400</td>"
                 ."<td>5.0</td><td>7,400</td>"
             ."</tr>"
-<<<<<<< HEAD
-            . "<tr><td colspan='9'><h4>Additional information</h4><ul><li><a href='http://en.wikipedia.org/wiki/Usa'>USA on Wikipedia</a></li><li><a href='http://nationalatlas.gov/'>National Atlas of the United States</a></li><li><a href='http://www.nationalcenter.org/HistoricalDocuments.html'>Historical Documents</a></li></ul></td>"
-            ."</tr>";
-=======
             . "<tr><td colspan='8'>"
                 . "<div class='container content package collapse in'><div class='row'>"
                 . "<div class='col-sm-12 col-xs-12'><h6>บมจ.เคเอสเค ประกันภัย (ประเทศไทย)</h6></div></div>"
@@ -56,7 +52,7 @@ and open the template in the editor.
                 . "<a href='#' class='btn-toggle' aria-expaned='true' data-toggle='collapse'></a></td>"
             ."</tr>"
       ."</tbody></table>";
->>>>>>> origin/master
+
   //$switcher = file_get_contents('switcher.php',TRUE);
   //$footer = file_get_contents('footer.php',TRUE);
   //$ourclient = file_get_contents('ourclient.php',TRUE);
