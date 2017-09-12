@@ -16,7 +16,7 @@ if(isset($_SESSION["status_regis"])){
     $menu = str_replace('<a href="login.php" class="dropdown-toggle" >ลงชื่อเข้าระบบ</a>',$txt,$menu);
 }
 ?>
-
+<html>
 <head>
 	<title>Manit Insurance</title>
 
@@ -98,7 +98,7 @@ if(isset($_SESSION["status_regis"])){
                         <div class="ui segment defaultpanel" >
                             <div class="ui top attached label">โปรดเลือกแบบประกัน</div>
                             <div class="ui divided items">
-                                <a class="item" href="#">
+                                <a class="item" href="cal_car_new.php">
                                     <div class="ui tiny image" style="text-align:center">
                                         <i class="car big icon"></i>
                                     </div>
@@ -141,5 +141,127 @@ if(isset($_SESSION["status_regis"])){
                     </div>
             </div>
         </div>
+        <div class="ui stripe vertical segment" style="margin-top:3em">
+            <div class="ui one column center aligned divided relaxed grid container">
+                <span class="thai" style="font-size:18px;font-weight:500">สิ่งที่เราสัญญากับ </span><span style="color:red">คุณ</span>
+                <div class="row" style="margin-bottom:3em;margin-top:1.5em">
+                    <div class="ui small horizontal list">
+                        <div class="item">
+                            <i class="yellow big smile icon"></i>
+                            <div class="content">
+                                <span class="thai"style="font-weight:400;font-size:15px">ง่ายและรวดเร็ว</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="red big heart icon"></i>
+                            <div class="content">
+                                <span class="thai"style="font-weight:400;font-size:15px">ราคาที่คุ้มค่า</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="big history icon"></i>
+                            <div class="content">
+                                <span class="thai"style="font-weight:400;font-size:15px">ประหยัดเวลา</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="big calculator icon"></i>
+                            <div class="content">
+                                <span class="thai"style="font-weight:400;font-size:15px">ประหยัดค่าเบี้ย</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="file big text outline icon"></i>
+                            <div class="content">
+                                <span class="thai"style="font-weight:400;font-size:15px">ข้อเสนอที่ต้องการ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stackable very relaxed ui grid container" style="margin-top:3em">
+            <div class="ui stripe vertical segment">
+                <div class="ui two column center aligned divided relaxed grid container">
+                    <span class="thai" style="font-size:18px;font-weight:500">รับประกันเงินคืน <span style="color:red"></span> หากเจอที่อื่นถูกกว่า</span>
+                    <div class="row" style="margin-top:1em">
+                        <div class="column">
+                            <i class="payment big icon"></i>
+                            <p><span style="color:red">ฟรี </span>ค่าธรรมเนียมบัตรเครดิต</p>
+                        </div>
+                        <div class="column">
+                            <i class="car big icon"></i>
+                            <p><span style="color:red">ฟรี </span>บริการต่อทะเบียนรถ</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom:2em">
+                        <div class="column"><i class="file outline big icon"></i><p><span style="color:red">100% </span>เงินคืนถ้าเจอข้อเสนอถูกกว่า</p></div>
+                        <div class="column"><i class="barcode big icon"></i><p><span style="color:red">ฟรี </span>E-Voucher diffuser RAMAIRA spa</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui stripe vertical segment" style="margin-top:3em">
+            <div class="ui three column center aligned divided relaxed stackable grid container">
+                <span class="thai" style="font-size:18px;font-weight:500">ทำประกันง่ายๆแค่ <span style="color:red">3</span> ขั้นตอน</span>
+                <div class="row" style="margin-top:1em;margin-bottom:2em">
+                    <div class="column"><img class="ui tiny image floated right" src="/Content/img/hp/quotes.png" alt="ประกันภัยรถยนต์">
+                        <h3>Step 1</h3><p><span style="color:red">1 </span>เช็คเบี้ยประกัน</p></div>
+                    <div class="column"><img class="ui tiny image floated right" src="/Content/img/hp/plan.png" alt="ประกันภัยรถยนต์">
+                        <h3>Step 2</h3><p><span style="color:red">2 </span>เลือกแผนที่ต้องการ</p></div>
+                    <div class="column"><img class="ui tiny image floated right" src="/Content/img/hp/member1.png" alt="ประกันภัยรถยนต์">
+                        <h3>Step 3</h3><p><span style="color:red">3 </span>คุ้มครองทันที</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui stripe vertical segment" style="margin-top:3em">
+            <div class="ui one column center aligned divided relaxed grid container"><span class="thai" style="font-size:16px;font-weight:500">สะดวกเลือกชำระได้หลายช่องทางและปลอดภัย</span>
+                <div class="row" style="margin-top:1em;margin-bottom:4em;display:-webkit-box">
+                    <div class="column">
+                        <div class="ui list">
+                            <div class="item"><i class="green checkmark icon"></i>
+                                <div class="content">ชำระสดลดสูงสุด 10% หรือผ่อน 0% นาน 10 เดือน ไม่มีค่าธรรมเนียมบัตรเครดิต</div>                            
+                            </div>
+                            <div class="item"><i class="green checkmark icon"></i>
+                                <div class="content">เลือกได้ทั้งกรอกข้อมูลเองรับกรมธรรม์ทันที หรือเจ้าหน้าที่ติดต่อกลับเพื่ออำนวยความสะดวก</div>                                
+                            </div>
+                            <div class="item"><i class="green checkmark icon"></i>
+                                <div class="content">สั่งซื้อได้ 24 ชม. 7 วันทั่วประเทศไทย ไม่มีค่าจัดส่ง</div>
+                            </div>
+                            <div class="item"><i class="green checkmark icon"></i>
+                                <div class="content">เจอที่อื่นถูกกว่าหรือไม่พอใจยินดีคืนเงิน 100%</div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+        <?php echo $footer; ?>
     </div>
+    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
+    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/style-switcher.js"></script>
+    <script type="text/javascript" src="assets/js/forms/order.js"></script>
+    <script type="text/javascript" src="assets/js/forms/review.js"></script>
+    <script type="text/javascript" src="assets/js/forms/checkout.js"></script>
+    <script src="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/js/bootstrap-table-expandable.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            App.init();
+            
+        });
+    </script>
 </body>
+</html>
