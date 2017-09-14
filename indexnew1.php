@@ -70,7 +70,7 @@ if(isset($_SESSION["status_regis"])){
                 display: grid;
                 border:1px solid #000;
                 grid-gap: 10px;
-                /*grid-template-columns: repeat(auto-fill, minmax(100px,1fr) minmax(200px,2fr));*/
+                grid-template-columns: repeat(auto-fill, minmax(100px,1fr) minmax(200px,2fr));
             }
             .box {
                 background-color: #444;
@@ -260,7 +260,7 @@ if(isset($_SESSION["status_regis"])){
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();
-            StyleSwitcher.initStyleSwitcher();
+            
         });
     </script>
 </body>
