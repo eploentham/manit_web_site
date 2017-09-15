@@ -3560,6 +3560,15 @@
   background-size: cover;
   background-position: center center;
 }
+.interactive-slider-v2-car {
+  z-index: 1;
+  padding: 200px 0;
+  position: relative;
+  text-align: center;
+  background: url(../img/bg/1712.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .interactive-slider-v2-old {
   z-index: 1;
   padding: 200px 0;
@@ -3583,7 +3592,7 @@
   padding: 200px 0;
   position: relative;
   text-align: center;
-  background: url(../img/bg/18-travel.jpg) no-repeat;
+  background: url(../img/bg/1711.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }

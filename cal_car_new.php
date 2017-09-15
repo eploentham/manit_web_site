@@ -84,7 +84,7 @@ if(isset($_SESSION["status_regis"])){
 <body class="header-fixed" id="body1">
     <div class="wrapper">
         <?php echo $menu; ?>
-        <div class="interactive-slider-v2" id="div1">
+        <div class="interactive-slider-v2-car" id="div1">
             <div class="ui stackable grid container">
                 <div class="five wide column" style="margin-top:10em;text-align:right">
                     <div class="mobile-hide">
@@ -92,65 +92,65 @@ if(isset($_SESSION["status_regis"])){
                     </div>
                 </div>
                 
-                    <div class="eight wide column" style="margin-top:1.5em;margin-bottom:1em">
-                        <h1 class="thai" style="font-weight:400;color:white;font-size:20px">เช็คราคาประกันภัยรถยนต์</h1>
-                        <div class="ui segment defaultpanel" >
-                            <div class="ui top attached label">1. ระบุข้อมูลรถยนต์</div>
-                            <form action="#" class="sky-form">
-                                <fieldset>
-                                    <section>
-                                        <div class="field">
-                                            <label class="label">เลือกปีรถ</label>
-                                            <label class="select state-success">
-                                                <select id="cboYear">
-                                                    <?php echo CboYearCar(); ?>
-                                                </select>
-                                                <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
-                                            </label>
-                                        </div>
-                                    </section>
-                                    <section>
-                                        <div class="field">
-                                            <label class="label">เลือกยี่ห้อรถ</label>
-                                            <label class="select state-success">
-                                                <select id="cboBrandCar">
-                                                    <?php echo CboBrandCar(); ?>
-                                                </select>
-                                                 <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
-                                            </label>
-
-                                        </div>
-                                    </section>
-                                    <section>
-                                        <div class="field">
-                                            <label class="label">เลือกรุ่น</label>
-                                            <label class="select state-success">
-                                                <select id="cboModelCar">
-                                                    <?php echo ""; ?>
-                                                </select>
-                                                 <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
-                                            </label>
-
-                                        </div>
-                                    </section>
-                                    <h6 class="ui dividing header" style="margin-top:-2px"></h6>
-
-                                    <section>
-                                            <label class="label">2. กดเพื่อดูเบี้ยประกัน ส่วนลด ราคาผ่อนชำระ</label>
-                                            <label class="input state-error">
-                                                    <input type="text">
-                                            </label>
-                                            <div class="note note-error"style="color:#FF6666;display:none">*โปรดใส่เบอร์มือถือ</div>
-                                    </section>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <button type="button" class="btn-u btn-lg rounded btn-u-brown" id="btnSearchCar" ><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
-                                        </div>
+                <div class="eight wide column" style="margin-top:1.5em;margin-bottom:1em">
+                    <h1 class="thai" style="font-weight:400;color:white;font-size:20px">เช็คราคาประกันภัยรถยนต์</h1>
+                    <div class="ui segment defaultpanel" >
+                        <div class="ui top attached label">1. ระบุข้อมูลรถยนต์</div>
+                        <form action="#" class="sky-form">
+                            <fieldset>
+                                <section>
+                                    <div class="field">
+                                        <label class="label">เลือกปีรถ</label>
+                                        <label class="select state-success">
+                                            <select id="cboYear">
+                                                <?php echo CboYearCar(); ?>
+                                            </select>
+                                            <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
+                                        </label>
                                     </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>                
+                                </section>
+                                <section>
+                                    <div class="field">
+                                        <label class="label">เลือกยี่ห้อรถ</label>
+                                        <label class="select state-success">
+                                            <select id="cboBrandCar">
+                                                <?php echo CboBrandCar(); ?>
+                                            </select>
+                                             <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
+                                        </label>
+
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="field">
+                                        <label class="label">เลือกรุ่น</label>
+                                        <label class="select state-success">
+                                            <select id="cboModelCar">
+                                                <?php echo ""; ?>
+                                            </select>
+                                             <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
+                                        </label>
+
+                                    </div>
+                                </section>
+                                <h6 class="ui dividing header" style="margin-top:-2px"></h6>
+
+                                <section>
+                                        <label class="label">2. กดเพื่อดูเบี้ยประกัน ส่วนลด ราคาผ่อนชำระ</label>
+                                        <label class="input state-error">
+                                                <input type="text">
+                                        </label>
+                                        <div class="note note-error"style="color:#FF6666;display:none">*โปรดใส่เบอร์มือถือ</div>
+                                </section>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn-u btn-lg rounded btn-u-brown" id="btnSearchCar" ><i class="fa fa-picture-o"></i>ค้นหา เบี้ยประกันภัยรถยนต์</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="ui stripe vertical segment" style="margin-top:3em">

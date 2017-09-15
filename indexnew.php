@@ -124,7 +124,7 @@ if(isset($_SESSION["status_regis"])){
                                 </a>
                             </div>
                             <div class="ui divided items">
-                                <a class="item" href="#">
+                                <a class="item" href="cal_travel.php">
                                     <div class="ui tiny image" style="text-align:center">
                                         <i class="plane big icon"></i>
                                     </div>
