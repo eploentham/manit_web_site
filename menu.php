@@ -24,12 +24,39 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <div class="menu-container">
+                    
                     <ul class="nav navbar-nav">
                         <!-- Home -->
+                        <li class="dropdown active">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                        </li>
                         <li class="dropdown">
-                            <a href="index.php" class="dropdown-toggle" >
-                                    Home
-                            </a>									
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">ประกันภัยรถยนต์</a>
+                                <ul class="dropdown-menu">		
+                                        <li class="dropdown-submenu">
+                                                <ul class="dropdown-menu">
+                                                        <li><a target="_blank" href="One-Pages/Classic/index.html">ประกันภัยรถยนต์</a></li>
+                                                        <li><a target="_blank" href="One-Pages/Classic/one_page_dark.html">ประกันภัยรถยนต์ ชั้น1</a></li>
+                                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home1.html">ประกันภัยรถยนต์ ชั้น2</a></li>
+                                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home2.html">ประกันภัยรถยนต์ ชั้น2+</a></li>
+                                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยรถยนต์ ชั้น3</a></li>
+                                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยรถยนต์ ชั้น3+</a></li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">ประกันภัยเดินทาง</a>                                
+                                <ul class="dropdown-menu">	
+                                        <li class="dropdown-submenu">
+                                                <ul class="dropdown-menu">
+                                                        <li><a target="_blank" href="E-Commerce/index.html">ประกันภัยเดินทาง</a></li>
+                                                        <li><a target="_blank" href="E-Commerce/shop-ui-inner.html">ประกันภัยเดินทาง MSIG</a></li>
+                                                        <li><a target="_blank" href="E-Commerce/shop-ui-filter-grid.html">ประกันภัยเดินทาง AXA</a></li>
+                                                        <li><a target="_blank" href="E-Commerce/shop-ui-filter-list.html">ประกันภัยเดินทาง กรุงเทพประกันภัย</a></li>
+                                                </ul>
+                                        </li>
+                                </ul>
                         </li>
                         <!-- End Home -->
                         <li class="dropdown">

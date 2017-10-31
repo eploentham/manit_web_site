@@ -100,6 +100,21 @@ if(isset($_SESSION["status_regis"])){
                             <fieldset>
                                 <section>
                                     <div class="field">
+                                        <label class="label">ประเภท</label>
+                                        <label class="select state-success">
+                                            <select id="cboCarType">
+                                                <option value='1'>ประกันรถยนต์ ชั้น1</option>
+                                                <option value='2'>ประกันรถยนต์ ชั้น2</option>
+                                                <option value='2+'>ประกันรถยนต์ ชั้น2+</option>
+                                                <option value='3'>ประกันรถยนต์ ชั้น3</option>
+                                                <option value='3+'>ประกันรถยนต์ ชั้น3+</option>
+                                            </select>
+                                            <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
+                                        </label>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="field">
                                         <label class="label">เลือกปีรถ</label>
                                         <label class="select state-success">
                                             <select id="cboYear">
@@ -130,7 +145,28 @@ if(isset($_SESSION["status_regis"])){
                                             </select>
                                              <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
                                         </label>
-
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="field">
+                                        <label class="label">เลือกรุ่นย่อย</label>
+                                        <label class="select state-success">
+                                            <select id="cboModelCarSub">
+                                                <?php echo ""; ?>
+                                            </select>
+                                             <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
+                                        </label>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="field">
+                                        <label class="label">หมดประกันหรือต้องการให้คุ้มครอง</label>
+                                        <label class="select state-success">
+                                            <select id="cboInsurStart">
+                                                <?php echo ""; ?>
+                                            </select>
+                                             <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
+                                        </label>
                                     </div>
                                 </section>
                                 <h6 class="ui dividing header" style="margin-top:-2px"></h6>
