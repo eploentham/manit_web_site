@@ -111,12 +111,12 @@ if(isset($_SESSION["status_regis"])){
                                 </a>
                             </div>
                             <div class="ui divided items">
-                                <a class="item" href="#">
+                                <a class="item" href="cal_travel.php">
                                     <div class="ui tiny image" style="text-align:center">
-                                        <i class="motorcycle big icon"></i>
+                                        <i class="plane big icon"></i>
                                     </div>
                                     <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันรถจักรยานยนต์</h2>
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยเดินทาง</h2>
                                     </div>
                                     <div class="ui right floated">
                                         <i class="chevron circle right icon"></i>
@@ -124,12 +124,38 @@ if(isset($_SESSION["status_regis"])){
                                 </a>
                             </div>
                             <div class="ui divided items">
-                                <a class="item" href="cal_travel.php">
+                                <a class="item" href="#">
                                     <div class="ui tiny image" style="text-align:center">
-                                        <i class="plane big icon"></i>
+                                        <i class="ambulance big icon"></i>
                                     </div>
                                     <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันเดินทาง</h2>
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยอุบัติเหตุ</h2>
+                                    </div>
+                                    <div class="ui right floated">
+                                        <i class="chevron circle right icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ui divided items">
+                                <a class="item" href="#">
+                                    <div class="ui tiny image" style="text-align:center">
+                                        <i class="child big icon"></i>
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยสุขภาพ</h2>
+                                    </div>
+                                    <div class="ui right floated">
+                                        <i class="chevron circle right icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ui divided items">
+                                <a class="item" href="#">
+                                    <div class="ui tiny image" style="text-align:center">
+                                        <i class="home big icon"></i>
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยบ้านและคอนโด</h2>
                                     </div>
                                     <div class="ui right floated">
                                         <i class="chevron circle right icon"></i>
