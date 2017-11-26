@@ -7926,6 +7926,10 @@ SEARCH FROM
 		.template .home .search p.link-signin {
 			margin: 15px 0;
 		}
+                .template .home .search p.link-signin1 {
+			margin: 10px 0;
+                        font-size: 12px;
+		}
 
 	}
 

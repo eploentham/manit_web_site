@@ -83,7 +83,7 @@ if(isset($_SESSION["status_regis"])){
         </style>
 </head>
 <body class="header-fixed" id="body1">
-    <div class="wrapper">
+    <div class="wrapper page-option-v1">
         <?php echo $menu; ?>
 
         <div class="interactive-slider-v2" id="div1">
@@ -167,7 +167,7 @@ if(isset($_SESSION["status_regis"])){
                     </div>
             </div>
         </div>
-        <div class="ui stripe vertical segment" style="margin-top:3em">
+        <!--<div class="ui stripe vertical segment" style="margin-top:3em">
             <div class="ui one column center aligned divided relaxed grid container">
                 <span class="thai" style="font-size:18px;font-weight:500">สิ่งที่เราสัญญากับ </span><span style="color:red">คุณ</span>
                 <div class="row" style="margin-bottom:3em;margin-top:1.5em">
@@ -261,7 +261,7 @@ if(isset($_SESSION["status_regis"])){
                     </div>                        
                 </div>
             </div>
-        </div>
+        </div>-->
         <?php echo $footer; ?>
     </div>
     <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
@@ -285,8 +285,15 @@ if(isset($_SESSION["status_regis"])){
     <script src="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/js/bootstrap-table-expandable.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
+            //App.init();
+            //StyleSwitcher.initStyleSwitcher();
+            
             App.init();
+            App.initParallaxBg();
+            FancyBox.initFancybox();
+            OwlCarousel.initOwlCarousel();
             StyleSwitcher.initStyleSwitcher();
+            RevolutionSlider.initRSfullWidth();
         });
     </script>
 </body>

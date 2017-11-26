@@ -1,63 +1,62 @@
 <!--=== Footer Version 1 ===-->
-        <div class="footer-v1">
-            <div class="footer">
+        <div class="footer-v2">
+            <div class="footer ">
                 <div class="container">
                     <div class="row">
-                            <!-- About -->
+                            <!-- About
                             <div class="col-md-3 md-margin-bottom-40">
                                     <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo4-light.png" alt=""></a>
                                     <!--<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                                    <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>-->
-                            </div><!--/col-md-3-->
+                                    <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
+                            </div>-->
                             <!-- End About -->
-
+                            <div class="col-md-3 md-margin-bottom-40">
+                                    <div class="headline"><h2>Sitemap</h2></div>
+                                    <ul class="list-unstyled link-signin1">
+                                            <li><a href="#">หน้าหลัก</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">ประกันภัยรถยนต์</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">ประกันเดินทาง</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">ประกันสุขภาพ</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">ติดต่อเรา</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">ขั้นตอนชำระเงิน</a><i class="fa fa-angle-right"></i></li>
+                                    </ul>
+                            </div>
+                            
                             <!-- Latest -->
                             <div class="col-md-3 md-margin-bottom-40">
                                     <div class="posts">
-                                            <div class="headline"><h2>ค้นหาประกันภัย</h2></div>
+                                            <div class="headline"><h2>เกี่ยวกับเรา</h2></div>
                                             <ul class="list-unstyled latest-list">
                                                     <li>
-                                                            <a href="#">ประกันรถยนต์</a>
+                                                        เราสร้างความแตกต่างด้วยการนำเสนอสิ่งที่ดีที่สุดให้กับลูกค้าพร้อมกับเทคโนโลยีที่ทันสมัยสำหรับธุรกิจประกันภัย เพื่อสร้างความพึงพอใจสูงสุดให้กับลูกค้า
+                                                        <br>ทะเบียนพาณิชย์เลขที่ 5704012880
                                                             
                                                     </li>
-                                                    <li>
-                                                            <a href="#">ประกันรถมอเตอร์ไซค์</a>
-                                                            
-                                                    </li>
-                                                    <li>
-                                                            <a href="#">ประกันการเดินทาง</a>
-                                                            
-                                                    </li>
+                                                    
                                             </ul>
                                     </div>
                             </div><!--/col-md-3-->
                             <!-- End Latest -->
-
+                            <div class="col-md-3 map-img md-margin-bottom-40">
+                                    <div class="headline"><h2>Contact Us</h2></div>
+                                    <address class="md-margin-bottom-40">
+                                            882/317 ทีซี-กรีน คอนโดมิเนียม เฟส2 อาคารซี ถนนริมคลองสามเสน  <br />
+                                            แขวงบางกะปิ เขตห้วยขวาง กรุงเทพฯ 10310 <br />
+                                            <i class="phone middle icon"></i>: 081-9294527<br />
+                                            <i class="mobile middle icon"></i>: 095-5531234<br />
+                                            <i class="mail middle icon"></i>: <a href="mailto:info@anybiz.com" class="">naprapajat@hotmail.com</a>
+                                    </address>
+                            </div>
                             <!-- Link List -->
                             <div class="col-md-3 md-margin-bottom-40">
-                                    <div class="headline"><h2>ช่วยเหลือ</h2></div>
-                                    <ul class="list-unstyled link-list">
-                                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
-                                    </ul>
+                                    <div class="headline"><h3>ภายใต้การควบคุมโดย</h3></div>
+                                    <div>
+                                        <div class="row"><img class="default-logo" src="assets/img/certificate1.png" alt="Logo"</div>
+                                        <div class="row"><div class="small aligned content"style="font-weight:400;font-size:14px;margin-bottom:-1.5rem"><img class="default-logo" src="assets/img/certificate2.png" alt="Logo"></div></div>
+                                        <div class="row"><img class="default-logo" src="assets/img/certificate3.png" alt="Logo"></div>
+                                    </div>
                             </div><!--/col-md-3-->
-                            <!-- End Link List -->
 
-                            <!-- Address -->
-                            <div class="col-md-3 map-img md-margin-bottom-40">
-                                    <div class="headline"><h2>บริษัท</h2></div>
-                                    <address class="md-margin-bottom-40">
-                                            105 ซอยมัยลาภ ถนนรามอินทรา แขวงท่าแร้ง  <br />
-                                            เขตบางเขน กรุงเทพ 10230 <br />
-                                            Phone: 084 851 7557 <br />
-                                            Fax: 800 123 3456 <br />
-                                            Email: <a href="mailto:info@anybiz.com" class="">info@nakoyasoft.com</a>
-                                    </address>
-                            </div><!--/col-md-3-->
-                            <!-- End Address -->
                     </div>
                 </div>
             </div><!--/footer-->
