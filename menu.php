@@ -5,6 +5,8 @@
     <div class="header">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
+            
+                                
             <div class="menu-container">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -19,8 +21,8 @@
                 <!-- Navbar Brand -->
                 <div class="navbar-brand">
                     <a href="indexnew.php">
-                                <img class="default-logo" src="assets/img/logo3-light.png" alt="Logo">
-                                <img class="shrink-logo" src="assets/img/logo3-dark.png" alt="Logo">
+                                <img class="default-logo" src="assets/img/ohana_light.png" alt="Logo">
+                                <img class="shrink-logo" src="assets/img/ohana_light.png" alt="Logo">
                         </a>
                 </div>
                 <!-- ENd Navbar Brand -->
@@ -56,7 +58,7 @@
                                                         <li><a target="_blank" href="E-Commerce/index.html">ประกันภัยเดินทาง</a></li>
                                                         <li><a target="_blank" href="E-Commerce/shop-ui-inner.html">ประกันภัยเดินทาง MSIG</a></li>
                                                         <li><a target="_blank" href="E-Commerce/shop-ui-filter-grid.html">ประกันภัยเดินทาง AXA</a></li>
-                                                        <li><a target="_blank" href="E-Commerce/shop-ui-filter-list.html">ประกันภัยเดินทาง กรุงเทพประกันภัย</a></li>
+                                                        <li><a target="_blank" href="E-Commerce/shop-ui-filter-list.html">ประกันภัยเดินทาง บริษัททิพยประกันภัย</a></li>
                                                 </ul>
                                         
                         </li>
@@ -72,6 +74,47 @@
                     </ul>
                 </div>
             </div><!--/navbar-collapse-->
+            <!-- Social Links -->
+                                <div class="col-md-12">
+                                        <ul class="footer-socials list-inline">
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                                                <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                                                <i class="fa fa-skype"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                                                <i class="fa fa-google-plus"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                                                <i class="fa fa-linkedin"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+                                                                <i class="fa fa-pinterest"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                                                <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                </li>
+                                                <li>
+                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                                                <i class="fa fa-dribbble"></i>
+                                                        </a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <!-- End Social Links -->
         </div>
     </div>
     <!-- End Navbar -->

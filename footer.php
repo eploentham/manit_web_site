@@ -72,7 +72,7 @@
                                 </div>
 
                                 <!-- Social Links -->
-                                <div class="col-md-6">
+                                <!--<div class="col-md-6">
                                         <ul class="footer-socials list-inline">
                                                 <li>
                                                         <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
@@ -110,7 +110,7 @@
                                                         </a>
                                                 </li>
                                         </ul>
-                                </div>
+                                </div>-->
                                 <!-- End Social Links -->
                         </div>
                 </div>
