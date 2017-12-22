@@ -73,7 +73,7 @@
                         <li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="#"></a></li>
                         <li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="#"></a></li>
                     </ul>
-                    <p>Don't Have Account? Click <a class="color-green" href="regis.php">Sign Up</a> to registration.</p>
+                    <p>ถ้ายังไม่เป็นสมาชิกเว็บไซต์ Click <a class="color-green" href="regis.php">Sign Up</a> สมัครสมาชิก.</p>
                 </div>
 
                 <div class="input-group margin-bottom-20">

@@ -61,7 +61,7 @@
 					<li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="#"></a></li>
 					<li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="#"></a></li>
 				</ul>
-                                <p>Already Signed Up? Click <a class="color-green" href="login.php">Sign In</a> to login your account.</p>
+                                <p>เป็นสมาชิกเว็บไซต์  Click <a class="color-green" href="login.php">Sign In</a> เพื่อเข้าระบบ.</p>
 			</div>
 
 			<div class="input-group margin-bottom-20">
@@ -70,15 +70,15 @@
 			</div>
                         <div class="input-group margin-bottom-20">
                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" id="reName" class="form-control" placeholder="Name">
+                            <input type="text" id="reName" class="form-control" placeholder="ชื่อ">
 			</div>
                         <div class="input-group margin-bottom-20">
                             <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="text" id="reLastname" class="form-control" placeholder="LastName">
+                            <input type="text" id="reLastname" class="form-control" placeholder="นามสกุล">
 			</div>
                         <div class="input-group margin-bottom-20">
 				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-				<input type="text" id="reTele" class="form-control" placeholder="Telephone">
+				<input type="text" id="reTele" class="form-control" placeholder="เบอร์มือถือ">
 			</div>
 			<div class="input-group margin-bottom-20">
 				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
