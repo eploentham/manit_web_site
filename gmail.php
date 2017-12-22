@@ -52,17 +52,17 @@ $mail->SMTPDebug = 0;
 $mail->Debugoutput = 'html';
 
 //Set the hostname of the mail server
-$mail->Host = 'smtp-relay.gmail.com';
+$mail->Host = 'smtp.gmail.com';
 // use
 // $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 587;
+$mail->Port = 465;
 //$mail->Port = 465;
 
 //Set the encryption system to use - ssl (deprecated) or tls
-$mail->SMTPSecure = 'tls';
+$mail->SMTPSecure = 'ssl';
 //$mail->SMTPSecure = 'ssl';
 
 //Whether to use SMTP authentication
@@ -70,14 +70,14 @@ $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
 //$mail->Username = "ekapop@nakoyagarden.com";
-$mail->Username = "info@thaihotels.org.in";
+$mail->Username = "ohanain2018@gmail.com";
 
 //Password to use for SMTP authentication
 //$mail->Password = "eploentham";
-$mail->Password = "Thahr30*";
+$mail->Password = "online2018";
 
 //Set who the message is to be sent from
-$mail->setFrom('info@thaihotels.org.in', 'Info Thaihotels(news)');
+$mail->setFrom('ohanain2018@gmail.com', 'Ohana');
 
 //Set an alternative reply-to address
 //$mail->addReplyTo('replyto@example.com', 'First Last');
