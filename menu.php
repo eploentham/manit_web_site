@@ -65,11 +65,17 @@
                         <!-- End Home -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" >
-                                    ติดต่อเจ้าหน้าที่
+                                    Call center 0955531234
                             </a>
                         </li>
+                        
                         <li class="dropdown">                            
-                            <a href="login.php" class="dropdown-toggle" >ลงชื่อเข้าระบบ</a>
+                            <a href="login.php" class="dropdown-toggle" >เข้าสู่ระบบ</a>
+                        </li>
+                        <li class="dropdown"  align="bottom">
+                            <a href="javascript:void(0);" class="dropdown-toggle"  align="bottom">
+                                <img class="default-logo" src="assets/img/icon-sol-line.png" width="48" height="48"  alt="Logo"  align="bottom" >
+                            </a>
                         </li>
                     </ul>
                 </div>

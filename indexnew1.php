@@ -180,7 +180,7 @@ if(isset($_SESSION["status_regis"])){
                 </div>
             </div>
         </div>
-        <div class="stackable very relaxed ui grid container" style="margin-top:3em">
+        <!--<div class="stackable very relaxed ui grid container" style="margin-top:3em">
             <div class="ui stripe vertical segment">
                 <div class="ui two column center aligned divided relaxed grid container">
                     <span class="thai" style="font-size:18px;font-weight:500">รับประกันเงินคืน <span style="color:red"></span> หากเจอที่อื่นถูกกว่า</span>
@@ -200,8 +200,8 @@ if(isset($_SESSION["status_regis"])){
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ui stripe vertical segment" style="margin-top:3em">
+        </div>-->
+        <!--<div class="ui stripe vertical segment" style="margin-top:3em">
             <div class="ui three column center aligned divided relaxed stackable grid container">
                 <span class="thai" style="font-size:18px;font-weight:500">ทำประกันง่ายๆแค่ <span style="color:red">3</span> ขั้นตอน</span>
                 <div class="row" style="margin-top:1em;margin-bottom:2em">
@@ -213,8 +213,8 @@ if(isset($_SESSION["status_regis"])){
                         <h3>Step 3</h3><p><span style="color:red">3 </span>คุ้มครองทันที</p></div>
                 </div>
             </div>
-        </div>
-        <div class="ui stripe vertical segment" style="margin-top:3em">
+        </div>-->
+        <!--<div class="ui stripe vertical segment" style="margin-top:3em">
             <div class="ui one column center aligned divided relaxed grid container"><span class="thai" style="font-size:16px;font-weight:500">สะดวกเลือกชำระได้หลายช่องทางและปลอดภัย</span>
                 <div class="row" style="margin-top:1em;margin-bottom:4em;display:-webkit-box">
                     <div class="column">
@@ -235,7 +235,7 @@ if(isset($_SESSION["status_regis"])){
                     </div>                        
                 </div>
             </div>
-        </div>
+        </div>-->
         <?php echo $footer; ?>
     </div>
     <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>

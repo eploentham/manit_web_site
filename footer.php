@@ -44,7 +44,7 @@
                                             แขวงบางกะปิ เขตห้วยขวาง กรุงเทพฯ 10310 <br />
                                             <i class="phone middle icon"></i>: 081-9294527<br />
                                             <i class="mobile middle icon"></i>: 095-5531234<br />
-                                            <i class="mail middle icon"></i>: <a href="mailto:info@anybiz.com" class="">naprapajat@hotmail.com</a>
+                                            <i class="mail middle icon"></i>: <a href="mailto:info@anybiz.com" class="">ohanain2018@gmail.com</a>
                                     </address>
                             </div>
                             <!-- Link List -->
