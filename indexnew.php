@@ -201,8 +201,7 @@ if(isset($_SESSION["status_regis"])){
                                     </div>-->
                                 </a>
                             </div>
-                        </div>
-                        
+                        </div>                        
                     </div>
             </div>
         </div>

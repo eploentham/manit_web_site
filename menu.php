@@ -74,52 +74,69 @@
                         </li>
                         <li class="dropdown"  align="bottom">
                             <a href="javascript:void(0);" class="dropdown-toggle"  align="bottom">
-                                <img class="default-logo" src="assets/img/icon-sol-line.png" width="48" height="48"  alt="Logo"  align="bottom" >
+                                <!--<img class="default-logo" src="assets/img/icon-sol-line.png" width="36" height="36"  alt="Logo"  align="bottom" >-->
+                                <img class="default-logo" src="assets/img/icon-sol-line.png" width="36" height="36"  alt="Logo"  align="bottom" >
                             </a>
                         </li>
                     </ul>
                 </div>
             </div><!--/navbar-collapse-->
             <!-- Social Links -->
-                                <div class="col-md-12">
-                                        <ul class="footer-socials list-inline">
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
-                                                                <i class="fa fa-facebook"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
-                                                                <i class="fa fa-skype"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
-                                                                <i class="fa fa-google-plus"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
-                                                                <i class="fa fa-linkedin"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
-                                                                <i class="fa fa-pinterest"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
-                                                                <i class="fa fa-twitter"></i>
-                                                        </a>
-                                                </li>
-                                                <li>
-                                                        <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-                                                                <i class="fa fa-dribbble"></i>
-                                                        </a>
-                                                </li>
-                                        </ul>
-                                </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="footer-socials list-inline">
+                        <li>
+                            <a href="facebook.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-socials list-inline">
+                        <li class="dropdown">
+                            <img class="shrink-logo" src="assets/img/icon_callcenter.png" height="48" alt="Logo"  >
+                        </li>
+                        <li class="dropdown"  >
+                            <a href="javascript:void(0);" class="dropdown-toggle"  >
+                                <!--<img class="default-logo" src="assets/img/icon-sol-line.png" width="36" height="36"  alt="Logo"  align="bottom" >-->
+                                <img class="shrink-logo" src="assets/img/icon_line_id.png" height="48" alt="Logo"  >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
                                 <!-- End Social Links -->
         </div>
     </div>
