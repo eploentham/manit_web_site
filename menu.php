@@ -63,27 +63,27 @@
                                         
                         </li>
                         <!-- End Home -->
-                        <li class="dropdown">
+                        <!--<li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" >
                                     Call center 0955531234
                             </a>
-                        </li>
+                        </li>-->
                         
                         <li class="dropdown">                            
                             <a href="login.php" class="dropdown-toggle" >เข้าสู่ระบบ</a>
                         </li>
-                        <li class="dropdown"  align="bottom">
+                        <!--<li class="dropdown"  align="bottom">
                             <a href="javascript:void(0);" class="dropdown-toggle"  align="bottom">
-                                <!--<img class="default-logo" src="assets/img/icon-sol-line.png" width="36" height="36"  alt="Logo"  align="bottom" >-->
+                                
                                 <img class="default-logo" src="assets/img/icon-sol-line.png" width="36" height="36"  alt="Logo"  align="bottom" >
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div><!--/navbar-collapse-->
             <!-- Social Links -->
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <ul class="footer-socials list-inline">
                         <li>
                             <a href="facebook.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
@@ -122,16 +122,24 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-md-2">
+                    
+                    
+                                <!--<img class="default-logo" src="assets/img/icon-sol-line.png" width="36" height="36"  alt="Logo"  align="bottom" >&nbsp;
+                    <img  src="assets/img/icon-sol-line.png" height="24"  width="24" >
+                             <a href="javascript:void(0);" class="tooltips" data-toggle="tooltip" >   line id : 095 5199098 1</a>-->
+                            
+                </div>
                 <div class="col-md-6">
                     <ul class="footer-socials list-inline">
-                        <li class="dropdown">
-                            <img class="shrink-logo" src="assets/img/icon_callcenter.png" height="48" alt="Logo"  >
-                        </li>
-                        <li class="dropdown"  >
-                            <a href="javascript:void(0);" class="dropdown-toggle"  >
-                                <!--<img class="default-logo" src="assets/img/icon-sol-line.png" width="36" height="36"  alt="Logo"  align="bottom" >-->
-                                <img class="shrink-logo" src="assets/img/icon_line_id.png" height="48" alt="Logo"  >
+                        <li >
+                            <!--<img class="shrink-logo" src="assets/img/icon_callcenter.png" height="48" alt="Logo"  >-->
+                            <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble" align="top">
+                                Call Center 095 553 1234
                             </a>
+                        </li>
+                        <li  >
+                            <a href="javascript:void(0);" class="tooltips" data-toggle="tooltip" >   line id : 095 5199098 1</a>
                         </li>
                     </ul>
                 </div>
