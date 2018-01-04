@@ -62,6 +62,7 @@ if(isset($_SESSION["status_regis"])){
         <link href="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/css/bootstrap-table-expandable.css" rel="stylesheet">
         <link rel="stylesheet" Type="text/css" href="assets/css/font/font.css">
         <link rel="stylesheet" Type="text/css" href="assets/css/css.css">
+        
         <style type="text/css">
             .bgimg {
                 background-image: url('../img/bg/18-car.jpg');

@@ -139,7 +139,7 @@
                             </a>
                         </li>
                         <li  >
-                            <a href="javascript:void(0);" class="tooltips" data-toggle="tooltip" >   line id : 095 5199098 1</a>
+                            <a href="http://line.me/ti/p/hsDkqaCd_m" class="tooltips" data-toggle="tooltip" > line id : insurance123</a>
                         </li>
                     </ul>
                 </div>
