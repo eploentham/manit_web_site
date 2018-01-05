@@ -196,12 +196,16 @@ if(isset($_SESSION["status_regis"])){
                                     </div>
                                     <div class="middle aligned content">
                                         <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ข้อมูลผู้เอาประกันภัยและรายละเอียดทรัพย์สินที่เอาประกันภัย</h2>
+                                        
                                     </div>
-                                    <!--<div class="ui right floated">
-                                        <i class="chevron circle right icon"></i>
-                                    </div>-->
+                                    
                                 </a>
                             </div>
+                            
+                                <section class="col col-8">
+                                    <input type="text" width="300">
+                                    </section>
+                            
                         </div>                        
                     </div>
             </div>

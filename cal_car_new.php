@@ -108,6 +108,7 @@ if(isset($_SESSION["status_regis"])){
                                                 <option value='2+'>ประกันรถยนต์ ชั้น2+</option>
                                                 <option value='3'>ประกันรถยนต์ ชั้น3</option>
                                                 <option value='3+'>ประกันรถยนต์ ชั้น3+</option>
+                                                <option value='3+'>ประกันรถยนต์ ชั้น3 และพ.ร.บ.</option>
                                             </select>
                                             <!--<span id="span1" style="color: rgb(255, 102, 102); display: inline;">*โปรดเลือกปีรถ</span>-->
                                         </label>

@@ -38,7 +38,7 @@
                         <li class="dropdown active">
                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a>
                         </li>
-                        <li class="dropdown">
+                        <!--<li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">ประกันภัยรถยนต์</a>
                                 
                                                 <ul class="dropdown-menu">
@@ -48,10 +48,25 @@
                                                         <li><a target="_blank" href="One-Pages/Classic/one_page_home2.html">ประกันภัยรถยนต์ ชั้น2+</a></li>
                                                         <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยรถยนต์ ชั้น3</a></li>
                                                         <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยรถยนต์ ชั้น3+</a></li>
+                                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยรถยนต์ ชั้น3 และพ.ร.บ.</a></li>
                                                 </ul>
                                         
-                        </li>
+                        </li>-->
                         <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">สินค้าประกันภัย</a>
+                                
+                                <ul class="dropdown-menu">
+                                        <li><a target="_blank" href="One-Pages/Classic/index.html">ประกันรถยนต์</a></li>
+                                        <li><a target="_blank" href="One-Pages/Classic/one_page_dark.html">ประกันภัยเดินทาง</a></li>
+                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home1.html">ประกันภัยอุบัติเหตุ</a></li>
+                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home2.html">ประกันภัยสุขภาพ</a></li>
+                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยบ้านและคอนโด</a></li>
+                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยทางทะเล</a></li>
+                                        <li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">ประกันภัยเบ็ดเตล็ด</a></li>
+                                </ul>
+                                        
+                        </li>
+                        <!--<li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">ประกันภัยเดินทาง</a>                                
                                 
                                                 <ul class="dropdown-menu">
@@ -60,6 +75,17 @@
                                                         <li><a target="_blank" href="E-Commerce/shop-ui-filter-grid.html">ประกันภัยเดินทาง AXA</a></li>
                                                         <li><a target="_blank" href="E-Commerce/shop-ui-filter-list.html">ประกันภัยเดินทาง บริษัททิพยประกันภัย</a></li>
                                                 </ul>
+                                        
+                        </li>-->
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">โปร์โมชั่น</a>                                
+                                
+                                                <!--<ul class="dropdown-menu">
+                                                        <li><a target="_blank" href="E-Commerce/index.html">ประกันภัยเดินทาง</a></li>
+                                                        <li><a target="_blank" href="E-Commerce/shop-ui-inner.html">ประกันภัยเดินทาง MSIG</a></li>
+                                                        <li><a target="_blank" href="E-Commerce/shop-ui-filter-grid.html">ประกันภัยเดินทาง AXA</a></li>
+                                                        <li><a target="_blank" href="E-Commerce/shop-ui-filter-list.html">ประกันภัยเดินทาง บริษัททิพยประกันภัย</a></li>
+                                                </ul>-->
                                         
                         </li>
                         <!-- End Home -->
