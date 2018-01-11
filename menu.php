@@ -78,7 +78,7 @@
                                         
                         </li>-->
                         <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">โปร์โมชั่น</a>                                
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">โปรโมชั่น</a>                                
                                 
                                                 <!--<ul class="dropdown-menu">
                                                         <li><a target="_blank" href="E-Commerce/index.html">ประกันภัยเดินทาง</a></li>
