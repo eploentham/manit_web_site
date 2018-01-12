@@ -202,10 +202,12 @@ if(isset($_SESSION["status_regis"])){
                                 </a>
                             </div>
                             
-                                <section class="col col-8">
-                                    <input type="text" width="300">
-                                    </section>
-                            
+                            <div class="ui divided items">      
+                                <div class="ui tiny image" style="text-align:center">
+                                    <input type="text" >
+                                </div>
+                                    
+                            </div>
                         </div>                        
                     </div>
             </div>
