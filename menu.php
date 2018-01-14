@@ -5,12 +5,10 @@
     <div class="header">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            
-                                
             <div class="menu-container">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="fa fa-bars"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
                 </button>
                 <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -21,9 +19,9 @@
                 <!-- Navbar Brand -->
                 <div class="navbar-brand">
                     <a href="indexnew.php">
-                                <img class="default-logo" src="assets/img/ohana_light.png" alt="Logo">
-                                <img class="shrink-logo" src="assets/img/ohana_light.png" alt="Logo">
-                        </a>
+                        <img class="default-logo" src="assets/img/ohana_light.png" alt="Logo">
+                        <img class="shrink-logo" src="assets/img/ohana_light.png" alt="Logo">
+                    </a>
                 </div>
                 <!-- ENd Navbar Brand -->
             </div>

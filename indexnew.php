@@ -204,7 +204,7 @@ if(isset($_SESSION["status_regis"])){
                             
                             <div class="ui divided items">      
                                 <div class="ui tiny image" style="text-align:center">
-                                    <input type="text" >
+                                    <h4 ><input type="text" ></h4>
                                 </div>
                                     
                             </div>
