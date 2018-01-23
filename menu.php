@@ -1,8 +1,10 @@
 
 <div class="header-v6 header-border-bottom header-sticky">
+
     <!-- Navbar -->
-    <!--<div class="navbar mega-menu" role="navigation">-->
-    <div class="header">
+    <div class="navbar mega-menu" role="navigation">
+    <!--<div class="header">-->
+    
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="menu-container">
@@ -19,8 +21,8 @@
                 <!-- Navbar Brand -->
                 <div class="navbar-brand">
                     <a href="indexnew.php">
-                        <img class="default-logo" src="assets/img/ohana_light.png" alt="Logo">
-                        <img class="shrink-logo" src="assets/img/ohana_light.png" alt="Logo">
+                        <img class="default-logo" src="assets/img/ohana_1.png" alt="Logo">
+                        <img class="shrink-logo" src="assets/img/ohana_1.png" alt="Logo">
                     </a>
                 </div>
                 <!-- ENd Navbar Brand -->
