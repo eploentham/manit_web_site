@@ -189,7 +189,7 @@ if(isset($_SESSION["status_regis"])){
                                     </div>
                                 </a>
                             </div>
-                            <div class="ui divided items">
+                            <!--<div class="ui divided items">
                                 <a class="item" href="#">
                                     <div class="ui tiny image" style="text-align:center">
                                         <i class="media big icon"></i>
@@ -200,15 +200,27 @@ if(isset($_SESSION["status_regis"])){
                                     </div>
                                     
                                 </a>
-                            </div>
-                            
-                            <div class="ui divided items">      
-                                <div class="ui tiny image" style="text-align:center">
-                                    <h4 ><input type="text" ></h4>
-                                </div>
-                                    
-                            </div>
-                        </div>                        
+                            </div>-->
+                            <form action="#" class="sky-form">
+                                <fieldset>
+                                    <div class="row">
+                                        <section class="col col-12">
+                                            <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ข้อมูลผู้เอาประกันภัยและรายละเอียดทรัพย์สินที่เอาประกันภัย</h2>
+                                        </section>
+                                    </div>
+                                    <div class="row">
+                                        <section class="col col-10">
+                                            <label class="input">
+                                                    <input type="text" name="url">
+                                            </label>
+                                        </section>
+                                        <section class="col col-2">
+                                            <button type="submit" class="btn-u btn-u-default">Submit</button>
+                                        </section>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
             </div>
         </div>
