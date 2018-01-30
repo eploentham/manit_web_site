@@ -21,8 +21,8 @@
                 <!-- Navbar Brand -->
                 <div class="navbar-brand">
                     <a href="indexnew.php">
-                        <img class="default-logo" src="assets/img/ohana_1.png" alt="Logo">
-                        <img class="shrink-logo" src="assets/img/ohana_1.png" alt="Logo">
+                        <img class="default-logo" src="assets/img/maxa.png" alt="Logo">
+                        <img class="shrink-logo" src="assets/img/maxa1.png" alt="Logo">
                     </a>
                 </div>
                 <!-- ENd Navbar Brand -->
