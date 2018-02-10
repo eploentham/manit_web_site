@@ -37,7 +37,7 @@ if(isset($_SESSION["status_regis"])){
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- CSS Header and Footer -->
-        <link rel="stylesheet" href="assets/css/headers/header-v6.css">
+	<link rel="stylesheet" href="assets/css/headers/header-v6.css">
         <link rel="stylesheet" href="assets/css/footers/footer-v1.css">
 
 	<!-- CSS Implementing Plugins -->
@@ -62,7 +62,6 @@ if(isset($_SESSION["status_regis"])){
         <link href="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/css/bootstrap-table-expandable.css" rel="stylesheet">
         <link rel="stylesheet" Type="text/css" href="assets/css/font/font.css">
         <link rel="stylesheet" Type="text/css" href="assets/css/css.css">
-        
         <style type="text/css">
             .bgimg {
                 background-image: url('../img/bg/18-car.jpg');
@@ -71,7 +70,7 @@ if(isset($_SESSION["status_regis"])){
                 display: grid;
                 border:1px solid #000;
                 grid-gap: 10px;
-                /*grid-template-columns: repeat(auto-fill, minmax(100px,1fr) minmax(200px,2fr));*/
+                grid-template-columns: repeat(auto-fill, minmax(100px,1fr) minmax(200px,2fr));
             }
             .box {
                 background-color: #444;
@@ -84,7 +83,7 @@ if(isset($_SESSION["status_regis"])){
         </style>
 </head>
 <body class="header-fixed" id="body1">
-    <div class="wrapper page-option-v1">
+    <div class="wrapper">
         <?php echo $menu; ?>
 
         <div class="interactive-slider-v2" id="div1">
@@ -112,153 +111,71 @@ if(isset($_SESSION["status_regis"])){
                                 </a>
                             </div>
                             <div class="ui divided items">
-                                <a class="item" href="cal_travel.php">
+                                <a class="item" href="#">
+                                    <div class="ui tiny image" style="text-align:center">
+                                        <i class="motorcycle big icon"></i>
+                                    </div>
+                                    <div class="middle aligned content">
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันรถจักรยานยนต์</h2>
+                                    </div>
+                                    <div class="ui right floated">
+                                        <i class="chevron circle right icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ui divided items">
+                                <a class="item" href="#">
                                     <div class="ui tiny image" style="text-align:center">
                                         <i class="plane big icon"></i>
                                     </div>
                                     <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยเดินทาง</h2>
+                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันเดินทาง</h2>
                                     </div>
                                     <div class="ui right floated">
                                         <i class="chevron circle right icon"></i>
                                     </div>
                                 </a>
                             </div>
-                            <div class="ui divided items">
-                                <a class="item" href="#">
-                                    <div class="ui tiny image" style="text-align:center">
-                                        <i class="ambulance big icon"></i>
-                                    </div>
-                                    <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยอุบัติเหตุ</h2>
-                                    </div>
-                                    <div class="ui right floated">
-                                        <i class="chevron circle right icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="ui divided items">
-                                <a class="item" href="#">
-                                    <div class="ui tiny image" style="text-align:center">
-                                        <i class="child big icon"></i>
-                                    </div>
-                                    <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยสุขภาพ</h2>
-                                    </div>
-                                    <div class="ui right floated">
-                                        <i class="chevron circle right icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="ui divided items">
-                                <a class="item" href="#">
-                                    <div class="ui tiny image" style="text-align:center">
-                                        <i class="home big icon"></i>
-                                    </div>
-                                    <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยบ้านและคอนโด</h2>
-                                    </div>
-                                    <div class="ui right floated">
-                                        <i class="chevron circle right icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="ui divided items">
-                                <a class="item" href="#">
-                                    <div class="ui tiny image" style="text-align:center">
-                                        <i class="github big icon"></i>
-                                    </div>
-                                    <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยทางทะเล</h2>
-                                    </div>
-                                    <div class="ui right floated">
-                                        <i class="chevron circle right icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="ui divided items">
-                                <a class="item" href="#">
-                                    <div class="ui tiny image" style="text-align:center">
-                                        <i class="server big icon"></i>
-                                    </div>
-                                    <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ประกันภัยเบ็ดเตล็ด</h2>
-                                    </div>
-                                    <div class="ui right floated">
-                                        <i class="chevron circle right icon"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <!--<div class="ui divided items">
-                                <a class="item" href="#">
-                                    <div class="ui tiny image" style="text-align:center">
-                                        <i class="media big icon"></i>
-                                    </div>
-                                    <div class="middle aligned content">
-                                        <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ข้อมูลผู้เอาประกันภัยและรายละเอียดทรัพย์สินที่เอาประกันภัย</h2>
-                                        
-                                    </div>
-                                    
-                                </a>
-                            </div>-->
-                            <form action="#" class="sky-form">
-                                <fieldset>
-                                    <div class="row">
-                                        <section class="col col-12">
-                                            <h2 class="thai" style="font-weight:400;font-size:14px;margin-bottom:-1.5rem">ข้อมูลผู้เอาประกันภัยและรายละเอียดทรัพย์สินที่เอาประกันภัย</h2>
-                                        </section>
-                                    </div>
-                                    <div class="row">
-                                        <section class="col col-10">
-                                            <label class="input">
-                                                    <input type="text" name="url">
-                                            </label>
-                                        </section>
-                                        <section class="col col-2">
-                                            <button type="submit" class="btn-u btn-u-default">Submit</button>
-                                        </section>
-                                    </div>
-                                </fieldset>
-                            </form>
                         </div>
+                        
                     </div>
             </div>
         </div>
         <div class="ui stripe vertical segment" style="margin-top:3em">
             <div class="ui one column center aligned divided relaxed grid container">
-                <span class="thai" style="font-size:18px;font-weight:500">MAXAdirect.com </span><span style="color:red">ผู้นำโบรกเกอร์ประกันภัยออนไลน์ ผู้มอบสิทธิเศษสำหรับลูกค้าออนไลน์ </span>
+                <span class="thai" style="font-size:18px;font-weight:500">สิ่งที่เราสัญญากับ </span><span style="color:red">คุณ</span>
                 <div class="row" style="margin-bottom:3em;margin-top:1.5em">
                     <div class="ui small horizontal list">
                         <div class="item">
                             <i class="yellow big smile icon"></i>
                             <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px"> โปรโมชั่นผ่อนสบายๆ0%  (โปรโมชั่นบัตรเครดิต)</span>
+                                <span class="thai"style="font-weight:400;font-size:15px">ง่ายและรวดเร็ว</span>
                             </div>
                         </div>
                         <div class="item">
                             <i class="red big heart icon"></i>
                             <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px">ฟรี บริการช่วยเหลือฉุกเฉิน24 ชม. โดย โลโก้ แอกซ่าประกันภัย กับ โลโก้เอ็มเอสไอจี</span>
+                                <span class="thai"style="font-weight:400;font-size:15px">ราคาที่คุ้มค่า</span>
                             </div>
                         </div>
                         <div class="item">
                             <i class="big history icon"></i>
                             <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px">บริการ 24ชม. เช็คเบี้ยประกันภัย รับเรื่องร้องเรียนให้คำปรึกษา</span>
+                                <span class="thai"style="font-weight:400;font-size:15px">ประหยัดเวลา</span>
                             </div>
                         </div>
                         <div class="item">
                             <i class="big calculator icon"></i>
                             <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px">ส่วนลดตลอดปีรวมถึงต่ออายุประกันภัย</span>
+                                <span class="thai"style="font-weight:400;font-size:15px">ประหยัดค่าเบี้ย</span>
                             </div>
                         </div>
-                        <!--<div class="item">
+                        <div class="item">
                             <i class="file big text outline icon"></i>
                             <div class="content">
                                 <span class="thai"style="font-weight:400;font-size:15px">ข้อเสนอที่ต้องการ</span>
                             </div>
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -283,8 +200,8 @@ if(isset($_SESSION["status_regis"])){
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ui stripe vertical segment" style="margin-top:3em">
+        </div>-->
+        <!--<div class="ui stripe vertical segment" style="margin-top:3em">
             <div class="ui three column center aligned divided relaxed stackable grid container">
                 <span class="thai" style="font-size:18px;font-weight:500">ทำประกันง่ายๆแค่ <span style="color:red">3</span> ขั้นตอน</span>
                 <div class="row" style="margin-top:1em;margin-bottom:2em">
@@ -296,8 +213,8 @@ if(isset($_SESSION["status_regis"])){
                         <h3>Step 3</h3><p><span style="color:red">3 </span>คุ้มครองทันที</p></div>
                 </div>
             </div>
-        </div>
-        <div class="ui stripe vertical segment" style="margin-top:3em">
+        </div>-->
+        <!--<div class="ui stripe vertical segment" style="margin-top:3em">
             <div class="ui one column center aligned divided relaxed grid container"><span class="thai" style="font-size:16px;font-weight:500">สะดวกเลือกชำระได้หลายช่องทางและปลอดภัย</span>
                 <div class="row" style="margin-top:1em;margin-bottom:4em;display:-webkit-box">
                     <div class="column">
@@ -342,15 +259,8 @@ if(isset($_SESSION["status_regis"])){
     <script src="assets/plugins/jquery-plugin-for-expandable-bootstrap-table-rows/js/bootstrap-table-expandable.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
-            //App.init();
-            //StyleSwitcher.initStyleSwitcher();
-            
             App.init();
-            App.initParallaxBg();
-            FancyBox.initFancybox();
-            OwlCarousel.initOwlCarousel();
-            StyleSwitcher.initStyleSwitcher();
-            RevolutionSlider.initRSfullWidth();
+            
         });
     </script>
 </body>
