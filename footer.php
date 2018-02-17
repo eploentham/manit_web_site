@@ -13,9 +13,9 @@
                             <div class="col-md-3 md-margin-bottom-40">
                                     <div class="headline"><h2></h2></div>
                                     <ul class="list-unstyled link-signin1">
-                                            <li><a href="#">สินค้าประกันภัย</a><i class="fa fa-angle-right"></i></li>
-                                            <li><a href="#">ติดต่อเรา</a><i class="fa fa-angle-right"></i></li>                                            
-                                            <li><a href="#">ขั้นตอนการชำระเงิน</a><i class="fa fa-angle-right"></i></li>
+                                            <li><a href="#">สินค้าประกันภัย</a></li>
+                                            <li><a href="#">ติดต่อเรา</a></li>                                            
+                                            <li><a href="#">ขั้นตอนการชำระเงิน</a></li>
                                     </ul>
                             </div>
                             

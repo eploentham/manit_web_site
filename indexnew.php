@@ -52,10 +52,10 @@ if(isset($_SESSION["status_regis"])){
 	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
 	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
 
-        <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
+        <!--<link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
         <link href="assets/king-ui/css/animate.css" rel="stylesheet">
         <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
-        <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
+        <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">-->
     
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="assets/css/custom.css">
@@ -227,31 +227,19 @@ if(isset($_SESSION["status_regis"])){
         <div class="ui stripe vertical segment" style="margin-top:3em">
             <div class="ui one column center aligned divided relaxed grid container">
                 <span class="thai" style="font-size:18px;font-weight:500">MAXAdirect.com </span><span style="color:red">ผู้นำโบรกเกอร์ประกันภัยออนไลน์ ผู้มอบสิทธิเศษสำหรับลูกค้าออนไลน์ </span>
-                <div class="row" style="margin-bottom:3em;margin-top:1.5em">
+                <div class="row" >
                     <div class="ui small horizontal list">
                         <div class="item">
-                            <i class="yellow big smile icon"></i>
-                            <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px"> โปรโมชั่นผ่อนสบายๆ0%  (โปรโมชั่นบัตรเครดิต)</span>
-                            </div>
+                            <span class="glyphicon glyphicon-ok"style="font-weight:400;font-size:15px"> โปรโมชั่นผ่อนสบายๆ 0%  (โปรโมชั่นบัตรเครดิต)</span>
                         </div>
                         <div class="item">
-                            <i class="red big heart icon"></i>
-                            <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px">ฟรี บริการช่วยเหลือฉุกเฉิน24 ชม. โดย โลโก้ แอกซ่าประกันภัย กับ โลโก้เอ็มเอสไอจี</span>
-                            </div>
+                            <span class="glyphicon glyphicon-ok">ฟรี บริการช่วยเหลือฉุกเฉิน24 ชม. <img src="assets/img/logo-axa.png" height="42" width="42"> กับ<img src="assets/img/msig-logo.png" height="42"> </span>                                                                
                         </div>
                         <div class="item">
-                            <i class="big history icon"></i>
-                            <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px">บริการ 24ชม. เช็คเบี้ยประกันภัย รับเรื่องร้องเรียนให้คำปรึกษา</span>
-                            </div>
+                            <span class="glyphicon glyphicon-ok"style="font-weight:400;font-size:15px">บริการ 24ชม. เช็คเบี้ยประกันภัย รับเรื่องร้องเรียนให้คำปรึกษา</span>
                         </div>
                         <div class="item">
-                            <i class="big calculator icon"></i>
-                            <div class="content">
-                                <span class="thai"style="font-weight:400;font-size:15px">ส่วนลดตลอดปีรวมถึงต่ออายุประกันภัย</span>
-                            </div>
+                            <span class="glyphicon glyphicon-ok"style="font-weight:400;font-size:15px">ส่วนลดตลอดปีรวมถึงต่ออายุประกันภัย</span>
                         </div>
                         <!--<div class="item">
                             <i class="file big text outline icon"></i>
@@ -261,8 +249,12 @@ if(isset($_SESSION["status_regis"])){
                         </div>-->
                     </div>
                 </div>
+                <div class="row" style="margin-bottom:3em">
+                    
+                </div>
             </div>
         </div>
+        
         <!--<div class="stackable very relaxed ui grid container" style="margin-top:3em">
             <div class="ui stripe vertical segment">
                 <div class="ui two column center aligned divided relaxed grid container">
