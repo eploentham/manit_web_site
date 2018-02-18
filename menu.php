@@ -164,8 +164,8 @@
                                 Call Center 095 553 1234
                             </a>
                         </li>
-                        <li  >
-                            <a href="http://line.me/ti/p/hsDkqaCd_m" class="tooltips" data-toggle="tooltip" > line id : insurance123</a>
+                        <li >
+                            <a href="http://line.me/ti/p/hsDkqaCd_m" class="tooltips" data-toggle="tooltip" > <img src="assets/img/icon_line_1.png"></a>
                         </li>
                     </ul>
                 </div>
