@@ -161,11 +161,11 @@
                         <li >
                             <!--<img class="shrink-logo" src="assets/img/icon_callcenter.png" height="48" alt="Logo"  >-->
                             <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble" align="top">
-                                Call Center 095 553 1234
+                                <img src="assets/img/icon_callcenter.png" width="120">
                             </a>
                         </li>
                         <li >
-                            <a href="http://line.me/ti/p/hsDkqaCd_m" class="tooltips" data-toggle="tooltip" > <img src="assets/img/icon_line_1.png"></a>
+                            <a href="http://line.me/ti/p/hsDkqaCd_m" class="tooltips" data-toggle="tooltip" > <img src="assets/img/icon_line_1.png" width="120"></a>
                         </li>
                     </ul>
                 </div>
