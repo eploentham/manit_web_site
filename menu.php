@@ -169,10 +169,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            
-                                <!-- End Social Links -->
-        </div>
+            </div>            
+                                <!-- End Social Links -->        </div>
     </div>
     <!-- End Navbar -->
 </div>

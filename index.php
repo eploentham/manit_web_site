@@ -18,7 +18,7 @@ if(isset($_SESSION["status_regis"])){
 ?>
 <html>
 <head>
-	<title>Manit Insurance</title>
+	<title>Maxa Direct Insurance</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -86,7 +86,6 @@ if(isset($_SESSION["status_regis"])){
 <body class="header-fixed" id="body1">
     <div class="wrapper page-option-v1">
         <?php echo $menu; ?>
-
         <div class="interactive-slider-v2" id="div1">
             <div class="ui stackable grid container">
                 <div class="five wide column" style="margin-top:10em;text-align:right">
