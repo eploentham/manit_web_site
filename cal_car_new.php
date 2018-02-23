@@ -52,10 +52,10 @@ if(isset($_SESSION["status_regis"])){
 	<link rel="stylesheet" href="assets/css/theme-colors/default.css" id="style_color">
 	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
 
-        <link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
+        <!--<link href="assets/king-ui/css/king-ui.css" rel="stylesheet">
         <link href="assets/king-ui/css/animate.css" rel="stylesheet">
         <link href="assets/king-ui/css/owl.carousel.css" rel="stylesheet">
-        <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">
+        <link href="assets/king-ui/css/owl.theme.css" rel="stylesheet">-->
     
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="assets/css/custom.css">

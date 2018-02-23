@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 //$passDb="";
-$databaseName="manit";
+$databaseName="maxadirect";
 $hostDB="localhost";
 $userDB="root";
 $passDB="Ekartc2c5";
